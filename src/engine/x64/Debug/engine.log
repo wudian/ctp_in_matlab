@@ -1,0 +1,33 @@
+﻿生成启动时间为 2014/4/4 11:18:02。
+     1>项目“f:\MATLAB_INVESTIGATE\engine\engine.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“x64\Debug\engine.unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I../common /I"C:\Program Files\MATLAB\R2011b\extern\include" /IC:\boost_1_54_0 /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D ENGINE_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc100.pdb" /Gd /TP /errorReport:prompt HelpFunction.cpp MatlabEngine.cpp
+         MatlabEngine.cpp
+     1>f:\matlab_investigate\engine\MatlabEngine.h(34): warning C4251: “MatlabEngine::m_last_error”: class“std::basic_string<_Elem,_Traits,_Ax>”需要有 dll 接口由 class“MatlabEngine”的客户端使用
+                 with
+                 [
+                     _Elem=char,
+                     _Traits=std::char_traits<char>,
+                     _Ax=std::allocator<char>
+                 ]
+     1>MatlabEngine.cpp(155): warning C4244: “return”: 从“size_t”转换到“double”，可能丢失数据
+         Generating Code...
+         Compiling...
+         HelpFunction.cpp
+     1>HelpFunction.cpp(51): warning C4244: “return”: 从“size_t”转换到“double”，可能丢失数据
+         Generating Code...
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"f:\MATLAB_INVESTIGATE\x64\Debug\engine.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\MATLAB\R2011b\extern\lib\win64\microsoft" /LIBPATH:"C:\boost_1_54_0\lib64-msvc-10.0" libeng.lib libmx.lib libmat.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"x64\Debug\engine.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"f:\MATLAB_INVESTIGATE\x64\Debug\engine.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"f:\MATLAB_INVESTIGATE\x64\Debug\engine.lib" /MACHINE:X64 /DLL x64\Debug\engine.dll.embed.manifest.res
+         x64\Debug\HelpFunction.obj
+         x64\Debug\MatlabEngine.obj
+         x64\Debug\SmartPointer.obj
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\x64\Microsoft.Cpp.x64.Targets(265,5): error MSB6006: “link.exe”已退出，代码为 1。
+     1>已完成生成项目“f:\MATLAB_INVESTIGATE\engine\engine.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:06.68

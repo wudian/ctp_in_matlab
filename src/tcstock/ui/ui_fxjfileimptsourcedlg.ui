@@ -1,0 +1,175 @@
+<ui version="4.0" >
+ <class>tcFxjFileImportSourceDialog</class>
+ <widget class="QDialog" name="tcFxjFileImportSourceDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>473</width>
+    <height>217</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Fxj File Import Source Setting...</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="gbx1" >
+     <property name="title" >
+      <string>Setup:</string>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QRadioButton" name="rdo1" >
+        <property name="text" >
+         <string>Auto download daily file (ZIP format) from http://www.fxj.net.cn</string>
+        </property>
+        <property name="checked" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lbl1" >
+          <property name="text" >
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl2" >
+          <property name="text" >
+           <string>URL:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edt1" />
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="rdo2" >
+        <property name="text" >
+         <string>Use the daily files (ZIP or DAD format) on local system</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lbl3" >
+          <property name="text" >
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl4" >
+          <property name="text" >
+           <string>Path:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="edt2" />
+        </item>
+        <item>
+         <widget class="QToolButton" name="btn1" >
+          <property name="text" >
+           <string>...</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::NoButton|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>tcFxjFileImportSourceDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>tcFxjFileImportSourceDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

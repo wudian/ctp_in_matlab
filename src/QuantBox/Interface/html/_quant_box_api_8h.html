@@ -1,0 +1,1198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>QuantBoxApi: QuantBoxApi.h 文件参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuantBoxApi
+   &#160;<span id="projectnumber">0.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle">
+<div class="title">QuantBoxApi.h 文件参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>定义了量化平台客户端的C风格的接口和各个数据结构,实现订阅行情、下单、撤单等功能 @20140915 吴典 创建该文件  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;MarketData.h&quot;</code><br />
+<code>#include &quot;TradeData.h&quot;</code><br />
+</div>
+<p><a href="_quant_box_api_8h_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:a38874c22801d5e2b10e54bb9dfec081c"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a38874c22801d5e2b10e54bb9dfec081c">MD_Connect</a> ()</td></tr>
+<tr class="memdesc:a38874c22801d5e2b10e54bb9dfec081c"><td class="mdescLeft">&#160;</td><td class="mdescRight">行情接口  <a href="#a38874c22801d5e2b10e54bb9dfec081c">更多...</a><br /></td></tr>
+<tr class="separator:a38874c22801d5e2b10e54bb9dfec081c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6115b9f2119f071b33731a6c7236b25b"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a6115b9f2119f071b33731a6c7236b25b">MD_Subscribe</a> (const char *Instruments, const char *period=&quot;tick&quot;)</td></tr>
+<tr class="memdesc:a6115b9f2119f071b33731a6c7236b25b"><td class="mdescLeft">&#160;</td><td class="mdescRight">订阅行情  <a href="#a6115b9f2119f071b33731a6c7236b25b">更多...</a><br /></td></tr>
+<tr class="separator:a6115b9f2119f071b33731a6c7236b25b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e61c8dbe8d3af3503397d788454800b"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a0e61c8dbe8d3af3503397d788454800b">MD_Unsubscribe</a> (const char *Instruments=&quot;all&quot;, const char *period=&quot;all&quot;)</td></tr>
+<tr class="memdesc:a0e61c8dbe8d3af3503397d788454800b"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消行情  <a href="#a0e61c8dbe8d3af3503397d788454800b">更多...</a><br /></td></tr>
+<tr class="separator:a0e61c8dbe8d3af3503397d788454800b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a452b02c1b5cd96d7e111aef86ee3aea4"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a452b02c1b5cd96d7e111aef86ee3aea4">MD_SubscribeHistory</a> (const char *beginTime, const char *endTime, const char *Instruments, const char *period=&quot;tick&quot;)</td></tr>
+<tr class="memdesc:a452b02c1b5cd96d7e111aef86ee3aea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">订阅历史数据  <a href="#a452b02c1b5cd96d7e111aef86ee3aea4">更多...</a><br /></td></tr>
+<tr class="separator:a452b02c1b5cd96d7e111aef86ee3aea4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f0d4de5d91017db616c7b1582da0d48"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f0d4de5d91017db616c7b1582da0d48"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a8f0d4de5d91017db616c7b1582da0d48">MD_Disconnect</a> ()</td></tr>
+<tr class="memdesc:a8f0d4de5d91017db616c7b1582da0d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开CTP的行情前端 <br /></td></tr>
+<tr class="separator:a8f0d4de5d91017db616c7b1582da0d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad36186044b6bdac3131e99770b29ecf3"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_limit_price.html">wdLimitPrice</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#ad36186044b6bdac3131e99770b29ecf3">GetLimitPrice</a> (const char *Instrument)</td></tr>
+<tr class="memdesc:ad36186044b6bdac3131e99770b29ecf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约今天的涨、跌停价  <a href="#ad36186044b6bdac3131e99770b29ecf3">更多...</a><br /></td></tr>
+<tr class="separator:ad36186044b6bdac3131e99770b29ecf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23127e7d3afb5c4a77d28e56bcee9aaf"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_tick.html">wdTick</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a23127e7d3afb5c4a77d28e56bcee9aaf">GetLastTick</a> (const char *Instrument, bool isHistory=false)</td></tr>
+<tr class="memdesc:a23127e7d3afb5c4a77d28e56bcee9aaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约的最新的tick  <a href="#a23127e7d3afb5c4a77d28e56bcee9aaf">更多...</a><br /></td></tr>
+<tr class="separator:a23127e7d3afb5c4a77d28e56bcee9aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac1d4096d7cecf539f21c9a6d35ade0"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a6ac1d4096d7cecf539f21c9a6d35ade0">GetLastTicks</a> (const char *Instrument, int Num, std::vector&lt; <a class="el" href="structwd_tick.html">wdTick</a> &gt; &amp;vecLastTicks, bool isHistory=false)</td></tr>
+<tr class="memdesc:a6ac1d4096d7cecf539f21c9a6d35ade0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约的最新的一些tick数据  <a href="#a6ac1d4096d7cecf539f21c9a6d35ade0">更多...</a><br /></td></tr>
+<tr class="separator:a6ac1d4096d7cecf539f21c9a6d35ade0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0116dc81f47571b4d1d024b6312a73b"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_k_line.html">wdKLine</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#ae0116dc81f47571b4d1d024b6312a73b">GetLastKLine</a> (const char *Instrument, const char *period, bool isHistory=false)</td></tr>
+<tr class="memdesc:ae0116dc81f47571b4d1d024b6312a73b"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约的某个周期的最新的K线  <a href="#ae0116dc81f47571b4d1d024b6312a73b">更多...</a><br /></td></tr>
+<tr class="separator:ae0116dc81f47571b4d1d024b6312a73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42e573a914a5901aa40f376fcbd2e250"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a42e573a914a5901aa40f376fcbd2e250">GetLastKLines</a> (const char *Instrument, const char *period, int Num, std::vector&lt; <a class="el" href="structwd_k_line.html">wdKLine</a> &gt; &amp;vecLastKLines, bool isHistory=false)</td></tr>
+<tr class="memdesc:a42e573a914a5901aa40f376fcbd2e250"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约的某个周期的最新的一些K线  <a href="#a42e573a914a5901aa40f376fcbd2e250">更多...</a><br /></td></tr>
+<tr class="separator:a42e573a914a5901aa40f376fcbd2e250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76d49d46e3ae6eb6eaf462d84f1ac8c"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_trading_account.html">wdTradingAccount</a> <br class="typebreak" />
+__stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#af76d49d46e3ae6eb6eaf462d84f1ac8c">GetTradingAccount</a> (const char *AccountID)</td></tr>
+<tr class="memdesc:af76d49d46e3ae6eb6eaf462d84f1ac8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个账户的信息  <a href="#af76d49d46e3ae6eb6eaf462d84f1ac8c">更多...</a><br /></td></tr>
+<tr class="separator:af76d49d46e3ae6eb6eaf462d84f1ac8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c06438cbf5d7bd51f582c9d08aea216"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_all_order.html">wdAllOrder</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a0c06438cbf5d7bd51f582c9d08aea216">GetAllOrder</a> (const char *Instrument)</td></tr>
+<tr class="memdesc:a0c06438cbf5d7bd51f582c9d08aea216"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约所有报单的信息  <a href="#a0c06438cbf5d7bd51f582c9d08aea216">更多...</a><br /></td></tr>
+<tr class="separator:a0c06438cbf5d7bd51f582c9d08aea216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1be3c0a8c2f401a0e99fc1b11229f24"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_available_order.html">wdAvailableOrder</a> <br class="typebreak" />
+__stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#ac1be3c0a8c2f401a0e99fc1b11229f24">GetAvailableOrder</a> (const char *Instrument)</td></tr>
+<tr class="memdesc:ac1be3c0a8c2f401a0e99fc1b11229f24"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约可撤报单的信息  <a href="#ac1be3c0a8c2f401a0e99fc1b11229f24">更多...</a><br /></td></tr>
+<tr class="separator:ac1be3c0a8c2f401a0e99fc1b11229f24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cde0bf5f5b0eb4007b15e6615ebf0f7"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_trade_ticket.html">wdTradeTicket</a> <br class="typebreak" />
+__stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a3cde0bf5f5b0eb4007b15e6615ebf0f7">GetTradeTicket</a> (const char *Instrument)</td></tr>
+<tr class="memdesc:a3cde0bf5f5b0eb4007b15e6615ebf0f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约的成交单信息  <a href="#a3cde0bf5f5b0eb4007b15e6615ebf0f7">更多...</a><br /></td></tr>
+<tr class="separator:a3cde0bf5f5b0eb4007b15e6615ebf0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3530add5bb997a790d89ad11850d94bd"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API <a class="el" href="structwd_position.html">wdPosition</a> __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a3530add5bb997a790d89ad11850d94bd">GetPosition</a> (const char *Instrument)</td></tr>
+<tr class="memdesc:a3530add5bb997a790d89ad11850d94bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取某个合约的持仓信息  <a href="#a3530add5bb997a790d89ad11850d94bd">更多...</a><br /></td></tr>
+<tr class="separator:a3530add5bb997a790d89ad11850d94bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a982651306de28adab5d1bf99d951a"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a54a982651306de28adab5d1bf99d951a">TD_Connect</a> ()</td></tr>
+<tr class="memdesc:a54a982651306de28adab5d1bf99d951a"><td class="mdescLeft">&#160;</td><td class="mdescRight">交易接口  <a href="#a54a982651306de28adab5d1bf99d951a">更多...</a><br /></td></tr>
+<tr class="separator:a54a982651306de28adab5d1bf99d951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282521584f0b66a2154a32d3a585c927"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a282521584f0b66a2154a32d3a585c927">TD_SendLimitOrder</a> (const char *Instrument, double Price, int Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag)</td></tr>
+<tr class="memdesc:a282521584f0b66a2154a32d3a585c927"><td class="mdescLeft">&#160;</td><td class="mdescRight">报单-限价  <a href="#a282521584f0b66a2154a32d3a585c927">更多...</a><br /></td></tr>
+<tr class="separator:a282521584f0b66a2154a32d3a585c927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf922ccabd74f1a0cd791677d0b50760"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#acf922ccabd74f1a0cd791677d0b50760">TD_SendMarketOrder</a> (const char *Instrument, int Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag)</td></tr>
+<tr class="memdesc:acf922ccabd74f1a0cd791677d0b50760"><td class="mdescLeft">&#160;</td><td class="mdescRight">报单-市价  <a href="#acf922ccabd74f1a0cd791677d0b50760">更多...</a><br /></td></tr>
+<tr class="separator:acf922ccabd74f1a0cd791677d0b50760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ccf7d4d274ed7d3977ab969ea89417"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#ab9ccf7d4d274ed7d3977ab969ea89417">TD_SendContingentOrder</a> (const char *Instrument, double Price, int Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag, wdContingentConditionType ContingentCondition, double StopPrice)</td></tr>
+<tr class="memdesc:ab9ccf7d4d274ed7d3977ab969ea89417"><td class="mdescLeft">&#160;</td><td class="mdescRight">报单-触发单  <a href="#ab9ccf7d4d274ed7d3977ab969ea89417">更多...</a><br /></td></tr>
+<tr class="separator:ab9ccf7d4d274ed7d3977ab969ea89417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02b3d5e1defa2ed2538a2eb6971ff3a9"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a02b3d5e1defa2ed2538a2eb6971ff3a9">TD_CancelOrder</a> (const char *Instrument, wdDirectionType Direction=E_Direction_Default, wdOffsetFlagType OffsetFlag=E_OffsetFlag_Default)</td></tr>
+<tr class="memdesc:a02b3d5e1defa2ed2538a2eb6971ff3a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">撤单  <a href="#a02b3d5e1defa2ed2538a2eb6971ff3a9">更多...</a><br /></td></tr>
+<tr class="separator:a02b3d5e1defa2ed2538a2eb6971ff3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40638f4d455389fa5d16519fe81fc9e4"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a40638f4d455389fa5d16519fe81fc9e4">TD_ReqQryInvestorPosition</a> (const char *Instrument=nullptr)</td></tr>
+<tr class="memdesc:a40638f4d455389fa5d16519fe81fc9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">查持仓  <a href="#a40638f4d455389fa5d16519fe81fc9e4">更多...</a><br /></td></tr>
+<tr class="separator:a40638f4d455389fa5d16519fe81fc9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd7033aad7b376ec0c9c3a423ff73b0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fd7033aad7b376ec0c9c3a423ff73b0"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a0fd7033aad7b376ec0c9c3a423ff73b0">TD_ReqQryTradingAccount</a> ()</td></tr>
+<tr class="memdesc:a0fd7033aad7b376ec0c9c3a423ff73b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">查资金账号 <br /></td></tr>
+<tr class="separator:a0fd7033aad7b376ec0c9c3a423ff73b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99252e6e581504d2866778b5826b6b14"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a99252e6e581504d2866778b5826b6b14">TD_ReqQryInstrument</a> (const char *Instrument=nullptr)</td></tr>
+<tr class="memdesc:a99252e6e581504d2866778b5826b6b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">查合约  <a href="#a99252e6e581504d2866778b5826b6b14">更多...</a><br /></td></tr>
+<tr class="separator:a99252e6e581504d2866778b5826b6b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b133bfcc54c2d37ef5c90e3726132d8"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a1b133bfcc54c2d37ef5c90e3726132d8">TD_ReqQryInstrumentCommissionRate</a> (const char *Instrument=nullptr)</td></tr>
+<tr class="memdesc:a1b133bfcc54c2d37ef5c90e3726132d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">查手续费  <a href="#a1b133bfcc54c2d37ef5c90e3726132d8">更多...</a><br /></td></tr>
+<tr class="separator:a1b133bfcc54c2d37ef5c90e3726132d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace4cdf920bc633a3f19229fc035ea717"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#ace4cdf920bc633a3f19229fc035ea717">TD_ReqQryInstrumentMarginRate</a> (const char *Instrument=nullptr)</td></tr>
+<tr class="memdesc:ace4cdf920bc633a3f19229fc035ea717"><td class="mdescLeft">&#160;</td><td class="mdescRight">查保证金  <a href="#ace4cdf920bc633a3f19229fc035ea717">更多...</a><br /></td></tr>
+<tr class="separator:ace4cdf920bc633a3f19229fc035ea717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dba7ee8b8ba662f2775bb4e60da09e9"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a9dba7ee8b8ba662f2775bb4e60da09e9">TD_ReqQrySettlementInfo</a> (const char *TradingDay)</td></tr>
+<tr class="memdesc:a9dba7ee8b8ba662f2775bb4e60da09e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">请求查询投资者结算结果  <a href="#a9dba7ee8b8ba662f2775bb4e60da09e9">更多...</a><br /></td></tr>
+<tr class="separator:a9dba7ee8b8ba662f2775bb4e60da09e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5231c436f9c631f3af1a599a90146633"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a5231c436f9c631f3af1a599a90146633">TD_ReqQryOrder</a> (const char *Instrument=nullptr)</td></tr>
+<tr class="memdesc:a5231c436f9c631f3af1a599a90146633"><td class="mdescLeft">&#160;</td><td class="mdescRight">查委托  <a href="#a5231c436f9c631f3af1a599a90146633">更多...</a><br /></td></tr>
+<tr class="separator:a5231c436f9c631f3af1a599a90146633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abec0283495913ceb0f5999944c5505cc"><td class="memItemLeft" align="right" valign="top">QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#abec0283495913ceb0f5999944c5505cc">TD_ReqQryTrade</a> (const char *Instrument=nullptr)</td></tr>
+<tr class="memdesc:abec0283495913ceb0f5999944c5505cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">查成交  <a href="#abec0283495913ceb0f5999944c5505cc">更多...</a><br /></td></tr>
+<tr class="separator:abec0283495913ceb0f5999944c5505cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f6baead7a624550e07289e864e3049"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43f6baead7a624550e07289e864e3049"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a43f6baead7a624550e07289e864e3049">TD_Disconnect</a> ()</td></tr>
+<tr class="memdesc:a43f6baead7a624550e07289e864e3049"><td class="mdescLeft">&#160;</td><td class="mdescRight">断开连接 <br /></td></tr>
+<tr class="separator:a43f6baead7a624550e07289e864e3049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b495d94184efdfc4fa99937b5082f82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b495d94184efdfc4fa99937b5082f82"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a1b495d94184efdfc4fa99937b5082f82">CTP_RegOnRtnDepthMarketData_Tick</a> (fnOnTick)</td></tr>
+<tr class="memdesc:a1b495d94184efdfc4fa99937b5082f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册行情回调 <br /></td></tr>
+<tr class="separator:a1b495d94184efdfc4fa99937b5082f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34b7a888bf809e28cfa3320c9dfab227"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b7a888bf809e28cfa3320c9dfab227"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRtnDepthMarketData_KLine</b> (fnOnKLine)</td></tr>
+<tr class="separator:a34b7a888bf809e28cfa3320c9dfab227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3234f523c9bec6f9736c68cf493105c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3234f523c9bec6f9736c68cf493105c6"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnHistory_Tick</b> (fnOnTick)</td></tr>
+<tr class="separator:a3234f523c9bec6f9736c68cf493105c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecdb9cac17cce17e999db938e7adad72"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aecdb9cac17cce17e999db938e7adad72"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnHistory_KLine</b> (fnOnKLine)</td></tr>
+<tr class="separator:aecdb9cac17cce17e999db938e7adad72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a347ce0fc248c99e7f12aece33e63a656"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a347ce0fc248c99e7f12aece33e63a656"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegMDOnConnect</b> (fnOnConnect)</td></tr>
+<tr class="separator:a347ce0fc248c99e7f12aece33e63a656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13968638a4d50fe16c3a4beca936d1ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13968638a4d50fe16c3a4beca936d1ab"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegMDOnDisconnect</b> (fnOnDisconnect)</td></tr>
+<tr class="separator:a13968638a4d50fe16c3a4beca936d1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77cbd517b5e988e5cf0861441a15fd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad77cbd517b5e988e5cf0861441a15fd5"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegMDOnRspError</b> (fnOnRspError)</td></tr>
+<tr class="separator:ad77cbd517b5e988e5cf0861441a15fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22dba262661fa6de7a4da70610505a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab22dba262661fa6de7a4da70610505a4"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRtnForQuoteRsp</b> (fnOnRtnForQuoteRsp)</td></tr>
+<tr class="separator:ab22dba262661fa6de7a4da70610505a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bc236f8a210a0d6bcedcbb13cc8ce4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bc236f8a210a0d6bcedcbb13cc8ce4b"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_quant_box_api_8h.html#a6bc236f8a210a0d6bcedcbb13cc8ce4b">CTP_RegTDOnConnect</a> (fnOnConnect)</td></tr>
+<tr class="memdesc:a6bc236f8a210a0d6bcedcbb13cc8ce4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">注册交易回调 <br /></td></tr>
+<tr class="separator:a6bc236f8a210a0d6bcedcbb13cc8ce4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1dadc9612ebef2f30aba0b5dfd4e9ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1dadc9612ebef2f30aba0b5dfd4e9ca"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegTDOnDisconnect</b> (fnOnDisconnect)</td></tr>
+<tr class="separator:ad1dadc9612ebef2f30aba0b5dfd4e9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffdb04cf77e42b64c2df4ac238b4c7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ffdb04cf77e42b64c2df4ac238b4c7c"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegTDOnRspError</b> (fnOnRspError)</td></tr>
+<tr class="separator:a1ffdb04cf77e42b64c2df4ac238b4c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8ef145c0558b3c9ecfd722897c6d6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd8ef145c0558b3c9ecfd722897c6d6e"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnErrRtnOrderAction</b> (fnOnErrRtnOrderAction)</td></tr>
+<tr class="separator:abd8ef145c0558b3c9ecfd722897c6d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292ce6ac26d262d367f41265c6dc2d62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a292ce6ac26d262d367f41265c6dc2d62"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnErrRtnOrderInsert</b> (fnOnErrRtnOrderInsert)</td></tr>
+<tr class="separator:a292ce6ac26d262d367f41265c6dc2d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02ded29f2b1f2f074c35b424598dfd53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02ded29f2b1f2f074c35b424598dfd53"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnErrRtnQuoteAction</b> (fnOnErrRtnQuoteAction)</td></tr>
+<tr class="separator:a02ded29f2b1f2f074c35b424598dfd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad94fd8c212c693b6196bc5da423e9262"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad94fd8c212c693b6196bc5da423e9262"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnErrRtnQuoteInsert</b> (fnOnErrRtnQuoteInsert)</td></tr>
+<tr class="separator:ad94fd8c212c693b6196bc5da423e9262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2ffd80ae8f188eb4d4fcc345eb3873"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade2ffd80ae8f188eb4d4fcc345eb3873"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspOrderAction</b> (fnOnRspOrderAction)</td></tr>
+<tr class="separator:ade2ffd80ae8f188eb4d4fcc345eb3873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb4ced0ea6eac8cc5193498ce68eadba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb4ced0ea6eac8cc5193498ce68eadba"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspOrderInsert</b> (fnOnRspOrderInsert)</td></tr>
+<tr class="separator:afb4ced0ea6eac8cc5193498ce68eadba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b563ab2050e1ae406919f1270edcb69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b563ab2050e1ae406919f1270edcb69"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQuoteAction</b> (fnOnRspQuoteAction)</td></tr>
+<tr class="separator:a6b563ab2050e1ae406919f1270edcb69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70529507cecab384872f6153d1443b7c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70529507cecab384872f6153d1443b7c"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQuoteInsert</b> (fnOnRspQuoteInsert)</td></tr>
+<tr class="separator:a70529507cecab384872f6153d1443b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63663da93141a4070deed78afd1c63df"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63663da93141a4070deed78afd1c63df"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryDepthMarketData</b> (fnOnRspQryDepthMarketData)</td></tr>
+<tr class="separator:a63663da93141a4070deed78afd1c63df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a11556bbdcebafcf2defc94df32b65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91a11556bbdcebafcf2defc94df32b65"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryInstrument</b> (fnOnRspQryInstrument)</td></tr>
+<tr class="separator:a91a11556bbdcebafcf2defc94df32b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2ba828eeb7a1722fea2f47c3d61042b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2ba828eeb7a1722fea2f47c3d61042b"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryInstrumentCommissionRate</b> (fnOnRspQryInstrumentCommissionRate)</td></tr>
+<tr class="separator:aa2ba828eeb7a1722fea2f47c3d61042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc402a0b68f0aba294b08478b6dc010"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addc402a0b68f0aba294b08478b6dc010"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryInstrumentMarginRate</b> (fnOnRspQryInstrumentMarginRate)</td></tr>
+<tr class="separator:addc402a0b68f0aba294b08478b6dc010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0903eb54ae108527f2ca53b83bc06e9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0903eb54ae108527f2ca53b83bc06e9"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryInvestorPosition</b> (fnOnRspQryInvestorPosition)</td></tr>
+<tr class="separator:aa0903eb54ae108527f2ca53b83bc06e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0709eda6f3d4c877669e62e1d06884ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0709eda6f3d4c877669e62e1d06884ef"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryInvestorPositionDetail</b> (fnOnRspQryInvestorPositionDetail)</td></tr>
+<tr class="separator:a0709eda6f3d4c877669e62e1d06884ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa40997c423c04abc4763482632edbda1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa40997c423c04abc4763482632edbda1"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryOrder</b> (fnOnRspQryOrder)</td></tr>
+<tr class="separator:aa40997c423c04abc4763482632edbda1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d60fba29c758fac192bbc470460ae9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d60fba29c758fac192bbc470460ae9d"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryTrade</b> (fnOnRspQryTrade)</td></tr>
+<tr class="separator:a1d60fba29c758fac192bbc470460ae9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26cbb8421a3fc4a955d87befca7c670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae26cbb8421a3fc4a955d87befca7c670"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQrySettlementInfo</b> (fnOnRspQrySettlementInfo)</td></tr>
+<tr class="separator:ae26cbb8421a3fc4a955d87befca7c670"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212e87bfa2bf6b89b694e66969d71610"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a212e87bfa2bf6b89b694e66969d71610"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRspQryTradingAccount</b> (fnOnRspQryTradingAccount)</td></tr>
+<tr class="separator:a212e87bfa2bf6b89b694e66969d71610"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2748dfaeb605c63990de33ddc093e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ace2748dfaeb605c63990de33ddc093e2"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRtnInstrumentStatus</b> (fnOnRtnInstrumentStatus)</td></tr>
+<tr class="separator:ace2748dfaeb605c63990de33ddc093e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a910b064710678ed34717122c0f0d509d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a910b064710678ed34717122c0f0d509d"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRtnOrder</b> (fnOnRtnOrder)</td></tr>
+<tr class="separator:a910b064710678ed34717122c0f0d509d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af30c685b9f38e1ef6c087a388f78a8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0af30c685b9f38e1ef6c087a388f78a8"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRtnQuote</b> (fnOnRtnQuote)</td></tr>
+<tr class="separator:a0af30c685b9f38e1ef6c087a388f78a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c5f4a2f31686f2ce5fdf56a8771d97e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c5f4a2f31686f2ce5fdf56a8771d97e"></a>
+QUANTBOX_API void __stdcall&#160;</td><td class="memItemRight" valign="bottom"><b>CTP_RegOnRtnTrade</b> (fnOnRtnTrade)</td></tr>
+<tr class="separator:a7c5f4a2f31686f2ce5fdf56a8771d97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>定义了量化平台客户端的C风格的接口和各个数据结构,实现订阅行情、下单、撤单等功能 @20140915 吴典 创建该文件 </p>
+<p>东航资管C++量化交易接口  东航金控 </p>
+</div><h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a0c06438cbf5d7bd51f582c9d08aea216"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_all_order.html">wdAllOrder</a> __stdcall GetAllOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约所有报单的信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>所有报单 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac1be3c0a8c2f401a0e99fc1b11229f24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_available_order.html">wdAvailableOrder</a> __stdcall GetAvailableOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约可撤报单的信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>所有可用单 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae0116dc81f47571b4d1d024b6312a73b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_k_line.html">wdKLine</a> __stdcall GetLastKLine </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isHistory</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约的某个周期的最新的K线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">period</td><td>周期 </td></tr>
+    <tr><td class="paramname">isHistory</td><td>是否订阅的历史数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最新K线 <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//获取IF1410最新的1m K线。前提是订阅了IF1410的1m K线</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;wdKLine kline = GetLastKLine(&quot;IF1410&quot;, &quot;1m&quot;);</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a42e573a914a5901aa40f376fcbd2e250"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall GetLastKLines </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>period</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structwd_k_line.html">wdKLine</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecLastKLines</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isHistory</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约的某个周期的最新的一些K线 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">period</td><td>周期 </td></tr>
+    <tr><td class="paramname">Num</td><td>多少个数据 </td></tr>
+    <tr><td class="paramname">isHistory</td><td>是否订阅的历史数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>vecLastKLines 存放K线的容器 <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//获取IF1410最新的30根 5sK线。前提是订阅了IF1410的5s K线</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;std::vector&lt;wdKLine&gt; vecLastKLines;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;GetLastKLines(&quot;IF1410&quot;, &quot;1m&quot;, 30, vecLastKLines);</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a23127e7d3afb5c4a77d28e56bcee9aaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_tick.html">wdTick</a> __stdcall GetLastTick </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isHistory</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约的最新的tick </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">isHistory</td><td>是否订阅的历史数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>最新tick <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//获取IF1410最新的tick</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;wdTick tick = GetLastTick(&quot;IF1410&quot;);</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6ac1d4096d7cecf539f21c9a6d35ade0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall GetLastTicks </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="structwd_tick.html">wdTick</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vecLastTicks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isHistory</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约的最新的一些tick数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">Num</td><td>多少个数据 </td></tr>
+    <tr><td class="paramname">isHistory</td><td>是否订阅的历史数据 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>vecLastTicks 存放数据的容器，最新的tick放在第一个，上一个tick放在容器的第二个位置... <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//获取IF1410最新的10个tick</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;std::vector&lt;wdTick&gt; vecLastTicks;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;GetLastTicks(&quot;IF1410&quot;, 10, vecLastTicks);   </div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad36186044b6bdac3131e99770b29ecf3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_limit_price.html">wdLimitPrice</a> __stdcall GetLimitPrice </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约今天的涨、跌停价 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>涨跌停价 <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//获取IF1410今天的涨停价</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;wdLimitPrice LimitPriceIF1410 = GetLimitPrice(&quot;IF1410&quot;);</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;double _UpperLimitPrice = todayLimitPrice.UpperLimitPrice;</div>
+</div><!-- fragment --> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3530add5bb997a790d89ad11850d94bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_position.html">wdPosition</a> __stdcall GetPosition </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约的持仓信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>持仓 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3cde0bf5f5b0eb4007b15e6615ebf0f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_trade_ticket.html">wdTradeTicket</a> __stdcall GetTradeTicket </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个合约的成交单信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>所有成交单 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af76d49d46e3ae6eb6eaf462d84f1ac8c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API <a class="el" href="structwd_trading_account.html">wdTradingAccount</a> __stdcall GetTradingAccount </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>AccountID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>获取某个账户的信息 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AccountID</td><td>账号ID </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>返回</dt><dd>账号信息 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38874c22801d5e2b10e54bb9dfec081c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall MD_Connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>行情接口 </p>
+<h1><a class="anchor" id="sec_example"></a>
+简单例子</h1>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//1、注册回调函数</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;//2、连接CTP的行情前端与交易前端</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;//3、订阅行情、编写策略，在行情回调中执行策略，根据交易信号调用下单、撤单接口</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;//4、断开CTP的行情前端、交易前端，程序退出</div>
+</div><!-- fragment --><p>连接CTP的行情前端 关于服务器的ip、port、user、passwd等 见 ConfigFile.xml </p>
+
+</div>
+</div>
+<a class="anchor" id="a6115b9f2119f071b33731a6c7236b25b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall MD_Subscribe </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instruments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>period</em> = <code>&quot;tick&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>订阅行情 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instruments</td><td>合约列表，用","隔开，"IF1409,IF1410" </td></tr>
+    <tr><td class="paramname">period</td><td>周期，用","隔开,"tick,3s,6m,8m,1h" <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//订阅IF1410和IF1411的tick数据、3s数据、1m数据</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;MD_Subscribe(&quot;IF1410,IF1411&quot;, &quot;tick,3s,1m&quot;);</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a452b02c1b5cd96d7e111aef86ee3aea4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall MD_SubscribeHistory </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>beginTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>endTime</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instruments</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>period</em> = <code>&quot;tick&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>订阅历史数据 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">beginTime</td><td>开始时间 "20140910-09:30:00.000" </td></tr>
+    <tr><td class="paramname">endTime</td><td>结束时间 "20140910-15:30:00.000" </td></tr>
+    <tr><td class="paramname">Instruments</td><td>合约列表，用","隔开，"IF1409,IF1410" </td></tr>
+    <tr><td class="paramname">period</td><td>周期，用","隔开,"tick,3s,6m,8m,1h" <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//订阅 IF1409从&quot;20140910-09:30:00.000&quot;到&quot;20140910-15:30:00.000&quot;的tick和4s的历史数据</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;MD_SubscribeHistory(&quot;20140910-09:30:00.000&quot;, &quot;20140910-15:30:00.000&quot;, &quot;IF1409&quot;, &quot;tick,4s&quot;);</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a0e61c8dbe8d3af3503397d788454800b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall MD_Unsubscribe </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instruments</em> = <code>&quot;all&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>period</em> = <code>&quot;all&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>取消行情 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instruments</td><td>合约列表，用","隔开，"IF1409,IF1410" </td></tr>
+    <tr><td class="paramname">period</td><td>周期，用","隔开,"tick,3s,6m,8m,1h" <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//取消IF1410和IF1411的tick数据、3s数据、1m数据</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;MD_Unsubscribe(&quot;IF1410,IF1411&quot;, &quot;tick,3s,1m&quot;);</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;//取消所有合约的行情</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;MD_Subscribe();</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a02b3d5e1defa2ed2538a2eb6971ff3a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_CancelOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdDirectionType&#160;</td>
+          <td class="paramname"><em>Direction</em> = <code>E_Direction_Default</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdOffsetFlagType&#160;</td>
+          <td class="paramname"><em>OffsetFlag</em> = <code>E_OffsetFlag_Default</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>撤单 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">Direction</td><td>买卖方向 </td></tr>
+    <tr><td class="paramname">OffsetFlag</td><td>开平标志 <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//撤销IF1410的买开单</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;TD_CancelOrder(&quot;IF1410&quot;, E_Buy, E_Open);</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a54a982651306de28adab5d1bf99d951a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_Connect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>交易接口 </p>
+<p>连接CTP交易前端 </p>
+
+</div>
+</div>
+<a class="anchor" id="a99252e6e581504d2866778b5826b6b14"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQryInstrument </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查合约 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b133bfcc54c2d37ef5c90e3726132d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQryInstrumentCommissionRate </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查手续费 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ace4cdf920bc633a3f19229fc035ea717"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQryInstrumentMarginRate </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查保证金 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a40638f4d455389fa5d16519fe81fc9e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQryInvestorPosition </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查持仓 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名,为""查所有 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5231c436f9c631f3af1a599a90146633"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQryOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查委托 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9dba7ee8b8ba662f2775bb4e60da09e9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQrySettlementInfo </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>TradingDay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>请求查询投资者结算结果 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TradingDay</td><td>交易日，例如"20140912" </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abec0283495913ceb0f5999944c5505cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_ReqQryTrade </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>查成交 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9ccf7d4d274ed7d3977ab969ea89417"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_SendContingentOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdDirectionType&#160;</td>
+          <td class="paramname"><em>Direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdOffsetFlagType&#160;</td>
+          <td class="paramname"><em>OffsetFlag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdContingentConditionType&#160;</td>
+          <td class="paramname"><em>ContingentCondition</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>StopPrice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>报单-触发单 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">Price</td><td>价格 </td></tr>
+    <tr><td class="paramname">Volume</td><td>数量 </td></tr>
+    <tr><td class="paramname">Direction</td><td>买卖方向 </td></tr>
+    <tr><td class="paramname">OffsetFlag</td><td>开平标志 </td></tr>
+    <tr><td class="paramname">ContingentCondition</td><td>触发条件 </td></tr>
+    <tr><td class="paramname">StopPrice</td><td>止损价 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a282521584f0b66a2154a32d3a585c927"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_SendLimitOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Price</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdDirectionType&#160;</td>
+          <td class="paramname"><em>Direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdOffsetFlagType&#160;</td>
+          <td class="paramname"><em>OffsetFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>报单-限价 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">Price</td><td>价格 </td></tr>
+    <tr><td class="paramname">Volume</td><td>数量 </td></tr>
+    <tr><td class="paramname">Direction</td><td>买卖方向 </td></tr>
+    <tr><td class="paramname">OffsetFlag</td><td>开平标志 <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//以3000点的价格买开1手IF1410</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;TD_SendLimitOrder(&quot;IF1410&quot;, 3000., 1, E_Buy, E_Open);</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acf922ccabd74f1a0cd791677d0b50760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QUANTBOX_API void __stdcall TD_SendMarketOrder </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>Instrument</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Volume</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdDirectionType&#160;</td>
+          <td class="paramname"><em>Direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">wdOffsetFlagType&#160;</td>
+          <td class="paramname"><em>OffsetFlag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>报单-市价 </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Instrument</td><td>合约名 </td></tr>
+    <tr><td class="paramname">Volume</td><td>数量 </td></tr>
+    <tr><td class="paramname">Direction</td><td>买卖方向 </td></tr>
+    <tr><td class="paramname">OffsetFlag</td><td>开平标志 <br />
+<br />
+函数使用范例： <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;//以市价买开1手IF1410</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;TD_SendMarketOrder(&quot;IF1410&quot;, 1, E_Buy, E_Open);</div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 十月 13日 星期一 09:35:00 , 为 QuantBoxApi使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

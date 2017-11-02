@@ -1,0 +1,421 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Algorithmic Trading with MATLAB&reg;: Simple Lead/Lag EMA</title><meta name="generator" content="MATLAB 7.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2010-11-22"><meta name="DC.source" content="AlgoTradingDemo1.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Algorithmic Trading with MATLAB&reg;: Simple Lead/Lag EMA</h1><!--introduction--><p>This demo is an introduction to using MATLAB to develop and test a simple trading strategy using an exponential moving average.</p><p>Copyright 2010, The MathWorks, Inc. All rights reserved.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Hey You: You should read <tt><a href="readme.html">readme.m</a></tt> before proceeding</a></li><li><a href="#2">Load in some data (Excel)</a></li><li><a href="#3">Develop a simple lead/lag technical indicator</a></li><li><a href="#6">Sidebar: Single moving average</a></li><li><a href="#7">Sidebar: Best parameter</a></li><li><a href="#8">Estimate parameters over a range of values</a></li><li><a href="#11">Evaluate performance on validation data</a></li><li><a href="#12">Include trading costs</a></li><li><a href="#13">Determine best trading frequency (considering intraday)</a></li><li><a href="#19">Best performer on validation data</a></li></ul></div><h2>Hey You: You should read <tt><a href="readme.html">readme.m</a></tt> before proceeding<a name="1"></a></h2><h2>Load in some data (Excel)<a name="2"></a></h2><p>Bund is a German bond future and data is sampled daily</p><pre class="codeinput">data = xlsread(<span class="string">'BundDaily.xls'</span>);
+testPts = floor(0.8*length(data(:,5)));
+BundClose = data(1:testPts,5);
+BundCloseV = data(testPts+1:end,5);
+</pre><h2>Develop a simple lead/lag technical indicator<a name="3"></a></h2><p>We'll use two exponentially weighted moving averages</p><pre class="codeinput">[lead,lag]=movavg(BundClose,5,20,<span class="string">'e'</span>);
+plot([BundClose,lead,lag]), grid <span class="string">on</span>
+legend(<span class="string">'Close'</span>,<span class="string">'Lead'</span>,<span class="string">'Lag'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>)
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_01.png" alt=""> <p>Develop a trading signal and performance measures.  We'll assume 250 trading days per year.</p><pre class="codeinput">s = zeros(size(BundClose));
+s(lead&gt;lag) = 1;                         <span class="comment">% Buy  (long)</span>
+s(lead&lt;lag) = -1;                        <span class="comment">% Sell (short)</span>
+r  = [0; s(1:end-1).*diff(BundClose)];   <span class="comment">% Return</span>
+sh = sqrt(250)*sharpe(r,0);              <span class="comment">% Annual Sharpe Ratio</span>
+</pre><p>Plot results</p><pre class="codeinput">ax(1) = subplot(2,1,1);
+plot([BundClose,lead,lag]); grid <span class="string">on</span>
+legend(<span class="string">'Close'</span>,<span class="string">'Lead'</span>,<span class="string">'Lag'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>)
+title([<span class="string">'First Pass Results, Annual Sharpe Ratio = '</span>,num2str(sh,3)])
+ax(2) = subplot(2,1,2);
+plot([s,cumsum(r)]); grid <span class="string">on</span>
+legend(<span class="string">'Position'</span>,<span class="string">'Cumulative Return'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>)
+linkaxes(ax,<span class="string">'x'</span>)
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_02.png" alt=""> <h2>Sidebar: Single moving average<a name="6"></a></h2><p>The case of a single moving average.  We can use this function to do a single moving average by setting first parameter to 1.</p><pre class="codeinput">annualScaling = sqrt(250);
+leadlag(BundClose,1,20,annualScaling)
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_03.png" alt=""> <h2>Sidebar: Best parameter<a name="7"></a></h2><p>Perform a parameter sweep to identify the best setting.</p><pre class="codeinput">sh = nan(100,1);
+<span class="keyword">for</span> m = 2:100
+    [~,~,sh(m)] = leadlag(BundClose,1,m);
+<span class="keyword">end</span>
+
+[~,mxInd] = max(sh);
+leadlag(BundClose,1,mxInd,annualScaling)
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_04.png" alt=""> <h2>Estimate parameters over a range of values<a name="8"></a></h2><p>Return to the two moving average case and identify the best one.</p><pre class="codeinput">sh = nan(100,100);
+tic
+<span class="keyword">for</span> n = 1:100
+    <span class="keyword">for</span> m = n:100
+        [~,~,sh(n,m)] = leadlag(BundClose,n,m,annualScaling);
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+toc
+</pre><pre class="codeoutput">Elapsed time is 2.900633 seconds.
+</pre><p>Plot results</p><pre class="codeinput">figure
+surfc(sh), shading <span class="string">interp</span>, lighting <span class="string">phong</span>
+view([80 35]), light(<span class="string">'pos'</span>,[0.5, -0.9, 0.05])
+colorbar
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_05.png" alt=""> <p>Plot best Sharpe Ratio</p><pre class="codeinput">[maxSH,row] = max(sh);    <span class="comment">% max by column</span>
+[maxSH,col] = max(maxSH); <span class="comment">% max by row and column</span>
+leadlag(BundClose,row(col),col,annualScaling)
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_06.png" alt=""> <h2>Evaluate performance on validation data<a name="11"></a></h2><pre class="codeinput">leadlag(BundCloseV,row(col),col,annualScaling)
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_07.png" alt=""> <h2>Include trading costs<a name="12"></a></h2><p>We'll add the trading cost associated with the bid/ask spread.  This will get us closer to the actual profit we could expect.  As an exercise, you should extend this to account for additional trading costs and slippage considerations.</p><pre class="codeinput">cost=0.01; <span class="comment">% bid/ask spread</span>
+range = {1:1:120,1:1:120};
+annualScaling = sqrt(250);
+llfun =@(x) leadlagFun(x,BundClose,annualScaling,cost);
+
+tic
+[maxSharpe,param,sh,vars] = parameterSweep(llfun,range);
+toc
+
+figure
+surfc(vars{1},vars{2},sh), shading <span class="string">interp</span>, lighting <span class="string">phong</span>
+title([<span class="string">'Max Sharpe Ratio '</span>,num2str(maxSharpe,3),<span class="keyword">...</span>
+    <span class="string">' for Lead '</span>,num2str(param(1)),<span class="string">' and Lag '</span>,num2str(param(2))]);
+view([80 35]), light(<span class="string">'pos'</span>,[0.5, -0.9, 0.05])
+colorbar
+figure
+leadlag(BundCloseV,row(col),col,annualScaling,cost)
+</pre><pre class="codeoutput">Elapsed time is 4.452227 seconds.
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_08.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo1_09.png" alt=""> <h2>Determine best trading frequency (considering intraday)<a name="13"></a></h2><p>Load in 1-minute data and break into test/validation data sets</p><pre class="codeinput">close <span class="string">all</span>
+load <span class="string">bund1min</span>
+testPts = floor(0.8*length(data));
+BundClose = data(1:testPts,4);
+BundCloseV = data(testPts+1:end,4);
+cost=0.01; <span class="comment">% bid/ask spread</span>
+</pre><p>Best Lead/Lag model for minute data with frequency consideration.  Use parallel computing to speed up the computations (parfor in <tt>leadlagFun</tt>)</p><pre class="codeinput">type <span class="string">leadlagFun</span>
+</pre><pre class="codeoutput">
+function sh = leadlagFun(x,data,scaling,cost)
+% define leadlag to accept vectorized inputs and return only sharpe ratio
+%%
+% Copyright 2010, The MathWorks, Inc.
+% All rights reserved.
+[row,col] = size(x);
+sh  = zeros(row,1);
+t   = length(data);
+x = round(x);
+
+if ~exist('scaling','var')
+    scaling = 1;
+end
+if ~exist('cost','var')
+    cost = 0;
+end
+
+% run simulation
+parfor i = 1:row
+    
+    if x(i,1) &gt; x(i,2)
+        sh(i) = NaN;
+        %elseif x(i,1) &gt; t || x(i,2) &gt; t
+        %sh(i) = NaN;
+    else
+        if col &gt; 2
+            tindex = 1:x(i,3):t;
+            % calculate scaling parameter for time sampling
+            sc = sqrt(scaling^2 / x(i,3));
+        else
+            tindex = 1:t;
+            sc = scaling;
+        end
+        [~,~,sh(i)] = leadlag(data(tindex), x(i,1), x(i,2),sc,cost);
+    end
+end
+</pre><p>Use my the cores on my laptop (a quadcore with hyperthreading, so 8 virtual cores).</p><pre class="codeinput">matlabpool <span class="string">local</span> <span class="string">8</span>
+</pre><pre class="codeoutput">Destroying 1 pre-existing parallel job(s) created by matlabpool that were in the 
+finished or failed state.
+
+Starting matlabpool using the 'local' configuration ... connected to 8 labs.
+</pre><p>Perform the parameter sweep</p><pre class="codeinput">seq = [1:20 10:10:100];
+ts  = [1:4 5:5:55 60:10:180 240 480];
+range = {seq,seq,ts};
+annualScaling = sqrt(250*11*60);
+llfun =@(x) leadlagFun(x,BundClose,annualScaling,cost);
+
+tic
+[~,param,sh,xyz] = parameterSweep(llfun,range);
+toc
+
+leadlag(BundClose(1:param(3):end),param(1),param(2),<span class="keyword">...</span>
+        sqrt(annualScaling^2/param(3)),cost)
+xlabel([<span class="string">'Frequency ('</span>,num2str(param(3)),<span class="string">' minute intervals)'</span>])
+</pre><pre class="codeoutput">Elapsed time is 74.028335 seconds.
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_10.png" alt=""> <p>Plot iso-surface</p><pre class="codeinput">figure
+redvals = 1.2:0.1:1.9;
+yelvals = 0.3:0.1:1;
+bluevals=0:0.1:0.4;
+isoplot(xyz{3},xyz{1},xyz{2},sh,redvals,yelvals,bluevals)
+set(gca,<span class="string">'view'</span>,[-21, 18],<span class="string">'dataaspectratio'</span>,[3 1 3])
+grid <span class="string">on</span>, box <span class="string">on</span>
+<span class="comment">% labels</span>
+title(<span class="string">'Iso-surface of Sharpes ratios.'</span>,<span class="string">'fontweight'</span>,<span class="string">'bold'</span>)
+zlabel(<span class="string">'Slow Mov. Avg.'</span>,<span class="string">'Fontweight'</span>,<span class="string">'bold'</span>);
+ylabel(<span class="string">'Fast Mov. Avg.'</span>,<span class="string">'Fontweight'</span>,<span class="string">'bold'</span>);
+xlabel(<span class="string">'Frequency (minutes)'</span>,<span class="string">'Fontweight'</span>,<span class="string">'bold'</span>);
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_11.png" alt=""> <p>Note that the lag of 100 is on the boundary of our parameter sweep, let's extend the search a bit more.  I  ran this earlier and the max is around 30 minutes, so we'll narrow our sweep (for time considerations).</p><pre class="codeinput">seq = [1:20 300:1:400];
+ts  = 25:50;
+range = {seq,seq,ts};
+annualScaling = sqrt(250*11*60);
+llfun =@(x) leadlagFun(x,BundClose,annualScaling,cost);
+
+tic
+[maxSharpe,param,sh,xyz] = parameterSweep(llfun,range);
+toc
+
+param                                                                                           <span class="comment">%#ok&lt;NOPTS&gt;</span>
+
+leadlag(BundClose(1:param(3):end),param(1),param(2),<span class="keyword">...</span>
+        sqrt(annualScaling^2/param(3)),cost)
+xlabel([<span class="string">'Frequency ('</span>,num2str(param(3)),<span class="string">' minute intervals)'</span>])
+</pre><pre class="codeoutput">Elapsed time is 100.845390 seconds.
+
+param =
+
+    10   394    29
+
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_12.png" alt=""> <h2>Best performer on validation data<a name="19"></a></h2><p>This is the result if we applied it to the remaining 20% (validation set) of the data.</p><pre class="codeinput">leadlag(BundCloseV(1:param(3):end),param(1),param(2),<span class="keyword">...</span>
+        sqrt(annualScaling^2/param(3)),cost)
+xlabel([<span class="string">'Frequency ('</span>,num2str(param(3)),<span class="string">' minute intervals)'</span>])
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo1_13.png" alt=""> <p>Let's now add an RSI indicator and see if we can do better (<a href="AlgoTradingDemo2.html">AlgoTradingDemo2.m</a>).</p><p class="footer"><br>
+      Published with MATLAB&reg; 7.11<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Algorithmic Trading with MATLAB(R): Simple Lead/Lag EMA
+% This demo is an introduction to using MATLAB to develop and test a simple
+% trading strategy using an exponential moving average.
+%
+% Copyright 2010, The MathWorks, Inc.
+% All rights reserved.
+
+%% Hey You: You should read |<readme.html readme.m>| before proceeding
+
+%% Load in some data (Excel)
+% Bund is a German bond future and data is sampled daily
+data = xlsread('BundDaily.xls');
+testPts = floor(0.8*length(data(:,5)));
+BundClose = data(1:testPts,5);
+BundCloseV = data(testPts+1:end,5);
+
+%% Develop a simple lead/lag technical indicator
+% We'll use two exponentially weighted moving averages
+[lead,lag]=movavg(BundClose,5,20,'e');
+plot([BundClose,lead,lag]), grid on
+legend('Close','Lead','Lag','Location','Best')
+
+%%
+% Develop a trading signal and performance measures.  We'll assume 250
+% trading days per year.
+s = zeros(size(BundClose));
+s(lead>lag) = 1;                         % Buy  (long)
+s(lead<lag) = -1;                        % Sell (short)
+r  = [0; s(1:end-1).*diff(BundClose)];   % Return
+sh = sqrt(250)*sharpe(r,0);              % Annual Sharpe Ratio
+
+%%
+% Plot results
+ax(1) = subplot(2,1,1);
+plot([BundClose,lead,lag]); grid on
+legend('Close','Lead','Lag','Location','Best')
+title(['First Pass Results, Annual Sharpe Ratio = ',num2str(sh,3)])
+ax(2) = subplot(2,1,2);
+plot([s,cumsum(r)]); grid on
+legend('Position','Cumulative Return','Location','Best')
+linkaxes(ax,'x')
+
+%% Sidebar: Single moving average
+% The case of a single moving average.  We can use this function to do a
+% single moving average by setting first parameter to 1.
+annualScaling = sqrt(250);
+leadlag(BundClose,1,20,annualScaling)
+
+%% Sidebar: Best parameter
+% Perform a parameter sweep to identify the best setting.
+sh = nan(100,1);
+for m = 2:100
+    [~,~,sh(m)] = leadlag(BundClose,1,m);
+end
+
+[~,mxInd] = max(sh);
+leadlag(BundClose,1,mxInd,annualScaling)
+
+%% Estimate parameters over a range of values
+% Return to the two moving average case and identify the best one.
+sh = nan(100,100);
+tic
+for n = 1:100  
+    for m = n:100
+        [~,~,sh(n,m)] = leadlag(BundClose,n,m,annualScaling);
+    end
+end
+toc
+
+%%
+% Plot results
+figure
+surfc(sh), shading interp, lighting phong
+view([80 35]), light('pos',[0.5, -0.9, 0.05])
+colorbar
+
+%%
+% Plot best Sharpe Ratio
+[maxSH,row] = max(sh);    % max by column
+[maxSH,col] = max(maxSH); % max by row and column
+leadlag(BundClose,row(col),col,annualScaling)
+
+%% Evaluate performance on validation data
+leadlag(BundCloseV,row(col),col,annualScaling)
+
+%% Include trading costs
+% We'll add the trading cost associated with the bid/ask spread.  This will
+% get us closer to the actual profit we could expect.  As an exercise, you
+% should extend this to account for additional trading costs and slippage
+% considerations.
+cost=0.01; % bid/ask spread
+range = {1:1:120,1:1:120};
+annualScaling = sqrt(250);
+llfun =@(x) leadlagFun(x,BundClose,annualScaling,cost);
+
+tic
+[maxSharpe,param,sh,vars] = parameterSweep(llfun,range);
+toc
+
+figure
+surfc(vars{1},vars{2},sh), shading interp, lighting phong
+title(['Max Sharpe Ratio ',num2str(maxSharpe,3),...
+    ' for Lead ',num2str(param(1)),' and Lag ',num2str(param(2))]);
+view([80 35]), light('pos',[0.5, -0.9, 0.05])
+colorbar
+figure
+leadlag(BundCloseV,row(col),col,annualScaling,cost)
+
+%% Determine best trading frequency (considering intraday)
+% Load in 1-minute data and break into test/validation data sets
+close all
+load bund1min
+testPts = floor(0.8*length(data));
+BundClose = data(1:testPts,4);
+BundCloseV = data(testPts+1:end,4);
+cost=0.01; % bid/ask spread
+
+%%
+% Best Lead/Lag model for minute data with frequency consideration.  Use
+% parallel computing to speed up the computations (parfor in |leadlagFun|)
+type leadlagFun
+
+%%
+% Use my the cores on my laptop (a quadcore with hyperthreading, so 8
+% virtual cores).
+matlabpool local 8
+
+%%
+% Perform the parameter sweep
+seq = [1:20 10:10:100];
+ts  = [1:4 5:5:55 60:10:180 240 480];
+range = {seq,seq,ts};
+annualScaling = sqrt(250*11*60);
+llfun =@(x) leadlagFun(x,BundClose,annualScaling,cost);
+
+tic
+[~,param,sh,xyz] = parameterSweep(llfun,range);
+toc
+
+leadlag(BundClose(1:param(3):end),param(1),param(2),...
+        sqrt(annualScaling^2/param(3)),cost)
+xlabel(['Frequency (',num2str(param(3)),' minute intervals)'])
+%%
+% Plot iso-surface
+figure
+redvals = 1.2:0.1:1.9;
+yelvals = 0.3:0.1:1;
+bluevals=0:0.1:0.4;
+isoplot(xyz{3},xyz{1},xyz{2},sh,redvals,yelvals,bluevals)
+set(gca,'view',[-21, 18],'dataaspectratio',[3 1 3])
+grid on, box on
+% labels
+title('Iso-surface of Sharpes ratios.','fontweight','bold')
+zlabel('Slow Mov. Avg.','Fontweight','bold');
+ylabel('Fast Mov. Avg.','Fontweight','bold');
+xlabel('Frequency (minutes)','Fontweight','bold');
+
+%%
+% Note that the lag of 100 is on the boundary of our parameter sweep, let's
+% extend the search a bit more.  I  ran this earlier and the max is around
+% 30 minutes, so we'll narrow our sweep (for time considerations).
+seq = [1:20 300:1:400];
+ts  = 25:50;
+range = {seq,seq,ts};
+annualScaling = sqrt(250*11*60);
+llfun =@(x) leadlagFun(x,BundClose,annualScaling,cost);
+
+tic
+[maxSharpe,param,sh,xyz] = parameterSweep(llfun,range);
+toc
+
+param                                                                                           %#ok<NOPTS>
+
+leadlag(BundClose(1:param(3):end),param(1),param(2),...
+        sqrt(annualScaling^2/param(3)),cost)
+xlabel(['Frequency (',num2str(param(3)),' minute intervals)'])
+
+%% Best performer on validation data
+% This is the result if we applied it to the remaining 20% (validation set)
+% of the data.
+leadlag(BundCloseV(1:param(3):end),param(1),param(2),...
+        sqrt(annualScaling^2/param(3)),cost)
+xlabel(['Frequency (',num2str(param(3)),' minute intervals)'])
+%%
+% Let's now add an RSI indicator and see if we can do better
+% (<AlgoTradingDemo2.html AlgoTradingDemo2.m>).
+
+
+
+##### SOURCE END #####
+--></body></html>

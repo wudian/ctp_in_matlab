@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>QuantBoxApi: QuantBoxApi.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuantBoxApi
+   &#160;<span id="projectnumber">0.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">QuantBoxApi.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_quant_box_api_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef _QUANT_BOX_API_H_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define _QUANT_BOX_API_H_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;MarketData.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;TradeData.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//extern &quot;C&quot; {</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">//#endif</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a38874c22801d5e2b10e54bb9dfec081c">MD_Connect</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a6115b9f2119f071b33731a6c7236b25b">MD_Subscribe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instruments, <span class="keyword">const</span> <span class="keywordtype">char</span> *period = <span class="stringliteral">&quot;tick&quot;</span>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a0e61c8dbe8d3af3503397d788454800b">MD_Unsubscribe</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instruments = <span class="stringliteral">&quot;all&quot;</span>, <span class="keyword">const</span> <span class="keywordtype">char</span> *period = <span class="stringliteral">&quot;all&quot;</span>);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a452b02c1b5cd96d7e111aef86ee3aea4">MD_SubscribeHistory</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *beginTime, <span class="keyword">const</span> <span class="keywordtype">char</span> *endTime, <span class="keyword">const</span> <span class="keywordtype">char</span> *Instruments, <span class="keyword">const</span> <span class="keywordtype">char</span> *period = <span class="stringliteral">&quot;tick&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a8f0d4de5d91017db616c7b1582da0d48">MD_Disconnect</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;QUANTBOX_API <a class="code" href="structwd_limit_price.html">wdLimitPrice</a> __stdcall <a class="code" href="_quant_box_api_8h.html#ad36186044b6bdac3131e99770b29ecf3">GetLimitPrice</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;QUANTBOX_API <a class="code" href="structwd_tick.html">wdTick</a> __stdcall <a class="code" href="_quant_box_api_8h.html#a23127e7d3afb5c4a77d28e56bcee9aaf">GetLastTick</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keywordtype">bool</span> isHistory = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a6ac1d4096d7cecf539f21c9a6d35ade0">GetLastTicks</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keywordtype">int</span> Num, std::vector&lt;wdTick&gt; &amp;vecLastTicks, <span class="keywordtype">bool</span> isHistory = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;QUANTBOX_API <a class="code" href="structwd_k_line.html">wdKLine</a> __stdcall <a class="code" href="_quant_box_api_8h.html#ae0116dc81f47571b4d1d024b6312a73b">GetLastKLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keyword">const</span> <span class="keywordtype">char</span> *period, <span class="keywordtype">bool</span> isHistory = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a42e573a914a5901aa40f376fcbd2e250">GetLastKLines</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keyword">const</span> <span class="keywordtype">char</span> *period, <span class="keywordtype">int</span> Num, std::vector&lt;wdKLine&gt; &amp;vecLastKLines, <span class="keywordtype">bool</span> isHistory = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;QUANTBOX_API <a class="code" href="structwd_trading_account.html">wdTradingAccount</a> __stdcall <a class="code" href="_quant_box_api_8h.html#af76d49d46e3ae6eb6eaf462d84f1ac8c">GetTradingAccount</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *AccountID);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;QUANTBOX_API <a class="code" href="structwd_all_order.html">wdAllOrder</a> __stdcall <a class="code" href="_quant_box_api_8h.html#a0c06438cbf5d7bd51f582c9d08aea216">GetAllOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;QUANTBOX_API <a class="code" href="structwd_available_order.html">wdAvailableOrder</a> __stdcall <a class="code" href="_quant_box_api_8h.html#ac1be3c0a8c2f401a0e99fc1b11229f24">GetAvailableOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;QUANTBOX_API <a class="code" href="structwd_trade_ticket.html">wdTradeTicket</a> __stdcall <a class="code" href="_quant_box_api_8h.html#a3cde0bf5f5b0eb4007b15e6615ebf0f7">GetTradeTicket</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;QUANTBOX_API <a class="code" href="structwd_position.html">wdPosition</a> __stdcall <a class="code" href="_quant_box_api_8h.html#a3530add5bb997a790d89ad11850d94bd">GetPosition</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a54a982651306de28adab5d1bf99d951a">TD_Connect</a>();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a282521584f0b66a2154a32d3a585c927">TD_SendLimitOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keywordtype">double</span> Price, <span class="keywordtype">int</span> Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#acf922ccabd74f1a0cd791677d0b50760">TD_SendMarketOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keywordtype">int</span> Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#ab9ccf7d4d274ed7d3977ab969ea89417">TD_SendContingentOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, <span class="keywordtype">double</span> Price, <span class="keywordtype">int</span> Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag,</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                                                   wdContingentConditionType ContingentCondition, <span class="keywordtype">double</span> StopPrice);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a02b3d5e1defa2ed2538a2eb6971ff3a9">TD_CancelOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument, wdDirectionType Direction = E_Direction_Default, wdOffsetFlagType OffsetFlag = E_OffsetFlag_Default);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a40638f4d455389fa5d16519fe81fc9e4">TD_ReqQryInvestorPosition</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a0fd7033aad7b376ec0c9c3a423ff73b0">TD_ReqQryTradingAccount</a>();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a99252e6e581504d2866778b5826b6b14">TD_ReqQryInstrument</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a1b133bfcc54c2d37ef5c90e3726132d8">TD_ReqQryInstrumentCommissionRate</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#ace4cdf920bc633a3f19229fc035ea717">TD_ReqQryInstrumentMarginRate</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a9dba7ee8b8ba662f2775bb4e60da09e9">TD_ReqQrySettlementInfo</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *TradingDay);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a5231c436f9c631f3af1a599a90146633">TD_ReqQryOrder</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#abec0283495913ceb0f5999944c5505cc">TD_ReqQryTrade</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Instrument = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a43f6baead7a624550e07289e864e3049">TD_Disconnect</a>();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a1b495d94184efdfc4fa99937b5082f82">CTP_RegOnRtnDepthMarketData_Tick</a>(fnOnTick);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRtnDepthMarketData_KLine(fnOnKLine);</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnHistory_Tick(fnOnTick);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnHistory_KLine(fnOnKLine);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegMDOnConnect(fnOnConnect);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegMDOnDisconnect(fnOnDisconnect);</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegMDOnRspError(fnOnRspError);</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRtnForQuoteRsp(fnOnRtnForQuoteRsp);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall <a class="code" href="_quant_box_api_8h.html#a6bc236f8a210a0d6bcedcbb13cc8ce4b">CTP_RegTDOnConnect</a>(fnOnConnect);</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegTDOnDisconnect(fnOnDisconnect);</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegTDOnRspError(fnOnRspError);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnErrRtnOrderAction(fnOnErrRtnOrderAction);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnErrRtnOrderInsert(fnOnErrRtnOrderInsert);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnErrRtnQuoteAction(fnOnErrRtnQuoteAction);</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnErrRtnQuoteInsert(fnOnErrRtnQuoteInsert);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspOrderAction(fnOnRspOrderAction);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspOrderInsert(fnOnRspOrderInsert);</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQuoteAction(fnOnRspQuoteAction);</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQuoteInsert(fnOnRspQuoteInsert);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryDepthMarketData(fnOnRspQryDepthMarketData);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryInstrument(fnOnRspQryInstrument);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryInstrumentCommissionRate(fnOnRspQryInstrumentCommissionRate);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryInstrumentMarginRate(fnOnRspQryInstrumentMarginRate);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryInvestorPosition(fnOnRspQryInvestorPosition);</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryInvestorPositionDetail(fnOnRspQryInvestorPositionDetail);</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryOrder(fnOnRspQryOrder);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryTrade(fnOnRspQryTrade);</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQrySettlementInfo(fnOnRspQrySettlementInfo);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRspQryTradingAccount(fnOnRspQryTradingAccount);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRtnInstrumentStatus(fnOnRtnInstrumentStatus);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRtnOrder(fnOnRtnOrder);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRtnQuote(fnOnRtnQuote);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;QUANTBOX_API <span class="keywordtype">void</span> __stdcall CTP_RegOnRtnTrade(fnOnRtnTrade);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="comment">//#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="comment">//}</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="comment">//#endif</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="structwd_available_order_html"><div class="ttname"><a href="structwd_available_order.html">wdAvailableOrder</a></div><div class="ttdoc">可撤单 </div><div class="ttdef"><b>Definition:</b> TradeData.h:77</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a452b02c1b5cd96d7e111aef86ee3aea4"><div class="ttname"><a href="_quant_box_api_8h.html#a452b02c1b5cd96d7e111aef86ee3aea4">MD_SubscribeHistory</a></div><div class="ttdeci">QUANTBOX_API void __stdcall MD_SubscribeHistory(const char *beginTime, const char *endTime, const char *Instruments, const char *period=&quot;tick&quot;)</div><div class="ttdoc">订阅历史数据 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a1b133bfcc54c2d37ef5c90e3726132d8"><div class="ttname"><a href="_quant_box_api_8h.html#a1b133bfcc54c2d37ef5c90e3726132d8">TD_ReqQryInstrumentCommissionRate</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryInstrumentCommissionRate(const char *Instrument=nullptr)</div><div class="ttdoc">查手续费 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a6115b9f2119f071b33731a6c7236b25b"><div class="ttname"><a href="_quant_box_api_8h.html#a6115b9f2119f071b33731a6c7236b25b">MD_Subscribe</a></div><div class="ttdeci">QUANTBOX_API void __stdcall MD_Subscribe(const char *Instruments, const char *period=&quot;tick&quot;)</div><div class="ttdoc">订阅行情 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a99252e6e581504d2866778b5826b6b14"><div class="ttname"><a href="_quant_box_api_8h.html#a99252e6e581504d2866778b5826b6b14">TD_ReqQryInstrument</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryInstrument(const char *Instrument=nullptr)</div><div class="ttdoc">查合约 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a1b495d94184efdfc4fa99937b5082f82"><div class="ttname"><a href="_quant_box_api_8h.html#a1b495d94184efdfc4fa99937b5082f82">CTP_RegOnRtnDepthMarketData_Tick</a></div><div class="ttdeci">QUANTBOX_API void __stdcall CTP_RegOnRtnDepthMarketData_Tick(fnOnTick)</div><div class="ttdoc">注册行情回调 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_ad36186044b6bdac3131e99770b29ecf3"><div class="ttname"><a href="_quant_box_api_8h.html#ad36186044b6bdac3131e99770b29ecf3">GetLimitPrice</a></div><div class="ttdeci">QUANTBOX_API wdLimitPrice __stdcall GetLimitPrice(const char *Instrument)</div><div class="ttdoc">获取某个合约今天的涨、跌停价 </div></div>
+<div class="ttc" id="structwd_position_html"><div class="ttname"><a href="structwd_position.html">wdPosition</a></div><div class="ttdoc">持仓 </div><div class="ttdef"><b>Definition:</b> TradeData.h:139</div></div>
+<div class="ttc" id="structwd_tick_html"><div class="ttname"><a href="structwd_tick.html">wdTick</a></div><div class="ttdoc">tick数据 </div><div class="ttdef"><b>Definition:</b> MarketData.h:20</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_ab9ccf7d4d274ed7d3977ab969ea89417"><div class="ttname"><a href="_quant_box_api_8h.html#ab9ccf7d4d274ed7d3977ab969ea89417">TD_SendContingentOrder</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_SendContingentOrder(const char *Instrument, double Price, int Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag, wdContingentConditionType ContingentCondition, double StopPrice)</div><div class="ttdoc">报单-触发单 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a5231c436f9c631f3af1a599a90146633"><div class="ttname"><a href="_quant_box_api_8h.html#a5231c436f9c631f3af1a599a90146633">TD_ReqQryOrder</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryOrder(const char *Instrument=nullptr)</div><div class="ttdoc">查委托 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a40638f4d455389fa5d16519fe81fc9e4"><div class="ttname"><a href="_quant_box_api_8h.html#a40638f4d455389fa5d16519fe81fc9e4">TD_ReqQryInvestorPosition</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryInvestorPosition(const char *Instrument=nullptr)</div><div class="ttdoc">查持仓 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a0c06438cbf5d7bd51f582c9d08aea216"><div class="ttname"><a href="_quant_box_api_8h.html#a0c06438cbf5d7bd51f582c9d08aea216">GetAllOrder</a></div><div class="ttdeci">QUANTBOX_API wdAllOrder __stdcall GetAllOrder(const char *Instrument)</div><div class="ttdoc">获取某个合约所有报单的信息 </div></div>
+<div class="ttc" id="structwd_all_order_html"><div class="ttname"><a href="structwd_all_order.html">wdAllOrder</a></div><div class="ttdoc">所有报单 </div><div class="ttdef"><b>Definition:</b> TradeData.h:46</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a3530add5bb997a790d89ad11850d94bd"><div class="ttname"><a href="_quant_box_api_8h.html#a3530add5bb997a790d89ad11850d94bd">GetPosition</a></div><div class="ttdeci">QUANTBOX_API wdPosition __stdcall GetPosition(const char *Instrument)</div><div class="ttdoc">获取某个合约的持仓信息 </div></div>
+<div class="ttc" id="structwd_trade_ticket_html"><div class="ttname"><a href="structwd_trade_ticket.html">wdTradeTicket</a></div><div class="ttdoc">成交单 </div><div class="ttdef"><b>Definition:</b> TradeData.h:108</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_ace4cdf920bc633a3f19229fc035ea717"><div class="ttname"><a href="_quant_box_api_8h.html#ace4cdf920bc633a3f19229fc035ea717">TD_ReqQryInstrumentMarginRate</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryInstrumentMarginRate(const char *Instrument=nullptr)</div><div class="ttdoc">查保证金 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a3cde0bf5f5b0eb4007b15e6615ebf0f7"><div class="ttname"><a href="_quant_box_api_8h.html#a3cde0bf5f5b0eb4007b15e6615ebf0f7">GetTradeTicket</a></div><div class="ttdeci">QUANTBOX_API wdTradeTicket __stdcall GetTradeTicket(const char *Instrument)</div><div class="ttdoc">获取某个合约的成交单信息 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a0e61c8dbe8d3af3503397d788454800b"><div class="ttname"><a href="_quant_box_api_8h.html#a0e61c8dbe8d3af3503397d788454800b">MD_Unsubscribe</a></div><div class="ttdeci">QUANTBOX_API void __stdcall MD_Unsubscribe(const char *Instruments=&quot;all&quot;, const char *period=&quot;all&quot;)</div><div class="ttdoc">取消行情 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a8f0d4de5d91017db616c7b1582da0d48"><div class="ttname"><a href="_quant_box_api_8h.html#a8f0d4de5d91017db616c7b1582da0d48">MD_Disconnect</a></div><div class="ttdeci">QUANTBOX_API void __stdcall MD_Disconnect()</div><div class="ttdoc">断开CTP的行情前端 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a54a982651306de28adab5d1bf99d951a"><div class="ttname"><a href="_quant_box_api_8h.html#a54a982651306de28adab5d1bf99d951a">TD_Connect</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_Connect()</div><div class="ttdoc">交易接口 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a43f6baead7a624550e07289e864e3049"><div class="ttname"><a href="_quant_box_api_8h.html#a43f6baead7a624550e07289e864e3049">TD_Disconnect</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_Disconnect()</div><div class="ttdoc">断开连接 </div></div>
+<div class="ttc" id="structwd_limit_price_html"><div class="ttname"><a href="structwd_limit_price.html">wdLimitPrice</a></div><div class="ttdoc">涨跌停板 </div><div class="ttdef"><b>Definition:</b> MarketData.h:9</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_acf922ccabd74f1a0cd791677d0b50760"><div class="ttname"><a href="_quant_box_api_8h.html#acf922ccabd74f1a0cd791677d0b50760">TD_SendMarketOrder</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_SendMarketOrder(const char *Instrument, int Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag)</div><div class="ttdoc">报单-市价 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a42e573a914a5901aa40f376fcbd2e250"><div class="ttname"><a href="_quant_box_api_8h.html#a42e573a914a5901aa40f376fcbd2e250">GetLastKLines</a></div><div class="ttdeci">QUANTBOX_API void __stdcall GetLastKLines(const char *Instrument, const char *period, int Num, std::vector&lt; wdKLine &gt; &amp;vecLastKLines, bool isHistory=false)</div><div class="ttdoc">获取某个合约的某个周期的最新的一些K线 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_abec0283495913ceb0f5999944c5505cc"><div class="ttname"><a href="_quant_box_api_8h.html#abec0283495913ceb0f5999944c5505cc">TD_ReqQryTrade</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryTrade(const char *Instrument=nullptr)</div><div class="ttdoc">查成交 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_ac1be3c0a8c2f401a0e99fc1b11229f24"><div class="ttname"><a href="_quant_box_api_8h.html#ac1be3c0a8c2f401a0e99fc1b11229f24">GetAvailableOrder</a></div><div class="ttdeci">QUANTBOX_API wdAvailableOrder __stdcall GetAvailableOrder(const char *Instrument)</div><div class="ttdoc">获取某个合约可撤报单的信息 </div></div>
+<div class="ttc" id="structwd_trading_account_html"><div class="ttname"><a href="structwd_trading_account.html">wdTradingAccount</a></div><div class="ttdoc">资金账户 </div><div class="ttdef"><b>Definition:</b> TradeData.h:15</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_ae0116dc81f47571b4d1d024b6312a73b"><div class="ttname"><a href="_quant_box_api_8h.html#ae0116dc81f47571b4d1d024b6312a73b">GetLastKLine</a></div><div class="ttdeci">QUANTBOX_API wdKLine __stdcall GetLastKLine(const char *Instrument, const char *period, bool isHistory=false)</div><div class="ttdoc">获取某个合约的某个周期的最新的K线 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a0fd7033aad7b376ec0c9c3a423ff73b0"><div class="ttname"><a href="_quant_box_api_8h.html#a0fd7033aad7b376ec0c9c3a423ff73b0">TD_ReqQryTradingAccount</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQryTradingAccount()</div><div class="ttdoc">查资金账号 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a38874c22801d5e2b10e54bb9dfec081c"><div class="ttname"><a href="_quant_box_api_8h.html#a38874c22801d5e2b10e54bb9dfec081c">MD_Connect</a></div><div class="ttdeci">QUANTBOX_API void __stdcall MD_Connect()</div><div class="ttdoc">行情接口 </div></div>
+<div class="ttc" id="structwd_k_line_html"><div class="ttname"><a href="structwd_k_line.html">wdKLine</a></div><div class="ttdoc">K线数据 </div><div class="ttdef"><b>Definition:</b> MarketData.h:58</div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a9dba7ee8b8ba662f2775bb4e60da09e9"><div class="ttname"><a href="_quant_box_api_8h.html#a9dba7ee8b8ba662f2775bb4e60da09e9">TD_ReqQrySettlementInfo</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_ReqQrySettlementInfo(const char *TradingDay)</div><div class="ttdoc">请求查询投资者结算结果 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a282521584f0b66a2154a32d3a585c927"><div class="ttname"><a href="_quant_box_api_8h.html#a282521584f0b66a2154a32d3a585c927">TD_SendLimitOrder</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_SendLimitOrder(const char *Instrument, double Price, int Volume, wdDirectionType Direction, wdOffsetFlagType OffsetFlag)</div><div class="ttdoc">报单-限价 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a23127e7d3afb5c4a77d28e56bcee9aaf"><div class="ttname"><a href="_quant_box_api_8h.html#a23127e7d3afb5c4a77d28e56bcee9aaf">GetLastTick</a></div><div class="ttdeci">QUANTBOX_API wdTick __stdcall GetLastTick(const char *Instrument, bool isHistory=false)</div><div class="ttdoc">获取某个合约的最新的tick </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a6ac1d4096d7cecf539f21c9a6d35ade0"><div class="ttname"><a href="_quant_box_api_8h.html#a6ac1d4096d7cecf539f21c9a6d35ade0">GetLastTicks</a></div><div class="ttdeci">QUANTBOX_API void __stdcall GetLastTicks(const char *Instrument, int Num, std::vector&lt; wdTick &gt; &amp;vecLastTicks, bool isHistory=false)</div><div class="ttdoc">获取某个合约的最新的一些tick数据 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a6bc236f8a210a0d6bcedcbb13cc8ce4b"><div class="ttname"><a href="_quant_box_api_8h.html#a6bc236f8a210a0d6bcedcbb13cc8ce4b">CTP_RegTDOnConnect</a></div><div class="ttdeci">QUANTBOX_API void __stdcall CTP_RegTDOnConnect(fnOnConnect)</div><div class="ttdoc">注册交易回调 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_a02b3d5e1defa2ed2538a2eb6971ff3a9"><div class="ttname"><a href="_quant_box_api_8h.html#a02b3d5e1defa2ed2538a2eb6971ff3a9">TD_CancelOrder</a></div><div class="ttdeci">QUANTBOX_API void __stdcall TD_CancelOrder(const char *Instrument, wdDirectionType Direction=E_Direction_Default, wdOffsetFlagType OffsetFlag=E_OffsetFlag_Default)</div><div class="ttdoc">撤单 </div></div>
+<div class="ttc" id="_quant_box_api_8h_html_af76d49d46e3ae6eb6eaf462d84f1ac8c"><div class="ttname"><a href="_quant_box_api_8h.html#af76d49d46e3ae6eb6eaf462d84f1ac8c">GetTradingAccount</a></div><div class="ttdeci">QUANTBOX_API wdTradingAccount __stdcall GetTradingAccount(const char *AccountID)</div><div class="ttdoc">获取某个账户的信息 </div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 十月 13日 星期一 09:35:00 , 为 QuantBoxApi使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,354 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Algorithmic Trading with MATLAB&reg;: Profiling and C-Code Generation</title><meta name="generator" content="MATLAB 7.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2010-11-22"><meta name="DC.source" content="AlgoTradingDemo5.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>Algorithmic Trading with MATLAB&reg;: Profiling and C-Code Generation</h1><!--introduction--><p>This demo shows how to profile your code to find the performance bottlenecks, or areas for improvement, as well as the capability to generate C-Code from MATLAB.</p><p>Copyright 2010, The MathWorks, Inc. All rights reserved.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Load in the data</a></li><li><a href="#2">Profile the MARSI code</a></li><li><a href="#3">Improve movavg code and re-profile</a></li><li><a href="#5">Now lets compile it into a mex file and run it again</a></li><li><a href="#7">Generating portable C-code</a></li></ul></div><h2>Load in the data<a name="1"></a></h2><p>Bund future data - 1 minute intervals</p><pre class="codeinput">load <span class="string">bund1min</span>
+step = 30;
+annualScaling = sqrt(250*60*11/step);
+cost = 0.01;
+BundClose = data(1:step:end,end);
+</pre><h2>Profile the MARSI code<a name="2"></a></h2><p>Let's find the slowest part of the MARSI code.</p><pre class="codeinput">N = 2; M = 396; thresh = 55; P = 2; Q = 110;
+profile <span class="string">on</span>
+marsi(BundClose,N,M,[P Q],thresh,annualScaling,cost)
+profile <span class="string">viewer</span>
+result = profile(<span class="string">'info'</span>);
+profile <span class="string">off</span>
+<span class="comment">% movavg was the bottleneck, take a look TotalTime for it</span>
+result.FunctionTable(4)
+</pre><pre class="codeoutput">
+ans = 
+
+          CompleteName: [1x56 char]
+          FunctionName: 'movavg'
+              FileName: 'C:\MATLAB\R2010b\toolbox\finance\finance\movavg.m'
+                  Type: 'M-function'
+              Children: [0x1 struct]
+               Parents: [3x1 struct]
+         ExecutedLines: [26x3 double]
+           IsRecursive: 0
+    TotalRecursiveTime: 0
+           PartialData: 0
+              NumCalls: 8
+             TotalTime: 0.5145
+
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo5_01.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo5_02.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo5_03.png" alt=""> <h2>Improve movavg code and re-profile<a name="3"></a></h2><p>Use the function in movavg2.m to shadow the financial toolbox <tt>movavg</tt> function and profile again.  Note that we are using embedded MATLAB to generate the mex (MATLAB Executable) file and will later use it to generate portable C-code.</p><pre class="codeinput">system(<span class="string">'copy movavg2.m movavg.m'</span>)
+type <span class="string">movavg</span>
+profile <span class="string">on</span>
+marsi(BundClose,N,M,[P Q],thresh,annualScaling,cost)
+profile <span class="string">viewer</span>
+result2 = profile(<span class="string">'info'</span>);
+result2.FunctionTable(4)
+</pre><pre class="codeoutput">        1 file(s) copied. 
+
+ans =
+
+     0
+
+
+function [lead,lag] = movavg(P,M,N,type) %#eml
+% moving average, exponentially weighted.
+
+%%
+% Copyright 2010, The MathWorks, Inc.
+% All rights reserved.
+if type ~= 'e'
+    error('MOVAVG:TYPE','This function only supports exponential moving averages')
+end
+
+L = length(P);
+
+lead = zeros(size(P));
+lag  = lead;
+
+ws = 2/(M+1);
+wl = 2/(N+1);
+
+lead(1) = P(1);
+lag(1)  = P(1);
+
+% The for loop approach (slow for small-medium sized data series)
+ for i = 2:L
+     lead(i) = lead(i-1) + ws*(P(i) - lead(i-1));
+     lag(i)  =  lag(i-1) + wl*(P(i) - lag(i-1));
+ end
+    
+
+ans = 
+
+          CompleteName: 'C:\MATLAB\Webinars\AlgoTrading2010\movavg.m&gt;movavg'
+          FunctionName: 'movavg'
+              FileName: 'C:\MATLAB\Webinars\AlgoTrading2010\movavg.m'
+                  Type: 'M-function'
+              Children: [0x1 struct]
+               Parents: [3x1 struct]
+         ExecutedLines: [12x3 double]
+           IsRecursive: 0
+    TotalRecursiveTime: 0
+           PartialData: 0
+              NumCalls: 8
+             TotalTime: 0.4505
+
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo5_04.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo5_05.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo5_06.png" alt=""> <p>Nearly 7% speed up in recoding the 2 for loops to 1 for loop.</p><pre class="codeinput">speedUp = result.FunctionTable(4).TotalTime/result2.FunctionTable(4).TotalTime
+</pre><pre class="codeoutput">
+speedUp =
+
+    1.1420
+
+</pre><h2>Now lets compile it into a mex file and run it again<a name="5"></a></h2><p>Note that you will need to set up your compiler first (through <tt>mex - setup</tt>)</p><pre class="codeinput">emlmex <span class="string">movavg.m</span> <span class="string">-eg</span> <span class="string">{BundClose,N,M,'e'}</span>
+profile <span class="string">on</span>
+marsi(BundClose,N,M,[P Q],thresh,annualScaling,cost)
+profile <span class="string">viewer</span>
+result3 = profile(<span class="string">'info'</span>);
+result3.FunctionTable(4)
+</pre><pre class="codeoutput">
+ans = 
+
+          CompleteName: [1x55 char]
+          FunctionName: 'movavg'
+              FileName: 'C:\MATLAB\Webinars\AlgoTrading2010\movavg.mexw64'
+                  Type: 'MEX-function'
+              Children: [0x1 struct]
+               Parents: [3x1 struct]
+         ExecutedLines: [0x3 double]
+           IsRecursive: 0
+    TotalRecursiveTime: 0
+           PartialData: 0
+              NumCalls: 8
+             TotalTime: 0.0150
+
+</pre><img vspace="5" hspace="5" src="AlgoTradingDemo5_07.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo5_08.png" alt=""> <img vspace="5" hspace="5" src="AlgoTradingDemo5_09.png" alt=""> <p>A 32X speedup over for loop, and 30X speedup over vectorized version!</p><pre class="codeinput">speedUpFor = result.FunctionTable(4).TotalTime/result3.FunctionTable(4).TotalTime
+speedUpVect = result2.FunctionTable(4).TotalTime/result3.FunctionTable(4).TotalTime
+</pre><pre class="codeoutput">
+speedUpFor =
+
+   34.2615
+
+
+speedUpVect =
+
+   30.0013
+
+</pre><h2>Generating portable C-code<a name="7"></a></h2><p>You can also generate portable C-code to target a different hardware platform or use the C-code in a real-time environment.  Here is how to do it for the movavg function (I leave marsi as an exercise for interested readers).</p><pre class="codeinput">emlc <span class="string">-report</span> <span class="string">movavg.m</span> <span class="string">-eg</span> <span class="string">{BundClose,N,M,'e'}</span>
+</pre><pre class="codeoutput">Compilation successful: To view the compilation report, open('C:\MATLAB\Webinars\AlgoTrading2010\emcprj\mexfcn\movavg\html\index.html').
+</pre><p>The generated C-code is in the emcprj folder.  Here is the listing of the entry point:</p><pre class="codeinput">type <span class="string">emcprj\mexfcn\movavg\movavg.c</span>
+</pre><pre class="codeoutput">
+/*
+ * movavg.c
+ *
+ * Embedded MATLAB Coder code generation for function 'movavg'
+ *
+ * C source code generated on: Mon Nov 22 20:50:43 2010
+ *
+ */
+
+/* Include files */
+#include "rt_nonfinite.h"
+#include "movavg.h"
+
+/* Type Definitions */
+
+/* Named Constants */
+
+/* Variable Declarations */
+
+/* Variable Definitions */
+static emlrtRSInfo eml_emlrtRSI = { 8, "movavg", "C:/MATLAB/Webinars/AlgoTrading2010/movavg.m" };
+static emlrtRSInfo eml_b_emlrtRSI = { 10, "error", "C:/MATLAB/R2010b/toolbox/eml/lib/matlab/lang/error.m" };
+static emlrtMCInfo eml_emlrtMCI = { 10, 7, "error", "C:/MATLAB/R2010b/toolbox/eml/lib/matlab/lang/error.m" };
+
+/* Function Declarations */
+static void m_error(const mxArray *eml_b, const mxArray *eml_c, emlrtMCInfo *eml_location);
+
+/* Function Definitions */
+
+static void m_error(const mxArray *eml_b, const mxArray *eml_c, emlrtMCInfo *eml_location)
+{
+    const mxArray *eml_pArrays[2];
+    eml_pArrays[0] = eml_b;
+    eml_pArrays[1] = eml_c;
+    emlrtCallMATLAB(0, NULL, 2, eml_pArrays, "error", TRUE, eml_location);
+}
+
+void movavg(const real_T eml_P[14173], real_T eml_M, real_T eml_N, char_T eml_type, real_T eml_lead[14173], real_T eml_lag[14173])
+{
+    const mxArray *eml_y;
+    static const int32_T eml_iv0[2] = { 1, 11 };
+    const mxArray *eml_m0;
+    static char_T eml_cv0[11] = { 'M', 'O', 'V', 'A', 'V', 'G', ':', 'T', 'Y', 'P', 'E' };
+    const mxArray *eml_b_y;
+    static const int32_T eml_iv1[2] = { 1, 55 };
+    static char_T eml_cv1[55] = { 'T', 'h', 'i', 's', ' ', 'f', 'u', 'n', 'c', 't', 'i', 'o', 'n', ' ', 'o', 'n', 'l', 'y', ' ', 's'
+                                          , 'u', 'p', 'p', 'o', 'r', 't', 's', ' ', 'e', 'x', 'p', 'o', 'n', 'e', 'n', 't', 'i', 'a'
+                                          , 'l', ' ', 'm', 'o', 'v', 'i', 'n', 'g', ' ', 'a', 'v', 'e', 'r', 'a', 'g', 'e', 's' };
+    int32_T eml_i;
+    real_T eml_ws;
+    real_T eml_wl;
+    /*  moving average, exponentially weighted. */
+    /* % */
+    /*  Copyright 2010, The MathWorks, Inc. */
+    /*  All rights reserved. */
+    if(eml_type != 'e') {
+        EMLRTPUSHRTSTACK(&amp;eml_emlrtRSI);
+        EMLRTPUSHRTSTACK(&amp;eml_b_emlrtRSI);
+        eml_y = NULL;
+        eml_m0 = mxCreateCharArray(2, eml_iv0);
+        emlrtInitCharArray(11, eml_m0, eml_cv0);
+        emlrtAssign(&amp;eml_y, eml_m0);
+        eml_b_y = NULL;
+        eml_m0 = mxCreateCharArray(2, eml_iv1);
+        emlrtInitCharArray(55, eml_m0, eml_cv1);
+        emlrtAssign(&amp;eml_b_y, eml_m0);
+        m_error(eml_y, eml_b_y, &amp;eml_emlrtMCI);
+        EMLRTPOPRTSTACK(&amp;eml_b_emlrtRSI);
+        EMLRTPOPRTSTACK(&amp;eml_emlrtRSI);
+    }
+    for(eml_i = 0; eml_i &lt; 14173; eml_i++) {
+        eml_lead[eml_i] = 0.0;
+        eml_lag[eml_i] = 0.0;
+    }
+    eml_ws = 2.0 / (eml_M + 1.0);
+    eml_wl = 2.0 / (eml_N + 1.0);
+    eml_lead[0] = eml_P[0];
+    eml_lag[0] = eml_P[0];
+    /*  The for loop approach (slow for small-medium sized data series) */
+    for(eml_i = 2; eml_i &lt; 14174; eml_i++) {
+        eml_lead[eml_i - 1] = eml_lead[eml_i - 2] + eml_ws * (eml_P[eml_i - 1] - eml_lead[eml_i - 2]);
+        eml_lag[eml_i - 1] = eml_lag[eml_i - 2] + eml_wl * (eml_P[eml_i - 1] - eml_lag[eml_i - 2]);
+        emlrtBreakCheck();
+    }
+}
+/* End of Embedded MATLAB Coder code generation (movavg.c) */
+
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.11<br></p></div><!--
+##### SOURCE BEGIN #####
+%% Algorithmic Trading with MATLAB(R): Profiling and C-Code Generation
+% This demo shows how to profile your code to find the performance
+% bottlenecks, or areas for improvement, as well as the capability to
+% generate C-Code from MATLAB.
+%
+% Copyright 2010, The MathWorks, Inc.
+% All rights reserved.
+%% Load in the data
+% Bund future data - 1 minute intervals
+load bund1min
+step = 30;
+annualScaling = sqrt(250*60*11/step);
+cost = 0.01;
+BundClose = data(1:step:end,end);
+
+%% Profile the MARSI code
+% Let's find the slowest part of the MARSI code.
+
+N = 2; M = 396; thresh = 55; P = 2; Q = 110;
+profile on
+marsi(BundClose,N,M,[P Q],thresh,annualScaling,cost)
+profile viewer
+result = profile('info');
+profile off
+% movavg was the bottleneck, take a look TotalTime for it
+result.FunctionTable(4)
+
+%% Improve movavg code and re-profile
+% Use the function in movavg2.m to shadow the financial toolbox |movavg|
+% function and profile again.  Note that we are using embedded MATLAB to
+% generate the mex (MATLAB Executable) file and will later use it to
+% generate portable C-code.
+system('copy movavg2.m movavg.m')
+type movavg
+profile on
+marsi(BundClose,N,M,[P Q],thresh,annualScaling,cost)
+profile viewer
+result2 = profile('info');
+result2.FunctionTable(4)
+%%
+% Nearly 7% speed up in recoding the 2 for loops to 1 for loop.
+speedUp = result.FunctionTable(4).TotalTime/result2.FunctionTable(4).TotalTime
+
+%% Now lets compile it into a mex file and run it again
+% Note that you will need to set up your compiler first (through |mex -
+% setup|)
+emlmex movavg.m -eg {BundClose,N,M,'e'}
+profile on
+marsi(BundClose,N,M,[P Q],thresh,annualScaling,cost)
+profile viewer
+result3 = profile('info');
+result3.FunctionTable(4)
+
+%%
+% A 32X speedup over for loop, and 30X speedup over vectorized version!
+speedUpFor = result.FunctionTable(4).TotalTime/result3.FunctionTable(4).TotalTime
+speedUpVect = result2.FunctionTable(4).TotalTime/result3.FunctionTable(4).TotalTime
+
+%% Generating portable C-code
+% You can also generate portable C-code to target a different hardware
+% platform or use the C-code in a real-time environment.  Here is how to do
+% it for the movavg function (I leave marsi as an exercise for interested
+% readers).
+emlc -report movavg.m -eg {BundClose,N,M,'e'}
+%%
+% The generated C-code is in the emcprj folder.  Here is the listing of the
+% entry point:
+type emcprj\mexfcn\movavg\movavg.c
+##### SOURCE END #####
+--></body></html>

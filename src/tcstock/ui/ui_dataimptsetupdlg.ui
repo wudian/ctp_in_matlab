@@ -1,0 +1,224 @@
+<ui version="4.0" >
+ <class>tcDataImporterSetupDialog</class>
+ <widget class="QDialog" name="tcDataImporterSetupDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>326</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Data Import Setup...</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QGroupBox" name="gbx1" >
+       <property name="title" >
+        <string>Source List:</string>
+       </property>
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QTableWidget" name="tbl1_1" >
+          <property name="sizePolicy" >
+           <sizepolicy>
+            <hsizetype>1</hsizetype>
+            <vsizetype>7</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn1_1" >
+            <property name="text" >
+             <string>Setting...</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn1_2" >
+            <property name="text" >
+             <string>Import Now</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>71</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="gbx2" >
+       <property name="title" >
+        <string>Setup:</string>
+       </property>
+       <layout class="QVBoxLayout" >
+        <property name="margin" >
+         <number>9</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QRadioButton" name="rdo2_1" >
+          <property name="text" >
+           <string>Do not Auto Import</string>
+          </property>
+          <property name="checked" >
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="rdo2_2" >
+          <property name="text" >
+           <string>Auto Import</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="lbl2_1" >
+            <property name="text" >
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lbl2_2" >
+            <property name="text" >
+             <string>Interval (minutes):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="edt2_1" >
+            <property name="sizePolicy" >
+             <sizepolicy>
+              <hsizetype>1</hsizetype>
+              <vsizetype>0</vsizetype>
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>tcDataImporterSetupDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>tcDataImporterSetupDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

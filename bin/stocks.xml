@@ -1,0 +1,1066 @@
+<TCStock>
+    <stocks>
+        <stock StockCode="000300" Description="" StockName="沪深300 "/>
+        <stock StockCode="000696" Description="" StockName="96国债⑹"/>
+        <stock StockCode="009704" Description="" StockName="97国债⑷"/>
+        <stock StockCode="009905" Description="" StockName="99国债⑸"/>
+        <stock StockCode="009908" Description="" StockName="99国债⑻"/>
+        <stock StockCode="010004" Description="" StockName="20国债⑷"/>
+        <stock StockCode="010010" Description="" StockName="20国债⑽"/>
+        <stock StockCode="010103" Description="" StockName="21国债⑶"/>
+        <stock StockCode="010107" Description="" StockName="21国债⑺"/>
+        <stock StockCode="010110" Description="" StockName="21国债⑽"/>
+        <stock StockCode="010112" Description="" StockName="21国债⑿"/>
+        <stock StockCode="010115" Description="" StockName="21国债⒂"/>
+        <stock StockCode="010203" Description="" StockName="02国债⑶"/>
+        <stock StockCode="010210" Description="" StockName="02国债⑽"/>
+        <stock StockCode="010213" Description="" StockName="02国债⒀"/>
+        <stock StockCode="010214" Description="" StockName="02国债⒁"/>
+        <stock StockCode="010215" Description="" StockName="02国债⒂"/>
+        <stock StockCode="010301" Description="" StockName="03国债⑴"/>
+        <stock StockCode="010303" Description="" StockName="03国债⑶"/>
+        <stock StockCode="010307" Description="" StockName="03国债⑺"/>
+        <stock StockCode="010308" Description="" StockName="03国债⑻"/>
+        <stock StockCode="010311" Description="" StockName="03国债⑾"/>
+        <stock StockCode="010403" Description="" StockName="04国债⑶"/>
+        <stock StockCode="010404" Description="" StockName="04国债⑷"/>
+        <stock StockCode="010405" Description="" StockName="04国债⑸"/>
+        <stock StockCode="010407" Description="" StockName="04国债⑺"/>
+        <stock StockCode="010408" Description="" StockName="04国债⑻"/>
+        <stock StockCode="010410" Description="" StockName="04国债⑽"/>
+        <stock StockCode="010411" Description="" StockName="04国债⑾"/>
+        <stock StockCode="010501" Description="" StockName="05国债⑴"/>
+        <stock StockCode="010502" Description="" StockName="05国债⑵"/>
+        <stock StockCode="010503" Description="" StockName="05国债⑶"/>
+        <stock StockCode="010504" Description="" StockName="05国债⑷"/>
+        <stock StockCode="100016" Description="" StockName="民生转债"/>
+        <stock StockCode="100087" Description="" StockName="水运转债"/>
+        <stock StockCode="100096" Description="" StockName="云化转债"/>
+        <stock StockCode="100117" Description="" StockName="西钢转债"/>
+        <stock StockCode="100177" Description="" StockName="雅戈转债"/>
+        <stock StockCode="100196" Description="" StockName="复星转债"/>
+        <stock StockCode="100236" Description="" StockName="桂冠转债"/>
+        <stock StockCode="100567" Description="" StockName="山鹰转债"/>
+        <stock StockCode="100726" Description="" StockName="华电转债"/>
+        <stock StockCode="100795" Description="" StockName="国电转债"/>
+        <stock StockCode="110001" Description="" StockName="邯钢转债"/>
+        <stock StockCode="110010" Description="" StockName="钢联转债"/>
+        <stock StockCode="110036" Description="" StockName="招行转债"/>
+        <stock StockCode="110037" Description="" StockName="歌华转债"/>
+        <stock StockCode="110219" Description="" StockName="南山转债"/>
+        <stock StockCode="110317" Description="" StockName="营港转债"/>
+        <stock StockCode="110418" Description="" StockName="江淮转债"/>
+        <stock StockCode="110874" Description="" StockName="创业转债"/>
+        <stock StockCode="111" Description="" StockName="111name"/>
+        <stock StockCode="120001" Description="" StockName="99宝钢债"/>
+        <stock StockCode="120101" Description="" StockName="01中移动"/>
+        <stock StockCode="120102" Description="" StockName="01三峡债"/>
+        <stock StockCode="120201" Description="" StockName="02三峡债"/>
+        <stock StockCode="120202" Description="" StockName="02中移⑸"/>
+        <stock StockCode="120203" Description="" StockName="02中移⒂"/>
+        <stock StockCode="120204" Description="" StockName="02苏交通"/>
+        <stock StockCode="120205" Description="" StockName="02渝城投"/>
+        <stock StockCode="120206" Description="" StockName="02武钢⑶"/>
+        <stock StockCode="120207" Description="" StockName="02武钢⑺"/>
+        <stock StockCode="120288" Description="" StockName="02金茂债"/>
+        <stock StockCode="120301" Description="" StockName="03沪轨道"/>
+        <stock StockCode="120302" Description="" StockName="03苏园建"/>
+        <stock StockCode="120303" Description="" StockName="03三峡债"/>
+        <stock StockCode="120304" Description="" StockName="03电网⑴"/>
+        <stock StockCode="120305" Description="" StockName="03电网⑵"/>
+        <stock StockCode="120306" Description="" StockName="03中电投"/>
+        <stock StockCode="120482" Description="" StockName="04通用债"/>
+        <stock StockCode="120483" Description="" StockName="04中石化"/>
+        <stock StockCode="129805" Description="" StockName="98三峡⑻"/>
+        <stock StockCode="129902" Description="" StockName="98中铁⑶"/>
+        <stock StockCode="129903" Description="" StockName="99三峡债"/>
+        <stock StockCode="129904" Description="" StockName="98中信⑺"/>
+        <stock StockCode="129905" Description="" StockName="98石油债"/>
+        <stock StockCode="181016" Description="" StockName="民生转股"/>
+        <stock StockCode="181087" Description="" StockName="水运转股"/>
+        <stock StockCode="181096" Description="" StockName="云化转股"/>
+        <stock StockCode="181117" Description="" StockName="西钢转股"/>
+        <stock StockCode="181177" Description="" StockName="雅戈转股"/>
+        <stock StockCode="181196" Description="" StockName="复星转股"/>
+        <stock StockCode="181236" Description="" StockName="桂冠转股"/>
+        <stock StockCode="181567" Description="" StockName="山鹰转股"/>
+        <stock StockCode="181726" Description="" StockName="华电转股"/>
+        <stock StockCode="181795" Description="" StockName="国电转股"/>
+        <stock StockCode="190001" Description="" StockName="邯钢转股"/>
+        <stock StockCode="190010" Description="" StockName="钢联转股"/>
+        <stock StockCode="190036" Description="" StockName="招行转股"/>
+        <stock StockCode="190037" Description="" StockName="歌华转股"/>
+        <stock StockCode="190219" Description="" StockName="南山转股"/>
+        <stock StockCode="190317" Description="" StockName="营口转股"/>
+        <stock StockCode="190418" Description="" StockName="江淮转股"/>
+        <stock StockCode="1A0001" Description="" StockName="上证指数"/>
+        <stock StockCode="1A0002" Description="" StockName="上证Ａ股"/>
+        <stock StockCode="1A0003" Description="" StockName="上证Ｂ股"/>
+        <stock StockCode="1B0001" Description="" StockName="工业指数"/>
+        <stock StockCode="1B0002" Description="" StockName="商业指数"/>
+        <stock StockCode="1B0004" Description="" StockName="地产指数"/>
+        <stock StockCode="1B0005" Description="" StockName="公用指数"/>
+        <stock StockCode="1B0006" Description="" StockName="综合指数"/>
+        <stock StockCode="1B0007" Description="" StockName="上证180"/>
+        <stock StockCode="1B0008" Description="" StockName="上证基金"/>
+        <stock StockCode="1B0010" Description="" StockName="企债指数"/>
+        <stock StockCode="1B0012" Description="" StockName="国债指数"/>
+        <stock StockCode="1B0016" Description="" StockName="上证５０"/>
+        <stock StockCode="1C0015" Description="" StockName="红利指数"/>
+        <stock StockCode="201000" Description="" StockName="  R003  "/>
+        <stock StockCode="201001" Description="" StockName="  R007  "/>
+        <stock StockCode="201002" Description="" StockName="  R014  "/>
+        <stock StockCode="201003" Description="" StockName="  R028  "/>
+        <stock StockCode="201004" Description="" StockName="  R091  "/>
+        <stock StockCode="201005" Description="" StockName="  R182  "/>
+        <stock StockCode="201008" Description="" StockName="  R001  "/>
+        <stock StockCode="201009" Description="" StockName="  R002  "/>
+        <stock StockCode="201010" Description="" StockName="  R004  "/>
+        <stock StockCode="202001" Description="" StockName=" RC001  "/>
+        <stock StockCode="202003" Description="" StockName=" RC003  "/>
+        <stock StockCode="202007" Description="" StockName=" RC007  "/>
+        <stock StockCode="222" Description="" StockName="222name"/>
+        <stock StockCode="500001" Description="" StockName="基金金泰"/>
+        <stock StockCode="500002" Description="" StockName="基金泰和"/>
+        <stock StockCode="500003" Description="" StockName="基金安信"/>
+        <stock StockCode="500005" Description="" StockName="基金汉盛"/>
+        <stock StockCode="500006" Description="" StockName="基金裕阳"/>
+        <stock StockCode="500007" Description="" StockName="基金景阳"/>
+        <stock StockCode="500008" Description="" StockName="基金兴华"/>
+        <stock StockCode="500009" Description="" StockName="基金安顺"/>
+        <stock StockCode="500010" Description="" StockName="基金金元"/>
+        <stock StockCode="500011" Description="" StockName="基金金鑫"/>
+        <stock StockCode="500013" Description="" StockName="基金安瑞"/>
+        <stock StockCode="500015" Description="" StockName="基金汉兴"/>
+        <stock StockCode="500016" Description="" StockName="基金裕元"/>
+        <stock StockCode="500017" Description="" StockName="基金景业"/>
+        <stock StockCode="500018" Description="" StockName="基金兴和"/>
+        <stock StockCode="500019" Description="" StockName="基金普润"/>
+        <stock StockCode="500021" Description="" StockName="基金金鼎"/>
+        <stock StockCode="500025" Description="" StockName="基金汉鼎"/>
+        <stock StockCode="500028" Description="" StockName="基金兴业"/>
+        <stock StockCode="500029" Description="" StockName="基金科讯"/>
+        <stock StockCode="500035" Description="" StockName="基金汉博"/>
+        <stock StockCode="500038" Description="" StockName="基金通乾"/>
+        <stock StockCode="500039" Description="" StockName="基金同德"/>
+        <stock StockCode="500056" Description="" StockName="基金科瑞"/>
+        <stock StockCode="500058" Description="" StockName="基金银丰"/>
+        <stock StockCode="510050" Description="" StockName="50   ETF"/>
+        <stock StockCode="510051" Description="" StockName="50申  赎"/>
+        <stock StockCode="510052" Description="" StockName="申赎资金"/>
+        <stock StockCode="600000" Description="" StockName="浦发银行"/>
+        <stock StockCode="600001" Description="" StockName="邯郸钢铁"/>
+        <stock StockCode="600002" Description="" StockName="齐鲁石化"/>
+        <stock StockCode="600003" Description="" StockName="东北高速"/>
+        <stock StockCode="600004" Description="" StockName="白云机场"/>
+        <stock StockCode="600005" Description="" StockName="武钢股份"/>
+        <stock StockCode="600006" Description="" StockName="东风汽车"/>
+        <stock StockCode="600007" Description="" StockName="中国国贸"/>
+        <stock StockCode="600008" Description="" StockName="首创股份"/>
+        <stock StockCode="600009" Description="" StockName="上海机场"/>
+        <stock StockCode="600010" Description="" StockName="钢联股份"/>
+        <stock StockCode="600011" Description="" StockName="华能国际"/>
+        <stock StockCode="600012" Description="" StockName="皖通高速"/>
+        <stock StockCode="600015" Description="" StockName="华夏银行"/>
+        <stock StockCode="600016" Description="" StockName="民生银行"/>
+        <stock StockCode="600018" Description="" StockName="上港集箱"/>
+        <stock StockCode="600019" Description="" StockName="宝钢股份"/>
+        <stock StockCode="600020" Description="" StockName="中原高速"/>
+        <stock StockCode="600021" Description="" StockName="上海电力"/>
+        <stock StockCode="600022" Description="" StockName="济南钢铁"/>
+        <stock StockCode="600026" Description="" StockName="中海发展"/>
+        <stock StockCode="600027" Description="" StockName="华电国际"/>
+        <stock StockCode="600028" Description="" StockName="中国石化"/>
+        <stock StockCode="600029" Description="" StockName="南方航空"/>
+        <stock StockCode="600030" Description="" StockName="中信证券"/>
+        <stock StockCode="600031" Description="" StockName="三一重工"/>
+        <stock StockCode="600033" Description="" StockName="福建高速"/>
+        <stock StockCode="600035" Description="" StockName="楚天高速"/>
+        <stock StockCode="600036" Description="" StockName="招商银行"/>
+        <stock StockCode="600037" Description="" StockName="歌华有线"/>
+        <stock StockCode="600038" Description="" StockName="哈飞股份"/>
+        <stock StockCode="600039" Description="" StockName="四川路桥"/>
+        <stock StockCode="600050" Description="" StockName="中国联通"/>
+        <stock StockCode="600051" Description="" StockName="宁波联合"/>
+        <stock StockCode="600052" Description="" StockName="浙江广厦"/>
+        <stock StockCode="600053" Description="" StockName="ST江  纸"/>
+        <stock StockCode="600054" Description="" StockName="黄山旅游"/>
+        <stock StockCode="600055" Description="" StockName="万东医疗"/>
+        <stock StockCode="600056" Description="" StockName="中技贸易"/>
+        <stock StockCode="600057" Description="" StockName="夏新电子"/>
+        <stock StockCode="600058" Description="" StockName="五矿发展"/>
+        <stock StockCode="600059" Description="" StockName="古越龙山"/>
+        <stock StockCode="600060" Description="" StockName="海信电器"/>
+        <stock StockCode="600061" Description="" StockName="中纺投资"/>
+        <stock StockCode="600062" Description="" StockName="双鹤药业"/>
+        <stock StockCode="600063" Description="" StockName="皖维高新"/>
+        <stock StockCode="600064" Description="" StockName="南京高科"/>
+        <stock StockCode="600065" Description="" StockName="*ST联 谊"/>
+        <stock StockCode="600066" Description="" StockName="宇通客车"/>
+        <stock StockCode="600067" Description="" StockName="冠城大通"/>
+        <stock StockCode="600068" Description="" StockName="葛 洲 坝"/>
+        <stock StockCode="600069" Description="" StockName="银鸽投资"/>
+        <stock StockCode="600070" Description="" StockName="浙江富润"/>
+        <stock StockCode="600071" Description="" StockName="凤凰光学"/>
+        <stock StockCode="600072" Description="" StockName="江南重工"/>
+        <stock StockCode="600073" Description="" StockName="上海梅林"/>
+        <stock StockCode="600074" Description="" StockName="中达股份"/>
+        <stock StockCode="600075" Description="" StockName="新疆天业"/>
+        <stock StockCode="600076" Description="" StockName="青鸟华光"/>
+        <stock StockCode="600077" Description="" StockName="*ST国 能"/>
+        <stock StockCode="600078" Description="" StockName="澄星股份"/>
+        <stock StockCode="600079" Description="" StockName="人福科技"/>
+        <stock StockCode="600080" Description="" StockName="金花股份"/>
+        <stock StockCode="600081" Description="" StockName="东风科技"/>
+        <stock StockCode="600082" Description="" StockName="海泰发展"/>
+        <stock StockCode="600083" Description="" StockName="ST 博 讯"/>
+        <stock StockCode="600084" Description="" StockName="新天国际"/>
+        <stock StockCode="600085" Description="" StockName="同 仁 堂"/>
+        <stock StockCode="600086" Description="" StockName="*ST多 佳"/>
+        <stock StockCode="600087" Description="" StockName="南京水运"/>
+        <stock StockCode="600088" Description="" StockName="中视传媒"/>
+        <stock StockCode="600089" Description="" StockName="特变电工"/>
+        <stock StockCode="600090" Description="" StockName="*ST酒 花"/>
+        <stock StockCode="600091" Description="" StockName="明天科技"/>
+        <stock StockCode="600092" Description="" StockName="*ST精 密"/>
+        <stock StockCode="600093" Description="" StockName="禾嘉股份"/>
+        <stock StockCode="600094" Description="" StockName="华源股份"/>
+        <stock StockCode="600095" Description="" StockName="哈 高 科"/>
+        <stock StockCode="600096" Description="" StockName="云 天 化"/>
+        <stock StockCode="600097" Description="" StockName="华立科技"/>
+        <stock StockCode="600098" Description="" StockName="广州控股"/>
+        <stock StockCode="600099" Description="" StockName="林海股份"/>
+        <stock StockCode="600100" Description="" StockName="清华同方"/>
+        <stock StockCode="600101" Description="" StockName="明星电力"/>
+        <stock StockCode="600102" Description="" StockName="莱钢股份"/>
+        <stock StockCode="600103" Description="" StockName="青山纸业"/>
+        <stock StockCode="600104" Description="" StockName="上海汽车"/>
+        <stock StockCode="600105" Description="" StockName="永鼎光缆"/>
+        <stock StockCode="600106" Description="" StockName="重庆路桥"/>
+        <stock StockCode="600107" Description="" StockName="美 尔 雅"/>
+        <stock StockCode="600108" Description="" StockName="亚盛集团"/>
+        <stock StockCode="600109" Description="" StockName="成都建投"/>
+        <stock StockCode="600110" Description="" StockName="中科英华"/>
+        <stock StockCode="600111" Description="" StockName="稀土高科"/>
+        <stock StockCode="600112" Description="" StockName="长征电器"/>
+        <stock StockCode="600113" Description="" StockName="浙江东日"/>
+        <stock StockCode="600114" Description="" StockName="宁波东睦"/>
+        <stock StockCode="600115" Description="" StockName="东方航空"/>
+        <stock StockCode="600116" Description="" StockName="三峡水利"/>
+        <stock StockCode="600117" Description="" StockName="西宁特钢"/>
+        <stock StockCode="600118" Description="" StockName="中国卫星"/>
+        <stock StockCode="600119" Description="" StockName="长江投资"/>
+        <stock StockCode="600120" Description="" StockName="浙江东方"/>
+        <stock StockCode="600121" Description="" StockName="郑州煤电"/>
+        <stock StockCode="600122" Description="" StockName="宏图高科"/>
+        <stock StockCode="600123" Description="" StockName="兰花科创"/>
+        <stock StockCode="600125" Description="" StockName="铁龙物流"/>
+        <stock StockCode="600126" Description="" StockName="杭钢股份"/>
+        <stock StockCode="600127" Description="" StockName="金健米业"/>
+        <stock StockCode="600128" Description="" StockName="弘业股份"/>
+        <stock StockCode="600129" Description="" StockName="太极集团"/>
+        <stock StockCode="600130" Description="" StockName="波导股份"/>
+        <stock StockCode="600131" Description="" StockName="岷江水电"/>
+        <stock StockCode="600132" Description="" StockName="重庆啤酒"/>
+        <stock StockCode="600133" Description="" StockName="东湖高新"/>
+        <stock StockCode="600135" Description="" StockName="乐凯胶片"/>
+        <stock StockCode="600136" Description="" StockName="道博股份"/>
+        <stock StockCode="600137" Description="" StockName="ST长  控"/>
+        <stock StockCode="600138" Description="" StockName="中 青 旅"/>
+        <stock StockCode="600139" Description="" StockName="绵阳高新"/>
+        <stock StockCode="600141" Description="" StockName="兴发集团"/>
+        <stock StockCode="600143" Description="" StockName="金发科技"/>
+        <stock StockCode="600145" Description="" StockName="四维瓷业"/>
+        <stock StockCode="600146" Description="" StockName="*ST大 元"/>
+        <stock StockCode="600148" Description="" StockName="长春一东"/>
+        <stock StockCode="600149" Description="" StockName="华夏建通"/>
+        <stock StockCode="600150" Description="" StockName="沪东重机"/>
+        <stock StockCode="600151" Description="" StockName="航天机电"/>
+        <stock StockCode="600152" Description="" StockName="维科精华"/>
+        <stock StockCode="600153" Description="" StockName="建发股份"/>
+        <stock StockCode="600155" Description="" StockName="宝硕股份"/>
+        <stock StockCode="600156" Description="" StockName="益 鑫 泰"/>
+        <stock StockCode="600157" Description="" StockName="鲁润股份"/>
+        <stock StockCode="600158" Description="" StockName="中体产业"/>
+        <stock StockCode="600159" Description="" StockName="ST宁  窖"/>
+        <stock StockCode="600160" Description="" StockName="巨化股份"/>
+        <stock StockCode="600161" Description="" StockName="天坛生物"/>
+        <stock StockCode="600162" Description="" StockName="香江控股"/>
+        <stock StockCode="600163" Description="" StockName="福建南纸"/>
+        <stock StockCode="600165" Description="" StockName="宁夏恒力"/>
+        <stock StockCode="600166" Description="" StockName="福田汽车"/>
+        <stock StockCode="600167" Description="" StockName="沈阳新开"/>
+        <stock StockCode="600168" Description="" StockName="武汉控股"/>
+        <stock StockCode="600169" Description="" StockName="太原重工"/>
+        <stock StockCode="600170" Description="" StockName="上海建工"/>
+        <stock StockCode="600171" Description="" StockName="上海贝岭"/>
+        <stock StockCode="600172" Description="" StockName="黄河旋风"/>
+        <stock StockCode="600173" Description="" StockName="牡 丹 江"/>
+        <stock StockCode="600175" Description="" StockName="美都控股"/>
+        <stock StockCode="600176" Description="" StockName="中国玻纤"/>
+        <stock StockCode="600177" Description="" StockName="雅 戈 尔"/>
+        <stock StockCode="600178" Description="" StockName="东安动力"/>
+        <stock StockCode="600179" Description="" StockName="黑化股份"/>
+        <stock StockCode="600180" Description="" StockName="九发股份"/>
+        <stock StockCode="600181" Description="" StockName="*ST云 大"/>
+        <stock StockCode="600182" Description="" StockName="桦林轮胎"/>
+        <stock StockCode="600183" Description="" StockName="生益科技"/>
+        <stock StockCode="600184" Description="" StockName="新 华 光"/>
+        <stock StockCode="600185" Description="" StockName="海星科技"/>
+        <stock StockCode="600186" Description="" StockName="莲花味精"/>
+        <stock StockCode="600187" Description="" StockName="*ST黑 龙"/>
+        <stock StockCode="600188" Description="" StockName="兖州煤业"/>
+        <stock StockCode="600189" Description="" StockName="吉林森工"/>
+        <stock StockCode="600190" Description="" StockName="锦 州 港"/>
+        <stock StockCode="600191" Description="" StockName="华资实业"/>
+        <stock StockCode="600192" Description="" StockName="长城电工"/>
+        <stock StockCode="600193" Description="" StockName="创兴科技"/>
+        <stock StockCode="600195" Description="" StockName="中牧股份"/>
+        <stock StockCode="600196" Description="" StockName="复星医药"/>
+        <stock StockCode="600197" Description="" StockName="伊 力 特"/>
+        <stock StockCode="600198" Description="" StockName="大唐电信"/>
+        <stock StockCode="600199" Description="" StockName="*ST金 牛"/>
+        <stock StockCode="600200" Description="" StockName="江苏吴中"/>
+        <stock StockCode="600201" Description="" StockName="金宇集团"/>
+        <stock StockCode="600202" Description="" StockName="哈 空 调"/>
+        <stock StockCode="600203" Description="" StockName="ST福  日"/>
+        <stock StockCode="600205" Description="" StockName="山东铝业"/>
+        <stock StockCode="600206" Description="" StockName="有研硅股"/>
+        <stock StockCode="600207" Description="" StockName="安彩高科"/>
+        <stock StockCode="600208" Description="" StockName="中宝股份"/>
+        <stock StockCode="600209" Description="" StockName="罗顿发展"/>
+        <stock StockCode="600210" Description="" StockName="紫江企业"/>
+        <stock StockCode="600211" Description="" StockName="西藏药业"/>
+        <stock StockCode="600212" Description="" StockName="江泉实业"/>
+        <stock StockCode="600213" Description="" StockName="*ST亚 星"/>
+        <stock StockCode="600215" Description="" StockName="长春经开"/>
+        <stock StockCode="600216" Description="" StockName="浙江医药"/>
+        <stock StockCode="600217" Description="" StockName="秦岭水泥"/>
+        <stock StockCode="600218" Description="" StockName="全柴动力"/>
+        <stock StockCode="600219" Description="" StockName="南山实业"/>
+        <stock StockCode="600220" Description="" StockName="江苏阳光"/>
+        <stock StockCode="600221" Description="" StockName="海南航空"/>
+        <stock StockCode="600222" Description="" StockName="竹林众生"/>
+        <stock StockCode="600223" Description="" StockName="万杰高科"/>
+        <stock StockCode="600225" Description="" StockName="天香集团"/>
+        <stock StockCode="600226" Description="" StockName="升华拜克"/>
+        <stock StockCode="600227" Description="" StockName="赤 天 化"/>
+        <stock StockCode="600228" Description="" StockName="昌九生化"/>
+        <stock StockCode="600229" Description="" StockName="青岛碱业"/>
+        <stock StockCode="600230" Description="" StockName="沧州大化"/>
+        <stock StockCode="600231" Description="" StockName="凌钢股份"/>
+        <stock StockCode="600232" Description="" StockName="金鹰股份"/>
+        <stock StockCode="600233" Description="" StockName="大连创世"/>
+        <stock StockCode="600234" Description="" StockName="ST天  龙"/>
+        <stock StockCode="600235" Description="" StockName="民丰特纸"/>
+        <stock StockCode="600236" Description="" StockName="桂冠电力"/>
+        <stock StockCode="600237" Description="" StockName="铜峰电子"/>
+        <stock StockCode="600238" Description="" StockName="海南椰岛"/>
+        <stock StockCode="600239" Description="" StockName="红河光明"/>
+        <stock StockCode="600240" Description="" StockName="仕奇实业"/>
+        <stock StockCode="600241" Description="" StockName="辽宁时代"/>
+        <stock StockCode="600242" Description="" StockName="华龙集团"/>
+        <stock StockCode="600243" Description="" StockName="青海华鼎"/>
+        <stock StockCode="600246" Description="" StockName="先锋股份"/>
+        <stock StockCode="600247" Description="" StockName="物华股份"/>
+        <stock StockCode="600248" Description="" StockName="秦丰农业"/>
+        <stock StockCode="600249" Description="" StockName="两 面 针"/>
+        <stock StockCode="600250" Description="" StockName="南纺股份"/>
+        <stock StockCode="600251" Description="" StockName="冠农股份"/>
+        <stock StockCode="600252" Description="" StockName="中恒集团"/>
+        <stock StockCode="600253" Description="" StockName="天方药业"/>
+        <stock StockCode="600255" Description="" StockName="鑫科材料"/>
+        <stock StockCode="600256" Description="" StockName="广汇股份"/>
+        <stock StockCode="600257" Description="" StockName="洞庭水殖"/>
+        <stock StockCode="600258" Description="" StockName="首旅股份"/>
+        <stock StockCode="600259" Description="" StockName="兴业聚酯"/>
+        <stock StockCode="600260" Description="" StockName="凯乐科技"/>
+        <stock StockCode="600261" Description="" StockName="浙江阳光"/>
+        <stock StockCode="600262" Description="" StockName="北方股份"/>
+        <stock StockCode="600263" Description="" StockName="路桥建设"/>
+        <stock StockCode="600265" Description="" StockName="景谷林业"/>
+        <stock StockCode="600266" Description="" StockName="北京城建"/>
+        <stock StockCode="600267" Description="" StockName="海正药业"/>
+        <stock StockCode="600268" Description="" StockName="国电南自"/>
+        <stock StockCode="600269" Description="" StockName="赣粤高速"/>
+        <stock StockCode="600270" Description="" StockName="外运发展"/>
+        <stock StockCode="600271" Description="" StockName="航天信息"/>
+        <stock StockCode="600272" Description="" StockName="开开实业"/>
+        <stock StockCode="600273" Description="" StockName="华芳纺织"/>
+        <stock StockCode="600275" Description="" StockName="武 昌 鱼"/>
+        <stock StockCode="600276" Description="" StockName="恒瑞医药"/>
+        <stock StockCode="600277" Description="" StockName="亿利科技"/>
+        <stock StockCode="600278" Description="" StockName="东方创业"/>
+        <stock StockCode="600279" Description="" StockName="重庆港九"/>
+        <stock StockCode="600280" Description="" StockName="南京中商"/>
+        <stock StockCode="600281" Description="" StockName="太化股份"/>
+        <stock StockCode="600282" Description="" StockName="南钢股份"/>
+        <stock StockCode="600283" Description="" StockName="钱江水利"/>
+        <stock StockCode="600284" Description="" StockName="浦东建设"/>
+        <stock StockCode="600285" Description="" StockName="羚锐股份"/>
+        <stock StockCode="600286" Description="" StockName="*ST国 瓷"/>
+        <stock StockCode="600287" Description="" StockName="江苏舜天"/>
+        <stock StockCode="600288" Description="" StockName="大恒科技"/>
+        <stock StockCode="600289" Description="" StockName="亿阳信通"/>
+        <stock StockCode="600290" Description="" StockName="苏 福 马"/>
+        <stock StockCode="600291" Description="" StockName="西水股份"/>
+        <stock StockCode="600292" Description="" StockName="九龙电力"/>
+        <stock StockCode="600293" Description="" StockName="三峡新材"/>
+        <stock StockCode="600295" Description="" StockName="鄂尔多斯"/>
+        <stock StockCode="600296" Description="" StockName="兰州铝业"/>
+        <stock StockCode="600297" Description="" StockName="美罗药业"/>
+        <stock StockCode="600298" Description="" StockName="安琪酵母"/>
+        <stock StockCode="600299" Description="" StockName="星新材料"/>
+        <stock StockCode="600300" Description="" StockName="维维股份"/>
+        <stock StockCode="600301" Description="" StockName="南化股份"/>
+        <stock StockCode="600302" Description="" StockName="标准股份"/>
+        <stock StockCode="600303" Description="" StockName="曙光股份"/>
+        <stock StockCode="600305" Description="" StockName="恒顺醋业"/>
+        <stock StockCode="600306" Description="" StockName="商 业 城"/>
+        <stock StockCode="600307" Description="" StockName="酒钢宏兴"/>
+        <stock StockCode="600308" Description="" StockName="华泰股份"/>
+        <stock StockCode="600309" Description="" StockName="烟台万华"/>
+        <stock StockCode="600310" Description="" StockName="桂东电力"/>
+        <stock StockCode="600311" Description="" StockName="荣华实业"/>
+        <stock StockCode="600312" Description="" StockName="平高电气"/>
+        <stock StockCode="600313" Description="" StockName="中农资源"/>
+        <stock StockCode="600315" Description="" StockName="上海家化"/>
+        <stock StockCode="600316" Description="" StockName="洪都航空"/>
+        <stock StockCode="600317" Description="" StockName="营 口 港"/>
+        <stock StockCode="600318" Description="" StockName="巢东股份"/>
+        <stock StockCode="600319" Description="" StockName="亚星化学"/>
+        <stock StockCode="600320" Description="" StockName="振华港机"/>
+        <stock StockCode="600321" Description="" StockName="国栋建设"/>
+        <stock StockCode="600322" Description="" StockName="天房发展"/>
+        <stock StockCode="600323" Description="" StockName="南海发展"/>
+        <stock StockCode="600325" Description="" StockName="华发股份"/>
+        <stock StockCode="600326" Description="" StockName="西藏天路"/>
+        <stock StockCode="600327" Description="" StockName="大厦股份"/>
+        <stock StockCode="600328" Description="" StockName="兰太实业"/>
+        <stock StockCode="600329" Description="" StockName="中新药业"/>
+        <stock StockCode="600330" Description="" StockName="天通股份"/>
+        <stock StockCode="600331" Description="" StockName="宏达股份"/>
+        <stock StockCode="600332" Description="" StockName="广州药业"/>
+        <stock StockCode="600333" Description="" StockName="长春燃气"/>
+        <stock StockCode="600335" Description="" StockName="ST盛  工"/>
+        <stock StockCode="600336" Description="" StockName="澳 柯 玛"/>
+        <stock StockCode="600337" Description="" StockName="美克股份"/>
+        <stock StockCode="600338" Description="" StockName="ST珠  峰"/>
+        <stock StockCode="600339" Description="" StockName="天利高新"/>
+        <stock StockCode="600340" Description="" StockName="国祥股份"/>
+        <stock StockCode="600343" Description="" StockName="航天动力"/>
+        <stock StockCode="600345" Description="" StockName="长江通信"/>
+        <stock StockCode="600346" Description="" StockName="冰山橡塑"/>
+        <stock StockCode="600348" Description="" StockName="国阳新能"/>
+        <stock StockCode="600350" Description="" StockName="山东基建"/>
+        <stock StockCode="600351" Description="" StockName="亚宝药业"/>
+        <stock StockCode="600352" Description="" StockName="浙江龙盛"/>
+        <stock StockCode="600353" Description="" StockName="旭光股份"/>
+        <stock StockCode="600354" Description="" StockName="敦煌种业"/>
+        <stock StockCode="600355" Description="" StockName="精伦电子"/>
+        <stock StockCode="600356" Description="" StockName="恒丰纸业"/>
+        <stock StockCode="600357" Description="" StockName="承德钒钛"/>
+        <stock StockCode="600358" Description="" StockName="国旅联合"/>
+        <stock StockCode="600359" Description="" StockName="新农开发"/>
+        <stock StockCode="600360" Description="" StockName="华微电子"/>
+        <stock StockCode="600361" Description="" StockName="华联综超"/>
+        <stock StockCode="600362" Description="" StockName="江西铜业"/>
+        <stock StockCode="600363" Description="" StockName="联创光电"/>
+        <stock StockCode="600365" Description="" StockName="通葡萄酒"/>
+        <stock StockCode="600366" Description="" StockName="宁波韵升"/>
+        <stock StockCode="600367" Description="" StockName="红星发展"/>
+        <stock StockCode="600368" Description="" StockName="五洲交通"/>
+        <stock StockCode="600369" Description="" StockName="*ST长 运"/>
+        <stock StockCode="600370" Description="" StockName="三 房 巷"/>
+        <stock StockCode="600371" Description="" StockName="华冠科技"/>
+        <stock StockCode="600372" Description="" StockName="昌河股份"/>
+        <stock StockCode="600373" Description="" StockName="鑫新股份"/>
+        <stock StockCode="600375" Description="" StockName="星马汽车"/>
+        <stock StockCode="600376" Description="" StockName="天鸿宝业"/>
+        <stock StockCode="600377" Description="" StockName="宁沪高速"/>
+        <stock StockCode="600378" Description="" StockName="天科股份"/>
+        <stock StockCode="600379" Description="" StockName="宝光股份"/>
+        <stock StockCode="600380" Description="" StockName="健 康 元"/>
+        <stock StockCode="600381" Description="" StockName="白 唇 鹿"/>
+        <stock StockCode="600382" Description="" StockName="广东明珠"/>
+        <stock StockCode="600383" Description="" StockName="金地集团"/>
+        <stock StockCode="600385" Description="" StockName="ST金  泰"/>
+        <stock StockCode="600386" Description="" StockName="北京巴士"/>
+        <stock StockCode="600387" Description="" StockName="海越股份"/>
+        <stock StockCode="600388" Description="" StockName="龙净环保"/>
+        <stock StockCode="600389" Description="" StockName="江山股份"/>
+        <stock StockCode="600390" Description="" StockName="金瑞科技"/>
+        <stock StockCode="600391" Description="" StockName="成发科技"/>
+        <stock StockCode="600392" Description="" StockName="太工天成"/>
+        <stock StockCode="600393" Description="" StockName="东华实业"/>
+        <stock StockCode="600395" Description="" StockName="盘江股份"/>
+        <stock StockCode="600396" Description="" StockName="金山股份"/>
+        <stock StockCode="600397" Description="" StockName="安源股份"/>
+        <stock StockCode="600398" Description="" StockName="凯诺科技"/>
+        <stock StockCode="600399" Description="" StockName="抚顺特钢"/>
+        <stock StockCode="600400" Description="" StockName="红豆股份"/>
+        <stock StockCode="600401" Description="" StockName="江苏申龙"/>
+        <stock StockCode="600403" Description="" StockName="欣网视讯"/>
+        <stock StockCode="600405" Description="" StockName="动 力 源"/>
+        <stock StockCode="600406" Description="" StockName="国电南瑞"/>
+        <stock StockCode="600408" Description="" StockName="安泰集团"/>
+        <stock StockCode="600409" Description="" StockName="三友化工"/>
+        <stock StockCode="600410" Description="" StockName="华胜天成"/>
+        <stock StockCode="600415" Description="" StockName="小商品城"/>
+        <stock StockCode="600416" Description="" StockName="湘电股份"/>
+        <stock StockCode="600418" Description="" StockName="江淮汽车"/>
+        <stock StockCode="600419" Description="" StockName="新疆天宏"/>
+        <stock StockCode="600420" Description="" StockName="现代制药"/>
+        <stock StockCode="600421" Description="" StockName="春天股份"/>
+        <stock StockCode="600422" Description="" StockName="昆明制药"/>
+        <stock StockCode="600423" Description="" StockName="柳化股份"/>
+        <stock StockCode="600425" Description="" StockName="青松建化"/>
+        <stock StockCode="600426" Description="" StockName="华鲁恒升"/>
+        <stock StockCode="600428" Description="" StockName="中远航运"/>
+        <stock StockCode="600429" Description="" StockName="三元股份"/>
+        <stock StockCode="600432" Description="" StockName="吉恩镍业"/>
+        <stock StockCode="600433" Description="" StockName="冠豪高新"/>
+        <stock StockCode="600435" Description="" StockName="北方天鸟"/>
+        <stock StockCode="600436" Description="" StockName="片 仔 癀"/>
+        <stock StockCode="600438" Description="" StockName="通威股份"/>
+        <stock StockCode="600439" Description="" StockName="瑞贝卡"/>
+        <stock StockCode="600444" Description="" StockName="国通管业"/>
+        <stock StockCode="600446" Description="" StockName="金证股份"/>
+        <stock StockCode="600448" Description="" StockName="华纺股份"/>
+        <stock StockCode="600449" Description="" StockName="赛马实业"/>
+        <stock StockCode="600452" Description="" StockName="涪陵电力"/>
+        <stock StockCode="600455" Description="" StockName="交大博通"/>
+        <stock StockCode="600456" Description="" StockName="宝钛股份"/>
+        <stock StockCode="600458" Description="" StockName="时代新材"/>
+        <stock StockCode="600459" Description="" StockName="贵研铂业"/>
+        <stock StockCode="600460" Description="" StockName="士 兰 微"/>
+        <stock StockCode="600461" Description="" StockName="洪城水业"/>
+        <stock StockCode="600462" Description="" StockName="石岘纸业"/>
+        <stock StockCode="600463" Description="" StockName="空港股份"/>
+        <stock StockCode="600466" Description="" StockName="迪康药业"/>
+        <stock StockCode="600467" Description="" StockName="好 当 家"/>
+        <stock StockCode="600468" Description="" StockName="百利电气"/>
+        <stock StockCode="600469" Description="" StockName="风神股份"/>
+        <stock StockCode="600470" Description="" StockName="六国化工"/>
+        <stock StockCode="600472" Description="" StockName="包头铝业"/>
+        <stock StockCode="600475" Description="" StockName="华光股份"/>
+        <stock StockCode="600476" Description="" StockName="湘邮科技"/>
+        <stock StockCode="600477" Description="" StockName="杭萧钢构"/>
+        <stock StockCode="600478" Description="" StockName="力元新材"/>
+        <stock StockCode="600479" Description="" StockName="千金药业"/>
+        <stock StockCode="600480" Description="" StockName="凌云股份"/>
+        <stock StockCode="600481" Description="" StockName="双良股份"/>
+        <stock StockCode="600482" Description="" StockName="风帆股份"/>
+        <stock StockCode="600483" Description="" StockName="福建南纺"/>
+        <stock StockCode="600485" Description="" StockName="中创信测"/>
+        <stock StockCode="600486" Description="" StockName="扬农化工"/>
+        <stock StockCode="600487" Description="" StockName="亨通光电"/>
+        <stock StockCode="600488" Description="" StockName="天药股份"/>
+        <stock StockCode="600489" Description="" StockName="中金黄金"/>
+        <stock StockCode="600490" Description="" StockName="中科合臣"/>
+        <stock StockCode="600491" Description="" StockName="龙元建设"/>
+        <stock StockCode="600493" Description="" StockName="凤竹纺织"/>
+        <stock StockCode="600495" Description="" StockName="晋西车轴"/>
+        <stock StockCode="600496" Description="" StockName="长江精工"/>
+        <stock StockCode="600497" Description="" StockName="驰宏锌锗"/>
+        <stock StockCode="600498" Description="" StockName="烽火通信"/>
+        <stock StockCode="600499" Description="" StockName="科达机电"/>
+        <stock StockCode="600500" Description="" StockName="中化国际"/>
+        <stock StockCode="600501" Description="" StockName="航天晨光"/>
+        <stock StockCode="600502" Description="" StockName="安徽水利"/>
+        <stock StockCode="600503" Description="" StockName="*ST新 智"/>
+        <stock StockCode="600505" Description="" StockName="西昌电力"/>
+        <stock StockCode="600506" Description="" StockName="香梨股份"/>
+        <stock StockCode="600507" Description="" StockName="长力股份"/>
+        <stock StockCode="600508" Description="" StockName="上海能源"/>
+        <stock StockCode="600509" Description="" StockName="天富热电"/>
+        <stock StockCode="600510" Description="" StockName="黑牡丹"/>
+        <stock StockCode="600511" Description="" StockName="国药股份"/>
+        <stock StockCode="600512" Description="" StockName="腾达建设"/>
+        <stock StockCode="600513" Description="" StockName="联环药业"/>
+        <stock StockCode="600515" Description="" StockName="ST一  投"/>
+        <stock StockCode="600516" Description="" StockName="海龙科技"/>
+        <stock StockCode="600517" Description="" StockName="置信电气"/>
+        <stock StockCode="600518" Description="" StockName="康美药业"/>
+        <stock StockCode="600519" Description="" StockName="贵州茅台"/>
+        <stock StockCode="600520" Description="" StockName="三佳科技"/>
+        <stock StockCode="600521" Description="" StockName="华海药业"/>
+        <stock StockCode="600522" Description="" StockName="中天科技"/>
+        <stock StockCode="600523" Description="" StockName="贵航股份"/>
+        <stock StockCode="600525" Description="" StockName="长园新材"/>
+        <stock StockCode="600526" Description="" StockName="菲达环保"/>
+        <stock StockCode="600527" Description="" StockName="江南高纤"/>
+        <stock StockCode="600528" Description="" StockName="中铁二局"/>
+        <stock StockCode="600529" Description="" StockName="山东药玻"/>
+        <stock StockCode="600530" Description="" StockName="交大昂立"/>
+        <stock StockCode="600531" Description="" StockName="豫光金铅"/>
+        <stock StockCode="600532" Description="" StockName="华阳科技"/>
+        <stock StockCode="600533" Description="" StockName="栖霞建设"/>
+        <stock StockCode="600535" Description="" StockName="天 士 力"/>
+        <stock StockCode="600536" Description="" StockName="中国软件"/>
+        <stock StockCode="600537" Description="" StockName="海通集团"/>
+        <stock StockCode="600538" Description="" StockName="北海国发"/>
+        <stock StockCode="600539" Description="" StockName="狮头股份"/>
+        <stock StockCode="600540" Description="" StockName="新赛股份"/>
+        <stock StockCode="600543" Description="" StockName="莫高股份"/>
+        <stock StockCode="600545" Description="" StockName="新疆城建"/>
+        <stock StockCode="600546" Description="" StockName="中油化建"/>
+        <stock StockCode="600547" Description="" StockName="山东黄金"/>
+        <stock StockCode="600548" Description="" StockName="深 高 速"/>
+        <stock StockCode="600549" Description="" StockName="厦门钨业"/>
+        <stock StockCode="600550" Description="" StockName="天威保变"/>
+        <stock StockCode="600551" Description="" StockName="科大创新"/>
+        <stock StockCode="600552" Description="" StockName="方兴科技"/>
+        <stock StockCode="600553" Description="" StockName="太行水泥"/>
+        <stock StockCode="600555" Description="" StockName="茉 织 华"/>
+        <stock StockCode="600556" Description="" StockName="北生药业"/>
+        <stock StockCode="600557" Description="" StockName="康缘药业"/>
+        <stock StockCode="600558" Description="" StockName="大 西 洋"/>
+        <stock StockCode="600559" Description="" StockName="裕丰股份"/>
+        <stock StockCode="600560" Description="" StockName="金自天正"/>
+        <stock StockCode="600561" Description="" StockName="江西长运"/>
+        <stock StockCode="600562" Description="" StockName="高淳陶瓷"/>
+        <stock StockCode="600563" Description="" StockName="法拉电子"/>
+        <stock StockCode="600565" Description="" StockName="迪马股份"/>
+        <stock StockCode="600566" Description="" StockName="洪城股份"/>
+        <stock StockCode="600567" Description="" StockName="山鹰纸业"/>
+        <stock StockCode="600568" Description="" StockName="潜江制药"/>
+        <stock StockCode="600569" Description="" StockName="安阳钢铁"/>
+        <stock StockCode="600570" Description="" StockName="恒生电子"/>
+        <stock StockCode="600571" Description="" StockName="信 雅 达"/>
+        <stock StockCode="600572" Description="" StockName="康 恩 贝"/>
+        <stock StockCode="600573" Description="" StockName="惠泉啤酒"/>
+        <stock StockCode="600575" Description="" StockName="芜 湖 港"/>
+        <stock StockCode="600576" Description="" StockName="庆丰股份"/>
+        <stock StockCode="600577" Description="" StockName="精达股份"/>
+        <stock StockCode="600578" Description="" StockName="京能热电"/>
+        <stock StockCode="600579" Description="" StockName="黄海股份"/>
+        <stock StockCode="600580" Description="" StockName="卧龙科技"/>
+        <stock StockCode="600581" Description="" StockName="八一钢铁"/>
+        <stock StockCode="600582" Description="" StockName="天地科技"/>
+        <stock StockCode="600583" Description="" StockName="海油工程"/>
+        <stock StockCode="600584" Description="" StockName="长电科技"/>
+        <stock StockCode="600585" Description="" StockName="海螺水泥"/>
+        <stock StockCode="600586" Description="" StockName="金晶科技"/>
+        <stock StockCode="600587" Description="" StockName="新华医疗"/>
+        <stock StockCode="600588" Description="" StockName="用友软件"/>
+        <stock StockCode="600589" Description="" StockName="广东榕泰"/>
+        <stock StockCode="600590" Description="" StockName="泰豪科技"/>
+        <stock StockCode="600591" Description="" StockName="上海航空"/>
+        <stock StockCode="600592" Description="" StockName="龙溪股份"/>
+        <stock StockCode="600593" Description="" StockName="大连圣亚"/>
+        <stock StockCode="600594" Description="" StockName="益佰制药"/>
+        <stock StockCode="600595" Description="" StockName="中孚实业"/>
+        <stock StockCode="600596" Description="" StockName="新安股份"/>
+        <stock StockCode="600597" Description="" StockName="光明乳业"/>
+        <stock StockCode="600598" Description="" StockName="北 大 荒"/>
+        <stock StockCode="600599" Description="" StockName="浏阳花炮"/>
+        <stock StockCode="600600" Description="" StockName="青岛啤酒"/>
+        <stock StockCode="600601" Description="" StockName="方正科技"/>
+        <stock StockCode="600602" Description="" StockName="广电电子"/>
+        <stock StockCode="600603" Description="" StockName="ST兴  业"/>
+        <stock StockCode="600604" Description="" StockName="二 纺 机"/>
+        <stock StockCode="600605" Description="" StockName="轻工机械"/>
+        <stock StockCode="600606" Description="" StockName="金丰投资"/>
+        <stock StockCode="600607" Description="" StockName="上实联合"/>
+        <stock StockCode="600608" Description="" StockName="上海科技"/>
+        <stock StockCode="600609" Description="" StockName="金杯汽车"/>
+        <stock StockCode="600610" Description="" StockName="中国纺机"/>
+        <stock StockCode="600611" Description="" StockName="大众交通"/>
+        <stock StockCode="600612" Description="" StockName="第一铅笔"/>
+        <stock StockCode="600613" Description="" StockName="*ST永 生"/>
+        <stock StockCode="600614" Description="" StockName="三九发展"/>
+        <stock StockCode="600615" Description="" StockName="ST丰  华"/>
+        <stock StockCode="600616" Description="" StockName="第一食品"/>
+        <stock StockCode="600618" Description="" StockName="氯碱化工"/>
+        <stock StockCode="600619" Description="" StockName="海立股份"/>
+        <stock StockCode="600620" Description="" StockName="天宸股份"/>
+        <stock StockCode="600621" Description="" StockName="上海金陵"/>
+        <stock StockCode="600622" Description="" StockName="嘉宝集团"/>
+        <stock StockCode="600623" Description="" StockName="轮胎橡胶"/>
+        <stock StockCode="600624" Description="" StockName="复旦复华"/>
+        <stock StockCode="600626" Description="" StockName="申达股份"/>
+        <stock StockCode="600627" Description="" StockName="上电股份"/>
+        <stock StockCode="600628" Description="" StockName="新 世 界"/>
+        <stock StockCode="600629" Description="" StockName="*ST棱 光"/>
+        <stock StockCode="600630" Description="" StockName="龙头股份"/>
+        <stock StockCode="600631" Description="" StockName="百联股份"/>
+        <stock StockCode="600633" Description="" StockName="白猫股份"/>
+        <stock StockCode="600634" Description="" StockName="海鸟发展"/>
+        <stock StockCode="600635" Description="" StockName="大众公用"/>
+        <stock StockCode="600636" Description="" StockName="三 爱 富"/>
+        <stock StockCode="600637" Description="" StockName="广电信息"/>
+        <stock StockCode="600638" Description="" StockName="新 黄 浦"/>
+        <stock StockCode="600639" Description="" StockName="浦东金桥"/>
+        <stock StockCode="600640" Description="" StockName="中卫国脉"/>
+        <stock StockCode="600641" Description="" StockName="中远发展"/>
+        <stock StockCode="600642" Description="" StockName="申能股份"/>
+        <stock StockCode="600643" Description="" StockName="爱建股份"/>
+        <stock StockCode="600644" Description="" StockName="乐山电力"/>
+        <stock StockCode="600645" Description="" StockName="望 春 花"/>
+        <stock StockCode="600647" Description="" StockName="ST同  达"/>
+        <stock StockCode="600648" Description="" StockName="外 高 桥"/>
+        <stock StockCode="600649" Description="" StockName="原水股份"/>
+        <stock StockCode="600650" Description="" StockName="锦江投资"/>
+        <stock StockCode="600651" Description="" StockName="飞乐音响"/>
+        <stock StockCode="600652" Description="" StockName="爱使股份"/>
+        <stock StockCode="600653" Description="" StockName="申华控股"/>
+        <stock StockCode="600654" Description="" StockName="飞乐股份"/>
+        <stock StockCode="600655" Description="" StockName="豫园商城"/>
+        <stock StockCode="600656" Description="" StockName="华源制药"/>
+        <stock StockCode="600657" Description="" StockName="青鸟天桥"/>
+        <stock StockCode="600658" Description="" StockName="兆维科技"/>
+        <stock StockCode="600659" Description="" StockName="*ST花 雕"/>
+        <stock StockCode="600660" Description="" StockName="福耀玻璃"/>
+        <stock StockCode="600661" Description="" StockName="交大南洋"/>
+        <stock StockCode="600662" Description="" StockName="强生控股"/>
+        <stock StockCode="600663" Description="" StockName="陆 家 嘴"/>
+        <stock StockCode="600664" Description="" StockName="哈药集团"/>
+        <stock StockCode="600665" Description="" StockName="天 地 源"/>
+        <stock StockCode="600666" Description="" StockName="西南药业"/>
+        <stock StockCode="600667" Description="" StockName="太极实业"/>
+        <stock StockCode="600668" Description="" StockName="尖峰集团"/>
+        <stock StockCode="600671" Description="" StockName="天目药业"/>
+        <stock StockCode="600673" Description="" StockName="阳 之 光"/>
+        <stock StockCode="600674" Description="" StockName="川投能源"/>
+        <stock StockCode="600675" Description="" StockName="中华企业"/>
+        <stock StockCode="600676" Description="" StockName="交运股份"/>
+        <stock StockCode="600677" Description="" StockName="航天通信"/>
+        <stock StockCode="600678" Description="" StockName="四川金顶"/>
+        <stock StockCode="600679" Description="" StockName="凤凰股份"/>
+        <stock StockCode="600680" Description="" StockName="上海邮通"/>
+        <stock StockCode="600681" Description="" StockName="ST万  鸿"/>
+        <stock StockCode="600682" Description="" StockName="南京新百"/>
+        <stock StockCode="600683" Description="" StockName="银泰股份"/>
+        <stock StockCode="600684" Description="" StockName="珠江实业"/>
+        <stock StockCode="600685" Description="" StockName="广船国际"/>
+        <stock StockCode="600686" Description="" StockName="金龙汽车"/>
+        <stock StockCode="600687" Description="" StockName="华 盛 达"/>
+        <stock StockCode="600688" Description="" StockName="上海石化"/>
+        <stock StockCode="600689" Description="" StockName="上海三毛"/>
+        <stock StockCode="600690" Description="" StockName="青岛海尔"/>
+        <stock StockCode="600691" Description="" StockName="ST林  控"/>
+        <stock StockCode="600692" Description="" StockName="亚通股份"/>
+        <stock StockCode="600693" Description="" StockName="东百集团"/>
+        <stock StockCode="600694" Description="" StockName="大商股份"/>
+        <stock StockCode="600695" Description="" StockName="ST大  江"/>
+        <stock StockCode="600696" Description="" StockName="利嘉股份"/>
+        <stock StockCode="600697" Description="" StockName="欧亚集团"/>
+        <stock StockCode="600698" Description="" StockName="ST轻  骑"/>
+        <stock StockCode="600699" Description="" StockName="辽源得亨"/>
+        <stock StockCode="600701" Description="" StockName="工大高新"/>
+        <stock StockCode="600702" Description="" StockName="沱牌曲酒"/>
+        <stock StockCode="600703" Description="" StockName="天颐科技"/>
+        <stock StockCode="600704" Description="" StockName="中大股份"/>
+        <stock StockCode="600705" Description="" StockName="北亚集团"/>
+        <stock StockCode="600706" Description="" StockName="长安信息"/>
+        <stock StockCode="600707" Description="" StockName="彩虹股份"/>
+        <stock StockCode="600708" Description="" StockName="海博股份"/>
+        <stock StockCode="600710" Description="" StockName="常林股份"/>
+        <stock StockCode="600711" Description="" StockName="雄震集团"/>
+        <stock StockCode="600712" Description="" StockName="南宁百货"/>
+        <stock StockCode="600713" Description="" StockName="南京医药"/>
+        <stock StockCode="600714" Description="" StockName="金瑞矿业"/>
+        <stock StockCode="600715" Description="" StockName="ST松  辽"/>
+        <stock StockCode="600716" Description="" StockName="耀华玻璃"/>
+        <stock StockCode="600717" Description="" StockName="天 津 港"/>
+        <stock StockCode="600718" Description="" StockName="东软股份"/>
+        <stock StockCode="600719" Description="" StockName="大连热电"/>
+        <stock StockCode="600720" Description="" StockName="祁 连 山"/>
+        <stock StockCode="600721" Description="" StockName="百 花 村"/>
+        <stock StockCode="600722" Description="" StockName="沧州化工"/>
+        <stock StockCode="600723" Description="" StockName="西单商场"/>
+        <stock StockCode="600724" Description="" StockName="宁波富达"/>
+        <stock StockCode="600725" Description="" StockName="云维股份"/>
+        <stock StockCode="600726" Description="" StockName="华电能源"/>
+        <stock StockCode="600727" Description="" StockName="鲁北化工"/>
+        <stock StockCode="600728" Description="" StockName="新太科技"/>
+        <stock StockCode="600729" Description="" StockName="重庆百货"/>
+        <stock StockCode="600730" Description="" StockName="中国高科"/>
+        <stock StockCode="600731" Description="" StockName="湖南海利"/>
+        <stock StockCode="600732" Description="" StockName="上海新梅"/>
+        <stock StockCode="600733" Description="" StockName="前锋股份"/>
+        <stock StockCode="600734" Description="" StockName="实达集团"/>
+        <stock StockCode="600735" Description="" StockName="ST陈  香"/>
+        <stock StockCode="600736" Description="" StockName="苏州高新"/>
+        <stock StockCode="600737" Description="" StockName="ST屯  河"/>
+        <stock StockCode="600738" Description="" StockName="兰州民百"/>
+        <stock StockCode="600739" Description="" StockName="辽宁成大"/>
+        <stock StockCode="600740" Description="" StockName="山西焦化"/>
+        <stock StockCode="600741" Description="" StockName="巴士股份"/>
+        <stock StockCode="600742" Description="" StockName="一汽四环"/>
+        <stock StockCode="600743" Description="" StockName="ST幸  福"/>
+        <stock StockCode="600744" Description="" StockName="华银电力"/>
+        <stock StockCode="600745" Description="" StockName="天华股份"/>
+        <stock StockCode="600746" Description="" StockName="江苏索普"/>
+        <stock StockCode="600747" Description="" StockName="大显股份"/>
+        <stock StockCode="600748" Description="" StockName="上实发展"/>
+        <stock StockCode="600749" Description="" StockName="西藏圣地"/>
+        <stock StockCode="600750" Description="" StockName="江中药业"/>
+        <stock StockCode="600753" Description="" StockName="ST冰  熊"/>
+        <stock StockCode="600754" Description="" StockName="锦江酒店"/>
+        <stock StockCode="600755" Description="" StockName="厦门国贸"/>
+        <stock StockCode="600756" Description="" StockName="浪潮软件"/>
+        <stock StockCode="600757" Description="" StockName="华源发展"/>
+        <stock StockCode="600758" Description="" StockName="ST金  帝"/>
+        <stock StockCode="600759" Description="" StockName="ST琼华侨"/>
+        <stock StockCode="600760" Description="" StockName="ST黑  豹"/>
+        <stock StockCode="600761" Description="" StockName="安徽合力"/>
+        <stock StockCode="600762" Description="" StockName="ST金  荔"/>
+        <stock StockCode="600763" Description="" StockName="*ST中 燕"/>
+        <stock StockCode="600764" Description="" StockName="中电广通"/>
+        <stock StockCode="600765" Description="" StockName="力源液压"/>
+        <stock StockCode="600766" Description="" StockName="ST烟  发"/>
+        <stock StockCode="600767" Description="" StockName="*ST运 盛"/>
+        <stock StockCode="600768" Description="" StockName="宁波富邦"/>
+        <stock StockCode="600769" Description="" StockName="祥龙电业"/>
+        <stock StockCode="600770" Description="" StockName="综艺股份"/>
+        <stock StockCode="600771" Description="" StockName="东盛科技"/>
+        <stock StockCode="600772" Description="" StockName="ST龙  昌"/>
+        <stock StockCode="600773" Description="" StockName="西藏金珠"/>
+        <stock StockCode="600774" Description="" StockName="汉商集团"/>
+        <stock StockCode="600775" Description="" StockName="南京熊猫"/>
+        <stock StockCode="600776" Description="" StockName="东方通信"/>
+        <stock StockCode="600777" Description="" StockName="新潮实业"/>
+        <stock StockCode="600778" Description="" StockName="友好集团"/>
+        <stock StockCode="600779" Description="" StockName="全兴股份"/>
+        <stock StockCode="600780" Description="" StockName="通宝能源"/>
+        <stock StockCode="600781" Description="" StockName="ST民  丰"/>
+        <stock StockCode="600782" Description="" StockName="新华股份"/>
+        <stock StockCode="600783" Description="" StockName="鲁信高新"/>
+        <stock StockCode="600784" Description="" StockName="鲁银投资"/>
+        <stock StockCode="600785" Description="" StockName="新华百货"/>
+        <stock StockCode="600786" Description="" StockName="东方锅炉"/>
+        <stock StockCode="600787" Description="" StockName="中储股份"/>
+        <stock StockCode="600789" Description="" StockName="鲁抗医药"/>
+        <stock StockCode="600790" Description="" StockName="轻 纺 城"/>
+        <stock StockCode="600791" Description="" StockName="天创置业"/>
+        <stock StockCode="600792" Description="" StockName="马龙产业"/>
+        <stock StockCode="600793" Description="" StockName="宜宾纸业"/>
+        <stock StockCode="600794" Description="" StockName="保税科技"/>
+        <stock StockCode="600795" Description="" StockName="国电电力"/>
+        <stock StockCode="600796" Description="" StockName="钱江生化"/>
+        <stock StockCode="600797" Description="" StockName="浙大网新"/>
+        <stock StockCode="600798" Description="" StockName="宁波海运"/>
+        <stock StockCode="600800" Description="" StockName="天津磁卡"/>
+        <stock StockCode="600801" Description="" StockName="华新水泥"/>
+        <stock StockCode="600802" Description="" StockName="福建水泥"/>
+        <stock StockCode="600803" Description="" StockName="威远生化"/>
+        <stock StockCode="600804" Description="" StockName="鹏 博 士"/>
+        <stock StockCode="600805" Description="" StockName="悦达投资"/>
+        <stock StockCode="600806" Description="" StockName="交大科技"/>
+        <stock StockCode="600807" Description="" StockName="ST济  百"/>
+        <stock StockCode="600808" Description="" StockName="马钢股份"/>
+        <stock StockCode="600809" Description="" StockName="山西汾酒"/>
+        <stock StockCode="600810" Description="" StockName="神马实业"/>
+        <stock StockCode="600811" Description="" StockName="东方集团"/>
+        <stock StockCode="600812" Description="" StockName="华北制药"/>
+        <stock StockCode="600814" Description="" StockName="杭州解百"/>
+        <stock StockCode="600815" Description="" StockName="厦工股份"/>
+        <stock StockCode="600816" Description="" StockName="安信信托"/>
+        <stock StockCode="600817" Description="" StockName="宏盛科技"/>
+        <stock StockCode="600818" Description="" StockName="上海永久"/>
+        <stock StockCode="600819" Description="" StockName="耀皮玻璃"/>
+        <stock StockCode="600820" Description="" StockName="隧道股份"/>
+        <stock StockCode="600821" Description="" StockName="津 劝 业"/>
+        <stock StockCode="600822" Description="" StockName="物贸中心"/>
+        <stock StockCode="600823" Description="" StockName="世茂股份"/>
+        <stock StockCode="600824" Description="" StockName="益民百货"/>
+        <stock StockCode="600825" Description="" StockName="华联超市"/>
+        <stock StockCode="600826" Description="" StockName="兰生股份"/>
+        <stock StockCode="600827" Description="" StockName="友谊股份"/>
+        <stock StockCode="600828" Description="" StockName="成商集团"/>
+        <stock StockCode="600829" Description="" StockName="三精制药"/>
+        <stock StockCode="600830" Description="" StockName="大 红 鹰"/>
+        <stock StockCode="600831" Description="" StockName="广电网络"/>
+        <stock StockCode="600832" Description="" StockName="东方明珠"/>
+        <stock StockCode="600833" Description="" StockName="第一医药"/>
+        <stock StockCode="600834" Description="" StockName="申通地铁"/>
+        <stock StockCode="600835" Description="" StockName="上海机电"/>
+        <stock StockCode="600836" Description="" StockName="界龙实业"/>
+        <stock StockCode="600837" Description="" StockName="都市股份"/>
+        <stock StockCode="600838" Description="" StockName="上海九百"/>
+        <stock StockCode="600839" Description="" StockName="四川长虹"/>
+        <stock StockCode="600840" Description="" StockName="新湖创业"/>
+        <stock StockCode="600841" Description="" StockName="上柴股份"/>
+        <stock StockCode="600842" Description="" StockName="ST中  西"/>
+        <stock StockCode="600843" Description="" StockName="上工申贝"/>
+        <stock StockCode="600845" Description="" StockName="宝信软件"/>
+        <stock StockCode="600846" Description="" StockName="同济科技"/>
+        <stock StockCode="600847" Description="" StockName="ST渝万里"/>
+        <stock StockCode="600848" Description="" StockName="ST自  仪"/>
+        <stock StockCode="600849" Description="" StockName="上海医药"/>
+        <stock StockCode="600850" Description="" StockName="华东电脑"/>
+        <stock StockCode="600851" Description="" StockName="海欣股份"/>
+        <stock StockCode="600853" Description="" StockName="龙建股份"/>
+        <stock StockCode="600854" Description="" StockName="春兰股份"/>
+        <stock StockCode="600855" Description="" StockName="航天长峰"/>
+        <stock StockCode="600856" Description="" StockName="长百集团"/>
+        <stock StockCode="600857" Description="" StockName="工大首创"/>
+        <stock StockCode="600858" Description="" StockName="银座股份"/>
+        <stock StockCode="600859" Description="" StockName="王 府 井"/>
+        <stock StockCode="600860" Description="" StockName="北人股份"/>
+        <stock StockCode="600861" Description="" StockName="北京城乡"/>
+        <stock StockCode="600862" Description="" StockName="ST纵  横"/>
+        <stock StockCode="600863" Description="" StockName="内蒙华电"/>
+        <stock StockCode="600864" Description="" StockName="岁宝热电"/>
+        <stock StockCode="600865" Description="" StockName="百大集团"/>
+        <stock StockCode="600866" Description="" StockName="星湖科技"/>
+        <stock StockCode="600867" Description="" StockName="通化东宝"/>
+        <stock StockCode="600868" Description="" StockName="梅雁股份"/>
+        <stock StockCode="600869" Description="" StockName="*ST三 普"/>
+        <stock StockCode="600870" Description="" StockName="厦华电子"/>
+        <stock StockCode="600871" Description="" StockName="仪征化纤"/>
+        <stock StockCode="600872" Description="" StockName="中炬高新"/>
+        <stock StockCode="600873" Description="" StockName="五洲明珠"/>
+        <stock StockCode="600874" Description="" StockName="创业环保"/>
+        <stock StockCode="600875" Description="" StockName="东方电机"/>
+        <stock StockCode="600876" Description="" StockName="*ST洛 玻"/>
+        <stock StockCode="600877" Description="" StockName="中国嘉陵"/>
+        <stock StockCode="600879" Description="" StockName="火箭股份"/>
+        <stock StockCode="600880" Description="" StockName="博瑞传播"/>
+        <stock StockCode="600881" Description="" StockName="亚泰集团"/>
+        <stock StockCode="600882" Description="" StockName="大成股份"/>
+        <stock StockCode="600883" Description="" StockName="博闻科技"/>
+        <stock StockCode="600884" Description="" StockName="杉杉股份"/>
+        <stock StockCode="600885" Description="" StockName="力诺工业"/>
+        <stock StockCode="600886" Description="" StockName="国投电力"/>
+        <stock StockCode="600887" Description="" StockName="伊利股份"/>
+        <stock StockCode="600888" Description="" StockName="新疆众和"/>
+        <stock StockCode="600889" Description="" StockName="南京化纤"/>
+        <stock StockCode="600890" Description="" StockName="中房股份"/>
+        <stock StockCode="600891" Description="" StockName="ST秋  林"/>
+        <stock StockCode="600893" Description="" StockName="华润生化"/>
+        <stock StockCode="600894" Description="" StockName="广钢股份"/>
+        <stock StockCode="600895" Description="" StockName="张江高科"/>
+        <stock StockCode="600896" Description="" StockName="中海海盛"/>
+        <stock StockCode="600897" Description="" StockName="厦门机场"/>
+        <stock StockCode="600898" Description="" StockName="三联商社"/>
+        <stock StockCode="600900" Description="" StockName="长江电力"/>
+        <stock StockCode="600960" Description="" StockName="滨州活塞"/>
+        <stock StockCode="600961" Description="" StockName="株冶火炬"/>
+        <stock StockCode="600962" Description="" StockName="国投中鲁"/>
+        <stock StockCode="600963" Description="" StockName="岳阳纸业"/>
+        <stock StockCode="600965" Description="" StockName="福成五丰"/>
+        <stock StockCode="600966" Description="" StockName="博汇纸业"/>
+        <stock StockCode="600967" Description="" StockName="北方创业"/>
+        <stock StockCode="600969" Description="" StockName="郴电国际"/>
+        <stock StockCode="600970" Description="" StockName="中材国际"/>
+        <stock StockCode="600971" Description="" StockName="恒源煤电"/>
+        <stock StockCode="600973" Description="" StockName="宝胜股份"/>
+        <stock StockCode="600975" Description="" StockName="新 五 丰"/>
+        <stock StockCode="600976" Description="" StockName="武汉健民"/>
+        <stock StockCode="600978" Description="" StockName="宜华木业"/>
+        <stock StockCode="600979" Description="" StockName="广安爱众"/>
+        <stock StockCode="600980" Description="" StockName="北矿磁材"/>
+        <stock StockCode="600981" Description="" StockName="江苏纺织"/>
+        <stock StockCode="600982" Description="" StockName="宁波热电"/>
+        <stock StockCode="600983" Description="" StockName="合肥三洋"/>
+        <stock StockCode="600984" Description="" StockName="建设机械"/>
+        <stock StockCode="600985" Description="" StockName="雷鸣科化"/>
+        <stock StockCode="600986" Description="" StockName="科达股份"/>
+        <stock StockCode="600987" Description="" StockName="航民股份"/>
+        <stock StockCode="600988" Description="" StockName="东方宝龙"/>
+        <stock StockCode="600990" Description="" StockName="四创电子"/>
+        <stock StockCode="600991" Description="" StockName="长丰汽车"/>
+        <stock StockCode="600992" Description="" StockName="贵绳股份"/>
+        <stock StockCode="600993" Description="" StockName="马 应 龙"/>
+        <stock StockCode="600995" Description="" StockName="文山电力"/>
+        <stock StockCode="600997" Description="" StockName="开滦股份"/>
+        <stock StockCode="609001" Description="" StockName="新 和 成"/>
+        <stock StockCode="609002" Description="" StockName="江苏琼花"/>
+        <stock StockCode="609003" Description="" StockName="伟星股份"/>
+        <stock StockCode="609004" Description="" StockName="华邦制药"/>
+        <stock StockCode="609005" Description="" StockName="德豪润达"/>
+        <stock StockCode="609006" Description="" StockName="精工科技"/>
+        <stock StockCode="609007" Description="" StockName="华兰生物"/>
+        <stock StockCode="609008" Description="" StockName="大族激光"/>
+        <stock StockCode="609009" Description="" StockName="天奇股份"/>
+        <stock StockCode="609010" Description="" StockName="传化股份"/>
+        <stock StockCode="609011" Description="" StockName="盾安环境"/>
+        <stock StockCode="609012" Description="" StockName="凯恩股份"/>
+        <stock StockCode="609013" Description="" StockName="中航精机"/>
+        <stock StockCode="609014" Description="" StockName="永新股份"/>
+        <stock StockCode="609015" Description="" StockName="霞客环保"/>
+        <stock StockCode="609016" Description="" StockName="威尔科技"/>
+        <stock StockCode="609017" Description="" StockName="东信和平"/>
+        <stock StockCode="609018" Description="" StockName="华星化工"/>
+        <stock StockCode="609019" Description="" StockName="鑫富股份"/>
+        <stock StockCode="609020" Description="" StockName="京新药业"/>
+        <stock StockCode="609021" Description="" StockName="中捷股份"/>
+        <stock StockCode="609022" Description="" StockName="科华生物"/>
+        <stock StockCode="609023" Description="" StockName="海特高新"/>
+        <stock StockCode="609024" Description="" StockName="苏宁电器"/>
+        <stock StockCode="609025" Description="" StockName="航天电器"/>
+        <stock StockCode="609026" Description="" StockName="山东威达"/>
+        <stock StockCode="609027" Description="" StockName="七喜股份"/>
+        <stock StockCode="609028" Description="" StockName="思源电气"/>
+        <stock StockCode="609029" Description="" StockName="七 匹 狼"/>
+        <stock StockCode="609030" Description="" StockName="达安基因"/>
+        <stock StockCode="609031" Description="" StockName="巨轮股份"/>
+        <stock StockCode="609032" Description="" StockName="苏 泊 尔"/>
+        <stock StockCode="609033" Description="" StockName="丽江旅游"/>
+        <stock StockCode="609034" Description="" StockName="美 欣 达"/>
+        <stock StockCode="609035" Description="" StockName="华帝股份"/>
+        <stock StockCode="609036" Description="" StockName="宜科科技"/>
+        <stock StockCode="609037" Description="" StockName="久联发展"/>
+        <stock StockCode="609038" Description="" StockName="双鹭药业"/>
+        <stock StockCode="609039" Description="" StockName="黔源电力"/>
+        <stock StockCode="609040" Description="" StockName="南 京 港"/>
+        <stock StockCode="609041" Description="" StockName="登海种业"/>
+        <stock StockCode="609042" Description="" StockName="飞亚股份"/>
+        <stock StockCode="609043" Description="" StockName="兔 宝 宝"/>
+        <stock StockCode="609044" Description="" StockName="江苏三友"/>
+        <stock StockCode="900901" Description="" StockName="上电Ｂ股"/>
+        <stock StockCode="900902" Description="" StockName="二纺Ｂ股"/>
+        <stock StockCode="900903" Description="" StockName="大众Ｂ股"/>
+        <stock StockCode="900904" Description="" StockName="*ST永生B"/>
+        <stock StockCode="900905" Description="" StockName="中铅Ｂ股"/>
+        <stock StockCode="900906" Description="" StockName="中纺Ｂ股"/>
+        <stock StockCode="900907" Description="" StockName="发展Ｂ股"/>
+        <stock StockCode="900908" Description="" StockName="氯碱Ｂ股"/>
+        <stock StockCode="900909" Description="" StockName="轮胎Ｂ股"/>
+        <stock StockCode="900910" Description="" StockName="海立Ｂ股"/>
+        <stock StockCode="900911" Description="" StockName="金桥Ｂ股"/>
+        <stock StockCode="900912" Description="" StockName="外高Ｂ股"/>
+        <stock StockCode="900914" Description="" StockName="锦投Ｂ股"/>
+        <stock StockCode="900915" Description="" StockName="永久Ｂ股"/>
+        <stock StockCode="900916" Description="" StockName="凤凰Ｂ股"/>
+        <stock StockCode="900917" Description="" StockName="海欣Ｂ股"/>
+        <stock StockCode="900918" Description="" StockName="耀皮Ｂ股"/>
+        <stock StockCode="900919" Description="" StockName="ST大 江B"/>
+        <stock StockCode="900920" Description="" StockName="上柴Ｂ股"/>
+        <stock StockCode="900922" Description="" StockName="三毛Ｂ股"/>
+        <stock StockCode="900923" Description="" StockName="友谊Ｂ股"/>
+        <stock StockCode="900924" Description="" StockName="上工Ｂ股"/>
+        <stock StockCode="900925" Description="" StockName="机电Ｂ股"/>
+        <stock StockCode="900926" Description="" StockName="宝信Ｂ股"/>
+        <stock StockCode="900927" Description="" StockName="物贸Ｂ股"/>
+        <stock StockCode="900928" Description="" StockName="ST自仪Ｂ"/>
+        <stock StockCode="900929" Description="" StockName="锦旅Ｂ股"/>
+        <stock StockCode="900930" Description="" StockName="邮通Ｂ股"/>
+        <stock StockCode="900932" Description="" StockName="陆家Ｂ股"/>
+        <stock StockCode="900933" Description="" StockName="华新Ｂ股"/>
+        <stock StockCode="900934" Description="" StockName="锦江Ｂ股"/>
+        <stock StockCode="900935" Description="" StockName="阳晨Ｂ股"/>
+        <stock StockCode="900936" Description="" StockName="鄂绒Ｂ股"/>
+        <stock StockCode="900937" Description="" StockName="华电Ｂ股"/>
+        <stock StockCode="900939" Description="" StockName="汇丽Ｂ股"/>
+        <stock StockCode="900940" Description="" StockName="华源Ｂ股"/>
+        <stock StockCode="900941" Description="" StockName="东信Ｂ股"/>
+        <stock StockCode="900942" Description="" StockName="黄山Ｂ股"/>
+        <stock StockCode="900943" Description="" StockName="开开Ｂ股"/>
+        <stock StockCode="900945" Description="" StockName="海航Ｂ股"/>
+        <stock StockCode="900946" Description="" StockName="ST轻骑Ｂ"/>
+        <stock StockCode="900947" Description="" StockName="振华Ｂ股"/>
+        <stock StockCode="900948" Description="" StockName="伊泰Ｂ股"/>
+        <stock StockCode="900949" Description="" StockName="东电Ｂ股"/>
+        <stock StockCode="900950" Description="" StockName="新城Ｂ股"/>
+        <stock StockCode="900951" Description="" StockName="大化Ｂ股"/>
+        <stock StockCode="900952" Description="" StockName="锦港Ｂ股"/>
+        <stock StockCode="900953" Description="" StockName="凯马Ｂ股"/>
+        <stock StockCode="900955" Description="" StockName="茉织华Ｂ"/>
+        <stock StockCode="900956" Description="" StockName="东贝Ｂ股"/>
+        <stock StockCode="900957" Description="" StockName="凌云Ｂ股"/>
+    </stocks>
+</TCStock>

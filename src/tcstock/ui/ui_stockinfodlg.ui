@@ -1,0 +1,114 @@
+<ui version="4.0" >
+ <class>tcStockInfoDialog</class>
+ <widget class="QDialog" name="tcStockInfoDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>155</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Stock Info...</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="gbx1" >
+     <property name="title" >
+      <string>Info:</string>
+     </property>
+     <layout class="QGridLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item row="0" column="1" >
+       <widget class="QLineEdit" name="edt1" />
+      </item>
+      <item row="1" column="1" >
+       <widget class="QLineEdit" name="edt2" />
+      </item>
+      <item row="2" column="1" >
+       <widget class="QLineEdit" name="edt3" />
+      </item>
+      <item row="0" column="0" >
+       <widget class="QLabel" name="lbl1" >
+        <property name="text" >
+         <string>Stock Code:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" >
+       <widget class="QLabel" name="lbl2" >
+        <property name="text" >
+         <string>Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" >
+       <widget class="QLabel" name="lbl3" >
+        <property name="text" >
+         <string>Description:</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::NoButton|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>tcStockInfoDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>tcStockInfoDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

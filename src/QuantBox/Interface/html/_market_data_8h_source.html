@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>QuantBoxApi: MarketData.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">QuantBoxApi
+   &#160;<span id="projectnumber">0.01</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+      <li><a href="globals.html"><span>全局定义</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">MarketData.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _MARKET_DATA_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define _MARKET_DATA_H_</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Types.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">struct </span>CThostFtdcDepthMarketDataField;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structwd_limit_price.html">    9</a></span>&#160;<span class="keyword">struct </span>QUANTBOX_API <a class="code" href="structwd_limit_price.html">wdLimitPrice</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="structwd_limit_price.html#aac418152d60257268bd13b1c6fcb1871">   12</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_limit_price.html#aac418152d60257268bd13b1c6fcb1871">UpperLimitPrice</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structwd_limit_price.html#a7db30a83450e7909376716417473e594">   14</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_limit_price.html#a7db30a83450e7909376716417473e594">LowerLimitPrice</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="structwd_limit_price.html">wdLimitPrice</a>(<span class="keywordtype">double</span> UpperLimitPrice = 0., <span class="keywordtype">double</span> LowerLimitPrice = 0.);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structwd_tick.html">   20</a></span>&#160;<span class="keyword">struct </span>QUANTBOX_API <a class="code" href="structwd_tick.html">wdTick</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structwd_tick.html#a63a9f5b69b4ae4e192501792a351b4f9">   23</a></span>&#160;    <span class="keywordtype">char</span>    InstrumentID[31];</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structwd_tick.html#a2b07b22705ea5329125568eeeb2faf13">   25</a></span>&#160;    <span class="keywordtype">char</span>    ExchangeTime[25];   </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structwd_tick.html#a8e6e423d91883860afdd0b0bfa07c9c0">   27</a></span>&#160;    <span class="keywordtype">char</span>    LocalTime[25];</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structwd_tick.html#a4f03f7df7145f69895a70bece6f5c4a8">   29</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#a4f03f7df7145f69895a70bece6f5c4a8">LastPrice</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structwd_tick.html#a733afd89abd9648fe611894f74c5cb05">   31</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#a733afd89abd9648fe611894f74c5cb05">BidPrice1</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structwd_tick.html#ad3d1bd519b30f4776736877b99e35dab">   33</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="structwd_tick.html#ad3d1bd519b30f4776736877b99e35dab">BidVolume1</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structwd_tick.html#a4b43d1accd06ab4d7c29d1b2a7b10489">   35</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#a4b43d1accd06ab4d7c29d1b2a7b10489">AskPrice1</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structwd_tick.html#ae0f8a32a08347d197e9726d4696352ec">   37</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="structwd_tick.html#ae0f8a32a08347d197e9726d4696352ec">AskVolume1</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structwd_tick.html#a4e1621dce0ce4268046a2ce7aed53313">   39</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="structwd_tick.html#a4e1621dce0ce4268046a2ce7aed53313">Volume</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structwd_tick.html#a144a1c30b82b2daa0483d3b821e001d3">   41</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#a144a1c30b82b2daa0483d3b821e001d3">Turnover</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structwd_tick.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7">   43</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7">OpenInterest</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structwd_tick.html#aee047c5040fcb64c0a7304a1feda40fc">   45</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#aee047c5040fcb64c0a7304a1feda40fc">HighestPrice</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structwd_tick.html#aab7cbaf6a514246108b0cac04642bf6a">   47</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_tick.html#aab7cbaf6a514246108b0cac04642bf6a">LowestPrice</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="structwd_tick.html">wdTick</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="structwd_tick.html">wdTick</a>(<span class="keywordtype">char</span> InstrumentID[31], <span class="keywordtype">char</span> ExchangeTime[25], <span class="keywordtype">char</span> LocalTime[25], <span class="keywordtype">double</span> LastPrice, <span class="keywordtype">double</span> BidPrice1, <span class="keywordtype">int</span> BidVolume1,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">double</span> AskPrice1, <span class="keywordtype">int</span> AskVolume1, <span class="keywordtype">int</span> Volume, <span class="keywordtype">double</span> Turnover, <span class="keywordtype">double</span> OpenInterest, <span class="keywordtype">double</span> HighestPrice, <span class="keywordtype">double</span> LowestPrice);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="structwd_tick.html">wdTick</a>(<span class="keyword">const</span> CThostFtdcDepthMarketDataField *pDepthMarketData);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structwd_k_line.html">   58</a></span>&#160;<span class="keyword">struct </span>QUANTBOX_API <a class="code" href="structwd_k_line.html">wdKLine</a></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structwd_k_line.html#a63a9f5b69b4ae4e192501792a351b4f9">   61</a></span>&#160;    <span class="keywordtype">char</span>    InstrumentID[31];</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structwd_k_line.html#a2b07b22705ea5329125568eeeb2faf13">   63</a></span>&#160;    <span class="keywordtype">char</span>    ExchangeTime[25];   </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structwd_k_line.html#a26b9924705bf07962ebb302dc940f55e">   65</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_k_line.html#a26b9924705bf07962ebb302dc940f55e">OpenPrice</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structwd_k_line.html#aee047c5040fcb64c0a7304a1feda40fc">   67</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_k_line.html#aee047c5040fcb64c0a7304a1feda40fc">HighestPrice</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structwd_k_line.html#aab7cbaf6a514246108b0cac04642bf6a">   69</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_k_line.html#aab7cbaf6a514246108b0cac04642bf6a">LowestPrice</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structwd_k_line.html#a5b23b28056814dc4255ca95dd65a5d04">   71</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_k_line.html#a5b23b28056814dc4255ca95dd65a5d04">ClosePrice</a>; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structwd_k_line.html#a4e1621dce0ce4268046a2ce7aed53313">   73</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="structwd_k_line.html#a4e1621dce0ce4268046a2ce7aed53313">Volume</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structwd_k_line.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7">   75</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_k_line.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7">OpenInterest</a>;   </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structwd_k_line.html#af53d92e48a6f64208faf3c0575ee8e75">   77</a></span>&#160;    <span class="keywordtype">char</span>    Period[5];</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structwd_k_line.html#a8e08553509a2f7864070627439534619">   79</a></span>&#160;    <span class="keywordtype">int</span>     <a class="code" href="structwd_k_line.html#a8e08553509a2f7864070627439534619">LastVolume</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structwd_k_line.html#ad75748237424a91717fa85cc6a4cee59">   81</a></span>&#160;    <span class="keywordtype">double</span>  <a class="code" href="structwd_k_line.html#ad75748237424a91717fa85cc6a4cee59">LastOpenInterest</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="structwd_k_line.html">wdKLine</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="structwd_k_line.html">wdKLine</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *InstrumentID, <span class="keyword">const</span> <span class="keywordtype">char</span> *Period);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="structwd_tick_html_a4f03f7df7145f69895a70bece6f5c4a8"><div class="ttname"><a href="structwd_tick.html#a4f03f7df7145f69895a70bece6f5c4a8">wdTick::LastPrice</a></div><div class="ttdeci">double LastPrice</div><div class="ttdoc">最新价 </div><div class="ttdef"><b>Definition:</b> MarketData.h:29</div></div>
+<div class="ttc" id="structwd_tick_html_a4e1621dce0ce4268046a2ce7aed53313"><div class="ttname"><a href="structwd_tick.html#a4e1621dce0ce4268046a2ce7aed53313">wdTick::Volume</a></div><div class="ttdeci">int Volume</div><div class="ttdoc">数量 </div><div class="ttdef"><b>Definition:</b> MarketData.h:39</div></div>
+<div class="ttc" id="structwd_tick_html"><div class="ttname"><a href="structwd_tick.html">wdTick</a></div><div class="ttdoc">tick数据 </div><div class="ttdef"><b>Definition:</b> MarketData.h:20</div></div>
+<div class="ttc" id="structwd_tick_html_aee047c5040fcb64c0a7304a1feda40fc"><div class="ttname"><a href="structwd_tick.html#aee047c5040fcb64c0a7304a1feda40fc">wdTick::HighestPrice</a></div><div class="ttdeci">double HighestPrice</div><div class="ttdoc">最高价 </div><div class="ttdef"><b>Definition:</b> MarketData.h:45</div></div>
+<div class="ttc" id="structwd_k_line_html_a8e08553509a2f7864070627439534619"><div class="ttname"><a href="structwd_k_line.html#a8e08553509a2f7864070627439534619">wdKLine::LastVolume</a></div><div class="ttdeci">int LastVolume</div><div class="ttdoc">上一根k线最后一个tick的累计成交量 </div><div class="ttdef"><b>Definition:</b> MarketData.h:79</div></div>
+<div class="ttc" id="structwd_k_line_html_ad75748237424a91717fa85cc6a4cee59"><div class="ttname"><a href="structwd_k_line.html#ad75748237424a91717fa85cc6a4cee59">wdKLine::LastOpenInterest</a></div><div class="ttdeci">double LastOpenInterest</div><div class="ttdoc">上一个持仓量 </div><div class="ttdef"><b>Definition:</b> MarketData.h:81</div></div>
+<div class="ttc" id="structwd_tick_html_aab7cbaf6a514246108b0cac04642bf6a"><div class="ttname"><a href="structwd_tick.html#aab7cbaf6a514246108b0cac04642bf6a">wdTick::LowestPrice</a></div><div class="ttdeci">double LowestPrice</div><div class="ttdoc">最低价 </div><div class="ttdef"><b>Definition:</b> MarketData.h:47</div></div>
+<div class="ttc" id="structwd_tick_html_ad3d1bd519b30f4776736877b99e35dab"><div class="ttname"><a href="structwd_tick.html#ad3d1bd519b30f4776736877b99e35dab">wdTick::BidVolume1</a></div><div class="ttdeci">int BidVolume1</div><div class="ttdoc">申买量一 </div><div class="ttdef"><b>Definition:</b> MarketData.h:33</div></div>
+<div class="ttc" id="structwd_k_line_html_aee047c5040fcb64c0a7304a1feda40fc"><div class="ttname"><a href="structwd_k_line.html#aee047c5040fcb64c0a7304a1feda40fc">wdKLine::HighestPrice</a></div><div class="ttdeci">double HighestPrice</div><div class="ttdoc">高 </div><div class="ttdef"><b>Definition:</b> MarketData.h:67</div></div>
+<div class="ttc" id="structwd_k_line_html_ad2589f3ac6c5bd1f7a4de9b7613f61e7"><div class="ttname"><a href="structwd_k_line.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7">wdKLine::OpenInterest</a></div><div class="ttdeci">double OpenInterest</div><div class="ttdoc">持仓量 </div><div class="ttdef"><b>Definition:</b> MarketData.h:75</div></div>
+<div class="ttc" id="structwd_k_line_html_aab7cbaf6a514246108b0cac04642bf6a"><div class="ttname"><a href="structwd_k_line.html#aab7cbaf6a514246108b0cac04642bf6a">wdKLine::LowestPrice</a></div><div class="ttdeci">double LowestPrice</div><div class="ttdoc">低 </div><div class="ttdef"><b>Definition:</b> MarketData.h:69</div></div>
+<div class="ttc" id="structwd_limit_price_html_aac418152d60257268bd13b1c6fcb1871"><div class="ttname"><a href="structwd_limit_price.html#aac418152d60257268bd13b1c6fcb1871">wdLimitPrice::UpperLimitPrice</a></div><div class="ttdeci">double UpperLimitPrice</div><div class="ttdoc">涨停价 </div><div class="ttdef"><b>Definition:</b> MarketData.h:12</div></div>
+<div class="ttc" id="structwd_limit_price_html"><div class="ttname"><a href="structwd_limit_price.html">wdLimitPrice</a></div><div class="ttdoc">涨跌停板 </div><div class="ttdef"><b>Definition:</b> MarketData.h:9</div></div>
+<div class="ttc" id="structwd_tick_html_a4b43d1accd06ab4d7c29d1b2a7b10489"><div class="ttname"><a href="structwd_tick.html#a4b43d1accd06ab4d7c29d1b2a7b10489">wdTick::AskPrice1</a></div><div class="ttdeci">double AskPrice1</div><div class="ttdoc">申卖价一 </div><div class="ttdef"><b>Definition:</b> MarketData.h:35</div></div>
+<div class="ttc" id="structwd_tick_html_a733afd89abd9648fe611894f74c5cb05"><div class="ttname"><a href="structwd_tick.html#a733afd89abd9648fe611894f74c5cb05">wdTick::BidPrice1</a></div><div class="ttdeci">double BidPrice1</div><div class="ttdoc">申买价一 </div><div class="ttdef"><b>Definition:</b> MarketData.h:31</div></div>
+<div class="ttc" id="structwd_limit_price_html_a7db30a83450e7909376716417473e594"><div class="ttname"><a href="structwd_limit_price.html#a7db30a83450e7909376716417473e594">wdLimitPrice::LowerLimitPrice</a></div><div class="ttdeci">double LowerLimitPrice</div><div class="ttdoc">跌停价 </div><div class="ttdef"><b>Definition:</b> MarketData.h:14</div></div>
+<div class="ttc" id="structwd_tick_html_ae0f8a32a08347d197e9726d4696352ec"><div class="ttname"><a href="structwd_tick.html#ae0f8a32a08347d197e9726d4696352ec">wdTick::AskVolume1</a></div><div class="ttdeci">int AskVolume1</div><div class="ttdoc">申卖量一 </div><div class="ttdef"><b>Definition:</b> MarketData.h:37</div></div>
+<div class="ttc" id="structwd_k_line_html_a5b23b28056814dc4255ca95dd65a5d04"><div class="ttname"><a href="structwd_k_line.html#a5b23b28056814dc4255ca95dd65a5d04">wdKLine::ClosePrice</a></div><div class="ttdeci">double ClosePrice</div><div class="ttdoc">收 </div><div class="ttdef"><b>Definition:</b> MarketData.h:71</div></div>
+<div class="ttc" id="structwd_k_line_html"><div class="ttname"><a href="structwd_k_line.html">wdKLine</a></div><div class="ttdoc">K线数据 </div><div class="ttdef"><b>Definition:</b> MarketData.h:58</div></div>
+<div class="ttc" id="structwd_k_line_html_a26b9924705bf07962ebb302dc940f55e"><div class="ttname"><a href="structwd_k_line.html#a26b9924705bf07962ebb302dc940f55e">wdKLine::OpenPrice</a></div><div class="ttdeci">double OpenPrice</div><div class="ttdoc">开 </div><div class="ttdef"><b>Definition:</b> MarketData.h:65</div></div>
+<div class="ttc" id="structwd_k_line_html_a4e1621dce0ce4268046a2ce7aed53313"><div class="ttname"><a href="structwd_k_line.html#a4e1621dce0ce4268046a2ce7aed53313">wdKLine::Volume</a></div><div class="ttdeci">int Volume</div><div class="ttdoc">最后一个tick的累计成交量； Volume - LastVolume 得到本根K线的成交量 </div><div class="ttdef"><b>Definition:</b> MarketData.h:73</div></div>
+<div class="ttc" id="structwd_tick_html_ad2589f3ac6c5bd1f7a4de9b7613f61e7"><div class="ttname"><a href="structwd_tick.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7">wdTick::OpenInterest</a></div><div class="ttdeci">double OpenInterest</div><div class="ttdoc">持仓量 </div><div class="ttdef"><b>Definition:</b> MarketData.h:43</div></div>
+<div class="ttc" id="structwd_tick_html_a144a1c30b82b2daa0483d3b821e001d3"><div class="ttname"><a href="structwd_tick.html#a144a1c30b82b2daa0483d3b821e001d3">wdTick::Turnover</a></div><div class="ttdeci">double Turnover</div><div class="ttdoc">成交金额 </div><div class="ttdef"><b>Definition:</b> MarketData.h:41</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+生成于 2014年 十月 13日 星期一 09:35:00 , 为 QuantBoxApi使用  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

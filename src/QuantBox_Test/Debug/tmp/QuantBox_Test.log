@@ -1,0 +1,20 @@
+﻿生成启动时间为 2014/10/13 9:44:35。
+     1>项目“F:\CTP-MATLAB\src\QuantBox_Test\QuantBox_Test.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>InitializeBuildStatus:
+         正在创建“F:\CTP-MATLAB\src\QuantBox_Test\Debug\tmp\QuantBox_Test.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I./include /I./include/CTP /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"F:\CTP-MATLAB\src\QuantBox_Test\Debug\tmp\\" /Fd"F:\CTP-MATLAB\src\QuantBox_Test\Debug\tmp\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         D:\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\CTP-MATLAB\src\QuantBox_Test\Debug\QuantBox_Test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\CTP-MATLAB\src\QuantBox_Test\Debug\QuantBox_Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\CTP-MATLAB\src\QuantBox_Test\Debug\QuantBox_Test.lib" /MACHINE:X86 "F:\CTP-MATLAB\src\QuantBox_Test\Debug\tmp\main.obj"
+         QuantBox.lib
+         QuantBox_Test.vcxproj -> F:\CTP-MATLAB\src\QuantBox_Test\Debug\QuantBox_Test.exe
+       FinalizeBuildStatus:
+         正在删除文件“F:\CTP-MATLAB\src\QuantBox_Test\Debug\tmp\QuantBox_Test.unsuccessfulbuild”。
+         正在对“F:\CTP-MATLAB\src\QuantBox_Test\Debug\tmp\QuantBox_Test.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\CTP-MATLAB\src\QuantBox_Test\QuantBox_Test.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.93

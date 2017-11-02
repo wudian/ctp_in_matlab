@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{525def18-abcd-4c62-9586-0ddab345ab76}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{60465c27-5e79-417f-9d13-9917b7b48478}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="dataimpt">
+      <UniqueIdentifier>{a730756e-e10b-4da5-8a15-061cb4316d31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="importer">
+      <UniqueIdentifier>{b7d3f932-5718-40ef-9479-4c3c996de269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="service">
+      <UniqueIdentifier>{4d141c3b-2acc-461f-be1a-ad31d9a6f30d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stockinfo">
+      <UniqueIdentifier>{690e105d-a603-47a6-958b-04e670890d7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stockview">
+      <UniqueIdentifier>{2d94a59d-7f5c-411b-b56e-d2ab865023ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{0d008b64-52d6-4353-9234-85b6b1070932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="viewmodel">
+      <UniqueIdentifier>{7768a31f-546f-4f1b-bac3-3b070ea9193b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="toolpad">
+      <UniqueIdentifier>{47925da5-544e-4165-8e41-54d8215952ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ui\ui_aboutdlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_dataimptsetupdlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_favouritegroupinfodlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_favouriteinfodlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_fxjfileimptsourcedlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_imptprogressdlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_marketinfodlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_marketlistdlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_marketselectdlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_sinawebimptsourcedlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_stockdatainfodlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_stockinfodlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_stocklistallwgt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_stocklistfavtwgt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_stocklistwgt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_stockselectdlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_toolpadwgt.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\ui_yahoowebimptsourcedlg.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\tcaboutdlg.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\tcdailyviewwgt.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\tcmainwnd.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\tcweeklyviewwgt.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcdataimpt.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcdataimptsetupdlg.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcfxjfileimptsource.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcfxjfileimptsourcedlg.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcimptprogressdlg.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcimptsource.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcqianlongfileimptsource.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcsinawebimptsource.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcsinawebimptsourcedlg.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcyahoowebimptsource.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\dataimpt\tcyahoowebimptsourcedlg.h">
+      <Filter>dataimpt</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\importer\tcqianlongimpt.h">
+      <Filter>importer</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcstockscene.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcstockview.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcviewentity.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcviewentitygroup.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcviewquantity.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcviewquantitygroup.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockview\tcviewstockgroup.h">
+      <Filter>stockview</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcfavtgrp.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcfavtgrpinfodlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcfavtinfodlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcfavtinfodlt.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcfavtinfomdl.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcfavtmgr.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcmarket.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcmarketinfodlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcmarketlistdlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcmarketmgr.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcmarketselectdlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcnullstock.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstock.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockdata.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockdatacache.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockdatainfodlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockdataitemdlt.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockdataitemmdl.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockinfo.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockinfodlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockinfolst.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockmgr.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\stockinfo\tcstockselectdlg.h">
+      <Filter>stockinfo</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\service\tccfgsvc.h">
+      <Filter>service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\service\tclogsvc.h">
+      <Filter>service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\service\tcobjsvc.h">
+      <Filter>service</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\viewmodel\tcdailyviewmodel.h">
+      <Filter>viewmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\viewmodel\tcmonthlyviewmodel.h">
+      <Filter>viewmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\viewmodel\tcviewmodel.h">
+      <Filter>viewmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\viewmodel\tcweekly2viewmodel.h">
+      <Filter>viewmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\viewmodel\tcweeklyviewmodel.h">
+      <Filter>viewmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\toolpad\tcstocklistwgt.h">
+      <Filter>toolpad</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\toolpad\tctoolpadwgt.h">
+      <Filter>toolpad</Filter>
+    </CustomBuild>
+    <CustomBuild Include="source\thirdparty\quazip\quazipfile.h">
+      <Filter>thirdparty</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\tcaboutdlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tcdailyviewwgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tcmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tcmainwnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tcweeklyviewwgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcdataimpt.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcdataimptsetupdlg.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcfxjfileimptsource.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcfxjfileimptsourcedlg.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcimptprogressdlg.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcimptsource.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcqianlongfileimptsource.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcsinawebimptsource.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcsinawebimptsourcedlg.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcyahoowebimptsource.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\dataimpt\tcyahoowebimptsourcedlg.cpp">
+      <Filter>dataimpt</Filter>
+    </ClCompile>
+    <ClCompile Include="source\importer\tcqianlongimpt.cpp">
+      <Filter>importer</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcstockscene.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcstockview.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcviewentity.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcviewentitygroup.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcviewquantity.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcviewquantitygroup.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockview\tcviewstockgroup.cpp">
+      <Filter>stockview</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcfavtgrp.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcfavtgrpinfodlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcfavtinfodlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcfavtinfodlt.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcfavtinfomdl.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcfavtmgr.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcmarket.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcmarketinfodlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcmarketlistdlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcmarketmgr.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcmarketselectdlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcnullstock.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstock.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockdata.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockdatacache.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockdatainfodlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockdataitemdlt.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockdataitemmdl.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockinfo.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockinfodlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockinfolst.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockmgr.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\stockinfo\tcstockselectdlg.cpp">
+      <Filter>stockinfo</Filter>
+    </ClCompile>
+    <ClCompile Include="source\service\tccfgsvc.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="source\service\tclogsvc.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="source\service\tcobjsvc.cpp">
+      <Filter>service</Filter>
+    </ClCompile>
+    <ClCompile Include="source\viewmodel\tcdailyviewmodel.cpp">
+      <Filter>viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\viewmodel\tcmonthlyviewmodel.cpp">
+      <Filter>viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\viewmodel\tcviewmodel.cpp">
+      <Filter>viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\viewmodel\tcweekly2viewmodel.cpp">
+      <Filter>viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\viewmodel\tcweeklyviewmodel.cpp">
+      <Filter>viewmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="source\thirdparty\quazip\ioapi.c">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="source\thirdparty\quazip\quazip.cpp">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="source\thirdparty\quazip\quazipfile.cpp">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="source\thirdparty\quazip\quazipnewinfo.cpp">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="source\thirdparty\quazip\unzip.c">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="source\thirdparty\quazip\zip.c">
+      <Filter>thirdparty</Filter>
+    </ClCompile>
+    <ClCompile Include="source\toolpad\tcstocklistwgt.cpp">
+      <Filter>toolpad</Filter>
+    </ClCompile>
+    <ClCompile Include="source\toolpad\tctoolpadwgt.cpp">
+      <Filter>toolpad</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcaboutdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tccfgsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcdailyviewmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcdailyviewwgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcdataimpt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcdataimptsetupdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfavtgrp.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfavtgrpinfodlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfavtinfodlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfavtinfodlt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfavtinfomdl.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfavtmgr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfxjfileimptsource.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcfxjfileimptsourcedlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcimptprogressdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcimptsource.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tclogsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmainwnd.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmarket.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmarketinfodlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmarketlistdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmarketmgr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmarketselectdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcmonthlyviewmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcnullstock.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcobjsvc.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcqianlongfileimptsource.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcqianlongimpt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcsinawebimptsource.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcsinawebimptsourcedlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstock.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockdata.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockdatacache.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockdatainfodlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockdataitemdlt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockdataitemmdl.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockinfo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockinfodlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockinfolst.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstocklistwgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockmgr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockscene.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockselectdlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcstockview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tctoolpadwgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcviewentity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcviewentitygroup.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcviewmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcviewquantity.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcviewquantitygroup.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcviewstockgroup.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcweekly2viewmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcweeklyviewmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcweeklyviewwgt.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcyahoowebimptsource.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tcyahoowebimptsourcedlg.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\tcdefine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\tcresource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\dataimpt\tcdataimptpack.h">
+      <Filter>dataimpt</Filter>
+    </ClInclude>
+    <ClInclude Include="source\importer\tcimporterpack.h">
+      <Filter>importer</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stockview\tcstockviewdef.h">
+      <Filter>stockview</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stockview\tcstockviewpack.h">
+      <Filter>stockview</Filter>
+    </ClInclude>
+    <ClInclude Include="source\stockinfo\tcstockinfopack.h">
+      <Filter>stockinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="source\service\tcsvcpack.h">
+      <Filter>service</Filter>
+    </ClInclude>
+    <ClInclude Include="source\viewmodel\tcviewmodelpack.h">
+      <Filter>viewmodel</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\crypt.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\ioapi.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\quazip.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\quazipfileinfo.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\quazipnewinfo.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\unzip.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\zconf.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\zip.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\thirdparty\quazip\zlib.h">
+      <Filter>thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="source\toolpad\tctoolpadpack.h">
+      <Filter>toolpad</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_aboutdlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_dataimptsetupdlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_favouritegroupinfodlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_favouriteinfodlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_fxjfileimptsourcedlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_imptprogressdlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_marketinfodlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_marketlistdlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_marketselectdlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_sinawebimptsourcedlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_stockdatainfodlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_stockinfodlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_stocklistallwgt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_stocklistfavtwgt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_stocklistwgt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_stockselectdlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_toolpadwgt.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ui_yahoowebimptsourcedlg.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="source\thirdparty\zlib128-dll\lib\zdll.lib">
+      <Filter>thirdparty</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

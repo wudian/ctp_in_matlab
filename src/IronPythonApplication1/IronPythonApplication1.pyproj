@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b6792d0e-709b-42bc-8e2a-a048a91fc43b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>IronPythonApplication1.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <InterpreterId>{80659ab7-4d53-4e0c-8588-a766116cbd46}</InterpreterId>
+    <LaunchProvider>IronPython (.NET) launcher</LaunchProvider>
+    <InterpreterVersion>2.7</InterpreterVersion>
+    <OutputPath>.</OutputPath>
+    <Name>IronPythonApplication1</Name>
+    <RootNamespace>IronPythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="IronPythonApplication1.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{80659ab7-4d53-4e0c-8588-a766116cbd46}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuantBox.CSharp2CTP\QuantBox.CSharp2CTP.csproj">
+      <Name>QuantBox.CSharp2CTP</Name>
+      <Project>{0266f737-2271-4791-8fb0-5ea9a8ac0f7a}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <Name>System</Name>
+      <AssemblyName>System.dll</AssemblyName>
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

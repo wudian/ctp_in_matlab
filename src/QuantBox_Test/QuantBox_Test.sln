@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuantBox_Test", "QuantBox_Test.vcxproj", "{144D7878-018C-443A-B154-7A87F83CEA9E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{144D7878-018C-443A-B154-7A87F83CEA9E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{144D7878-018C-443A-B154-7A87F83CEA9E}.Debug|Win32.Build.0 = Debug|Win32
+		{144D7878-018C-443A-B154-7A87F83CEA9E}.Release|Win32.ActiveCfg = Release|Win32
+		{144D7878-018C-443A-B154-7A87F83CEA9E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

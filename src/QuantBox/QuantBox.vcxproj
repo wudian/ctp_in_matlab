@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{50C2868A-B6A4-4116-AD6B-63C792F6E681}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>QuantBoxC2CTP</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\bin\</OutDir>
+    <TargetExt>.dll</TargetExt>
+    <TargetName>QuantBox</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;QUANTBOX_EXPORTS;BOOST_ALL_DYN_LINK;_CRT_SECURE_NO_WARNINGS;__LCC__;__WIN__;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./;./include;./Database;./Common;./Interface;D:\boost_1_55_0;C:\Program Files (x86)\MySQL\MySQL Server 5.6\include</AdditionalIncludeDirectories>
+      <AdditionalOptions>/wd4819 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Boost\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <ResourceCompile>
+      <ResourceOutputFileName />
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;QUANTBOXC2CTP_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\defines.h" />
+    <ClInclude Include="Common\Enums.h" />
+    <ClInclude Include="CTPLastInfos.h" />
+    <ClInclude Include="Database\CppMysql.h" />
+    <ClInclude Include="Common\GlobalVars.h" />
+    <ClInclude Include="Common\logger.h" />
+    <ClInclude Include="Common\MyThreads.h" />
+    <ClInclude Include="Common\toolkit.h" />
+    <ClInclude Include="CTPCommonApi.h" />
+    <ClInclude Include="CTPMdApi.h" />
+    <ClInclude Include="CTPReqMsg.h" />
+    <ClInclude Include="CTPRspMsg.h" />
+    <ClInclude Include="CTPTdApi.h" />
+    <ClInclude Include="Database\TDSQLite.h" />
+    <ClInclude Include="include\CTP\ThostFtdcMdApi.h" />
+    <ClInclude Include="include\CTP\ThostFtdcTraderApi.h" />
+    <ClInclude Include="include\CTP\ThostFtdcUserApiDataType.h" />
+    <ClInclude Include="include\CTP\ThostFtdcUserApiStruct.h" />
+    <ClInclude Include="CTPRspMsgQueue.h" />
+    <ClInclude Include="include\hiredis.h" />
+    <ClInclude Include="Interface\MarketData.h" />
+    <ClInclude Include="Interface\QuantBoxApi.h" />
+    <ClInclude Include="Interface\TradeData.h" />
+    <ClInclude Include="Interface\Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\bin\hiredis.lib" />
+    <Library Include="..\..\bin\libmysql.lib" />
+    <Library Include="..\..\bin\WS2_32.Lib" />
+    <Library Include="include\CTP\thostmduserapi.lib" />
+    <Library Include="include\CTP\thosttraderapi.lib" />
+    <Library Include="include\SQLite3\sqlite3.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CTPLastInfos.cpp" />
+    <ClCompile Include="Database\CppMysql.cpp" />
+    <ClCompile Include="Common\GlobalVars.cpp" />
+    <ClCompile Include="Common\logger.cpp" />
+    <ClCompile Include="Common\MyThreads.cpp" />
+    <ClCompile Include="Common\toolkit.cpp" />
+    <ClCompile Include="CTPCommonApi.cpp" />
+    <ClCompile Include="CTPMdApi.cpp" />
+    <ClCompile Include="CTPReqMsg.cpp" />
+    <ClCompile Include="CTPRspMsg.cpp" />
+    <ClCompile Include="CTPTdApi.cpp" />
+    <ClCompile Include="Database\TDSQLite.cpp" />
+    <ClCompile Include="CTPRspMsgQueue.cpp" />
+    <ClCompile Include="MarketData.cpp" />
+    <ClCompile Include="QuantBoxApi.cpp" />
+    <ClCompile Include="TradeData.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

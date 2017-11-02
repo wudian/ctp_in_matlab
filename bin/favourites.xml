@@ -1,0 +1,11 @@
+<TCStock>
+    <favourites>
+        <favourite Description="" Name="最近关注的股票" >
+            <stocks>
+                <info StockCode="600000" />
+                <info StockCode="600001" />
+                <info StockCode="600002" />
+            </stocks>
+        </favourite>
+    </favourites>
+</TCStock>

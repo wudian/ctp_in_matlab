@@ -1,0 +1,173 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>README.m</title><meta name="generator" content="MATLAB 7.11"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2010-11-22"><meta name="DC.source" content="readme.m"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><h1>README.m</h1><!--introduction--><p>DISCLAIMER: THE SAMPLE FILES ENCLOSED IN THIS DOWNLOAD ARE FOR ILLUSTRATION PURPOSES ONLY.  USE THE INFORMATION CONTAINED IN THIS DOWNLOAD AT YOUR OWN RISK.</p><p>Copyright 2010, The MathWorks, Inc. All rights reserved.</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">General information</a></li><li><a href="#2">What you need to run these files</a></li><li><a href="#3">What's NOT included in this download</a></li><li><a href="#4">Demos</a></li><li><a href="#5">Published files</a></li><li><a href="#6">MATLAB Code</a></li><li><a href="#8">Data files</a></li></ul></div><h2>General information<a name="1"></a></h2><p>The files contained in this dowload were used in the webinar titled: <i>Algorithmic Trading with MATLAB Products for Financial Applications</i> that originally aired on November 18, 2010.  You can watch an archived version of this webinar from <a href="http://www.mathworks.com/webinars">http://www.mathworks.com/webinars</a> and look for the title webinar.  It is recomended you watch this webinar as you walk through the code.</p><h2>What you need to run these files<a name="2"></a></h2><p>These files were developed and tested on R2010b.  The products need to run all of the files are:</p><pre>* MATLAB
+* Statistics Toolbox
+* Optimization Toolbox
+* Global Optimization Toolbox
+* Financial Toolbox
+* Real-Time Workshop (and Simulink)</pre><pre class="codeinput">license(<span class="string">'inuse'</span>)
+</pre><pre class="codeoutput">distrib_computing_toolbox
+financial_toolbox
+gads_toolbox
+matlab
+real-time_workshop
+simulink
+statistics_toolbox
+</pre><h2>What's NOT included in this download<a name="3"></a></h2><p>Files generated from <a href="AlgoTradingDemo5.html">AlgoTradingDemo5.m</a> such as the moving average MEX file and all files generated using the emlc command (the C-Code source files).  You will need Real-Time Workshop to generate these files.</p><p>Also not inlcuded is the powerpoint slides.  You can find these on the registration page for the webinar.</p><h2>Demos<a name="4"></a></h2><div><ul><li>Demo 1: Moving averages (<a href="AlgoTradingDemo1.html">html</a>, <a href="matlab:open('AlgoTradingDemo1.m')">MATLAB Script</a>)</li><li>Demo 2: RSI and moving average (<a href="AlgoTradingDemo3.html">html</a>, <a href="matlab:open('AlgoTradingDemo2.m')">MATLAB Script</a></li><li>Demo 3: Evolutionary learning (<a href="AlgoTradi2gDemo3.html">html</a>, <a href="matlab:open('AlgoTradingDemo3.m')">MATLAB Script</a></li><li>Demo 4: Adding Williams %R to the mix (<a href="AlgoTradingDemo4.html">html</a>, <a href="matlab:open('AlgoTradingDemo4.m')">MATLAB Script</a></li><li>Demo 5: Profiling and C-Code generation (<a href="AlgoTradingDemo5.html">html</a>, <a href="matlab:open('AlgoTradingDemo5.m')">MATLAB Script</a></li></ul></div><pre class="codeinput">dir(<span class="string">'Algo*'</span>)
+</pre><pre class="codeoutput">
+AlgoTradingDemo1.m  AlgoTradingDemo3.m  AlgoTradingDemo5.m  
+AlgoTradingDemo2.m  AlgoTradingDemo4.m  
+
+</pre><h2>Published files<a name="5"></a></h2><p>HTML formated versions with results for each demo can be found in the <i>html</i> folder.</p><pre class="codeinput">dir(<span class="string">'html\*.html'</span>)
+</pre><pre class="codeoutput">
+AlgoTradingDemo1.html  AlgoTradingDemo3.html  AlgoTradingDemo5.html  
+AlgoTradingDemo2.html  AlgoTradingDemo4.html  
+
+</pre><h2>MATLAB Code<a name="6"></a></h2><p>Listing of the MATLAB code files.  You can open this files in the editor and step through them using cell mode.</p><pre class="codeinput">dir(<span class="string">'*.m'</span>)
+</pre><pre class="codeoutput">
+AlgoTradingDemo1.m  leadlag.m           publishall.m        
+AlgoTradingDemo2.m  leadlagFun.m        readme.m            
+AlgoTradingDemo3.m  marsi.m             rsi.m               
+AlgoTradingDemo4.m  marsiFun.m          rsiFun.m            
+AlgoTradingDemo5.m  marsiwprFun.m       wpr.m               
+importfile.m        movavg2.m           wprFun.m            
+isoplot.m           parameterSweep.m    
+
+</pre><p>and the genetic programming files</p><pre class="codeinput">dir(<span class="string">'gaFiles\'</span>)
+</pre><pre class="codeoutput">
+.                       initializePopulation.m  tradeSignal.m           
+..                      locateConnectors.m      validRule.m             
+crossover.m             mutation.m              
+fitness.m               plotRules.m             
+
+</pre><h2>Data files<a name="8"></a></h2><p>The data files (daily and 1 minute)</p><pre class="codeinput">dir(<span class="string">'Bund*'</span>)
+</pre><pre class="codeoutput">
+BundDaily.xls  bund1min.mat   
+
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.11<br></p></div><!--
+##### SOURCE BEGIN #####
+%% README.m
+% DISCLAIMER: THE SAMPLE FILES ENCLOSED IN THIS DOWNLOAD ARE FOR
+% ILLUSTRATION PURPOSES ONLY.  USE THE INFORMATION CONTAINED IN THIS
+% DOWNLOAD AT YOUR OWN RISK.
+%
+% Copyright 2010, The MathWorks, Inc.
+% All rights reserved.
+%% General information
+% The files contained in this dowload were used in the webinar titled:
+% _Algorithmic Trading with MATLAB Products for Financial Applications_
+% that originally aired on November 18, 2010.  You can watch an archived
+% version of this webinar from http://www.mathworks.com/webinars and look
+% for the title webinar.  It is recomended you watch this webinar as you
+% walk through the code.
+
+%% What you need to run these files
+% These files were developed and tested on R2010b.  The products need to
+% run all of the files are:
+%
+%  * MATLAB
+%  * Statistics Toolbox
+%  * Optimization Toolbox
+%  * Global Optimization Toolbox
+%  * Financial Toolbox
+%  * Real-Time Workshop (and Simulink)
+license('inuse')
+
+%% What's NOT included in this download
+% Files generated from <AlgoTradingDemo5.html AlgoTradingDemo5.m> such as
+% the moving average MEX file and all files generated using the emlc
+% command (the C-Code source files).  You will need Real-Time Workshop to
+% generate these files.
+%
+% Also not inlcuded is the powerpoint slides.  You can find these on the
+% registration page for the webinar.
+
+%% Demos
+%
+% * Demo 1: Moving averages (<AlgoTradingDemo1.html html>, <matlab:open('AlgoTradingDemo1.m') MATLAB Script>)
+% * Demo 2: RSI and moving average (<AlgoTradingDemo3.html html>, <matlab:open('AlgoTradingDemo2.m') MATLAB Script>
+% * Demo 3: Evolutionary learning (<AlgoTradi2gDemo3.html html>, <matlab:open('AlgoTradingDemo3.m') MATLAB Script>
+% * Demo 4: Adding Williams %R to the mix (<AlgoTradingDemo4.html html>, <matlab:open('AlgoTradingDemo4.m') MATLAB Script>
+% * Demo 5: Profiling and C-Code generation (<AlgoTradingDemo5.html html>, <matlab:open('AlgoTradingDemo5.m') MATLAB Script>
+dir('Algo*')
+
+%% Published files
+% HTML formated versions with results for each demo can be found in the
+% _html_ folder.
+dir('html\*.html')
+%% MATLAB Code
+% Listing of the MATLAB code files.  You can open this files in the editor
+% and step through them using cell mode.
+dir('*.m')
+%%
+% and the genetic programming files
+dir('gaFiles\')
+%% Data files
+% The data files (daily and 1 minute)
+dir('Bund*')
+%%
+##### SOURCE END #####
+--></body></html>

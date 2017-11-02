@@ -1,0 +1,327 @@
+!
+! General configuration
+! ---------------------
+!
+! The symbolList parameter is used by both the Recorder and Playback programs
+! to either pre-load a service cache or to make requests for data (as in the Ticker
+! component). One may specialize the symbolList for a particular application
+! by providing a more specific identifier. For example, if you want all
+! the components in the Recorder application to use a particular symbolList,
+! add the entry:
+!
+! *recorder*symbolList : IBM, WSTL.O
+!
+! Since all the instance identifiers of the components in the Recorder
+! application are based on the "recorder" instance identifier (that's the
+! identifier passed to all the components that get created), this entry
+! will apply to all object instances in the Recorder application.
+!
+!*symbolList : RTR.L, .FTSE
+!
+*symbolList :  BRENT
+
+
+!
+
+! Realtime Data Recorder configuration
+! ---------------------------------
+!
+! This parmeter defines the name of the service used by recorder to record 
+! items. Default value is IDN_SELECTFEED
+!
+*recorder*sinkServiceName : IDN_SELECTFEED
+
+
+!
+! If the storeAndForward value is True, the recorder will forward data as
+! an SSL record service. Default value is False.
+!
+*recorder*storeAndForward : False
+
+! This parmeter defines the name of the service used by recorder 
+! in the store and forward mode of operation to publish items.
+!
+! Default value is SINK_DRIVEN_REC
+!
+*recorder*srcServiceName : IDN_SELECTFEED
+
+! If the storeAndDisplay value is True, the recorder will display the 
+! requested records to stdout using the tickclient.C component. Default
+! value is True.
+!
+*recorder*storeAndDisplay : True
+
+! The maxBytesPerRecord variable determines the number of bytes of
+! information to record for each record data file. Recording for
+! that item stops once the limit is reached.
+*recorder*maxBytesPerRecord : 10000000
+
+! The dataDirectory parameter determines the directory path in which to
+! create record event data. Default value is "data_files".
+!
+*recorder*dataDirectory : data_files_brent
+!
+! This parameter is required to define what infrastructure the
+! recorder app will connect to. The values are "ssl" or "tib". 
+! Default value is "ssl"
+!
+*recorder*subInfra : ssl 
+
+! This parameter is required to define what infrastructure the
+! recorder app will publish its data on. The values are "ssl" or "tib". 
+! Default value is "ssl"
+!
+*recorder*pubInfra : ssl
+!Need to test USERNAME for permissioned systems including RWS
+*username : USERNAME
+
+! This parameter is required when publishing or subscribing on a
+! tib or tsa infrastructure. 
+! 
+! There is no default value. 
+!
+!*recorder*tibsubconnection*service : 7501
+!*recorder*tibpubconnection*service : 7501
+
+! This parameter is required when publishing or subscribing on a
+! tib or tsa infrastructure. 
+!
+! There is no default value. 
+! <protocol>:<hostname>:<port number>
+! ex. "tcp:tibcomputer:3500"
+!
+!*recorder*tibsubconnection*daemon : tcp:<hostname>:7500
+!*recorder*tibpubconnection*daemon : tcp:<hostname>:7500
+
+! This parameter is used only when using a tib infrastructure.
+!
+! Default is blank
+!
+!*recorder*tibsubconnection*network :
+!*recorder*tibpubconnection*network :
+!
+! ---------------------------------------------
+! Realtime Data Playback Service Configuration
+! ---------------------------------------------
+!
+! The "playbackServiceName" parameter determines the name by which the
+! playback service will be made available to clients of this broker record
+! service daemon. 
+!
+! Default is "PLAYBACK_SERVICE".
+!
+*playback*playbackServiceName : IDN_RDF
+
+! This parameter is required to define what infrastructure the 
+! playback app will publish its data on. The values are "ssl","tib" or "tsa". 
+! Default value is "ssl"
+!
+*playback*pubInfra : ssl
+
+! This parameter is required when publishing on a tib or tsa
+! infrastructure.
+!
+! There is no default value. If recorder is to use a tib infrastructure,
+! it is required that this value is defined. ex. "3501"
+!
+!*playback*tibpubconnection*service : 7501
+
+! This parameter is required when publishing or subscribing on a tib
+! infrastructure. If you will be subscribing and publishing on tib, 
+! both the subscriber and the publisher will use this value.
+!
+! There is no default value. If recorder is to use a tib infrastructure, 
+! it is required that this value is defined. 
+! <protocol>:<hostname>:<port number>
+! ex. "tcp:tibcomputer:3500"
+!
+!*playback*tibpubconnection*daemon : tcp:<hostname>:7500
+
+! This parameter is used only when using a tib infrastructure.
+!
+! Default is blank
+!
+!*playback*tibpubconnection*network :
+
+! The "enableDebugTrace" parameter determines whether debug trace logging
+! will be enabled in the playback service. If set to "true", this
+! parameter allows debug message tracing information to be logged to the
+! log file (and/or stderr if the logger is so configured). The tracing
+! is on a per record/per message basis.
+!
+! The default value is "false".
+!
+*playback*enableDebugTrace : false
+
+
+! The "defaultDataFileName" parameter specifies the default data file which is 
+! used if a data file with the same name as the requested record symbol cannot 
+! be found. 
+!
+! The default value is "DEFAULT.DAT".
+!
+!*playback*defaultDataFileName : DEFAULT.DAT
+*playback*defaultDataFileName : filepairs.dat
+
+! The "dataDirectory" parameter determines the directory path in which to 
+! locate record event data. Used in both Recorder and Playback programs.
+!
+! The default value is "data_files".
+! 
+*playback*dataDirectory : data_files_brent
+!
+! The "sendImageFirst" parameter determines whether each playback record
+! will search for a SYNC message to use as it's initial response message. This
+! implies searching the data file for the first instance of a SYNC message type.
+! If no SYNC message type is found, the record will remain stale. If an
+! INACTIVE message type is found, the record will be inactive initially.
+!
+! The default is "false".
+!
+*playback*sendImageFirst : false
+
+
+! The "enableDataRecycling" parameter determines whether each playback record 
+! will continue cycling back to the beginning of the record data file when the 
+! end of the data file is encountered.
+!
+! The default is "true".
+!
+*playback*enableDataRecycling : true
+
+
+! The "recycleDelay" parameter determines the time in seconds between recycling 
+! a records data (i.e. the time between the end of the records data file being read
+! and published and the beginning of the records data file being read and published).
+! When "enableDataRecycling" is set to false "recycleDelay" determines the time 
+! between a records last recorded update and the record being set to inactive.
+! The default is 10 seconds.
+!
+*playback*recycleDelay : 10
+
+
+! The "isSinkDriven" parameter determines whether this playback service will
+! mount to Triarch as a SinkDriven or SourceDriven application. A SourceDriven
+! application determines it's own cache - i.e. only those items entered into
+! the cache by the application can be retrieved by Triarch users. 
+! 
+! When used in conjunction with a "preloadCache" parameter set to "true", this
+! playback service will pre-load the cache with records found in the 
+! "symbolList" config parameter.
+! 
+! If publishing to a tib infrastructure this parameter is overridden and
+! defaults to "false".
+!
+! The default value is "true".
+!
+*playback*isSinkDriven : true
+
+
+! The "preloadCache" parameter determines whether the playback service loads
+! it's local cache with records as found in the "symbolList" configuration
+! parameter. This option simply allows the creation of playback records and
+! loading of the initial message to be done at startup rather than dynamically
+! when each record is requested.
+!
+! The default is "false".
+!
+*playback*preloadCache : false
+
+!
+! Event Logger configuration
+! --------------------------
+!
+! The selector parameter is used by descendants of RTRLogActionImp to
+! determine, by severity level, the log events that are logged. Note
+! that when the RTRDefaultLogger is created, it always creates a File
+! Log action that logs events with any severity except "debug".
+!
+*selector : *.info, *.debug, *.notice, *.warning, *.error, *.critical, *.alert, *.emergency
+
+! The install_stderr_action parameter is used by instances of
+! RTRDefaultLogger to determine whether to install a log action 
+! that prints log messages to the standard error device. The default
+! value is False.
+*install_stderr_action : true
+
+! SFC Debug tracing to log file
+! --------------------------
+! For SSL consumers only.
+!*item_debug : true
+
+! For TIB consumer and TIB & SSL publishers
+! Integer value sets various levels of 
+! tracing as follows by adding together
+! the different trace levels:
+! 1 = Service level only
+! 2 = basic item level
+! 4 = all item level (basic + queuing & notifications)
+! 8 = item data tracing
+!
+! 1 = Service level only
+!*traceLevel : 1
+
+! 3 = Service + basic item level
+!*traceLevel : 3
+
+! 7 = Service + all item level
+!*traceLevel : 7
+
+! 15 = Service + all item + item data 
+!*traceLevel : 15
+!
+
+
+!
+! Extra
+! -----
+! The ipcroute_entry_label allows the RTRSSLDispatcher to establish its
+! SSL session with the sink distributor that is associated with a 
+! "/var/triarch/ipcroute" file entry tagged with this service name
+! label. For example, if the "/var/triarch/ipcroute" file contains
+! the entries :
+!
+! IDN_SELECTFEED.sinklib:machine1:machine2 
+! triarch_sink.sinklib:machine1:machine4
+!
+! and the ipcroute entry is set to "IDN_SELECTFEED", then the SSL
+! session is established with the sink distributor found on machine2.
+! If no ipcroute_entry_label is specified, the default value "triarch_sink"
+! is used. Note that the label must relate to a service_name entry in
+! the "/etc/services" file (or equivalent).
+!
+!*ipcroute_entry_label : IDN_SELECTFEED
+
+! The "fid_file_path" parameter determines the path to the master fid list
+! file that is used by the Playback realtime service components. The master 
+! fid list file is the "standard" Reuters master fid file provided with IDN 
+! services. The master file provides a list of field identifiers, known as 
+! fids, that define the characteristics of fields found in market data records.
+!
+! An environment variable called "MASTER_FID_FILE" may also be used to 
+! provide a global master fid file path. This value will be used if no
+! configuration entry is found.
+!
+! The "fid_file_path" parameter determines the path to a master fid list file
+! for instances of RTRFileFidDb. 
+!
+! The default is "./appendix_a"
+!
+*fidDb*fid_file_path : ./appendix_a
+
+
+! The "enum_file_path" parameter determines the path to an enumeration list
+! file that is used by Playback realtime service components. The enumeration
+! file is the "standard" Reuters enumeration file provided with IDN services. 
+! Entries in the enumeration file provide expansion strings for fields of type 
+! Enumerated.
+!
+! An environment variable called "ENUM_FILE" may also be used to 
+! provide a global master fid file path. This value will be used if no
+! configuration entry is found.
+! 
+! The default is "./enumtype.def".
+!
+*fidDb*enum_file_path : ./enumtype.def
+
+*enableEntitlements: false

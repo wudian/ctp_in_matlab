@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD></HEAD><BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="Introduction"><param name="Local" value="index.html#Introduction"><param name="ImageNumber" value="1"></OBJECT>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="结构体"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="结构体"><param name="Local" value="annotated.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdAllOrder"><param name="Local" value="structwd_all_order.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="update"><param name="Local" value="structwd_all_order.html#ac313ee1741e45732e46db53984f2de53"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseAvgPrice"><param name="Local" value="structwd_all_order.html#a482b7ef5dde75b8fda13241a182c08b5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseHands"><param name="Local" value="structwd_all_order.html#aa116c83cf3bfd54d0fecccd1264dd66d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseTodayAvgPrice"><param name="Local" value="structwd_all_order.html#aaec5d1329dc406f0ec743898dfff0ac8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseTodayHands"><param name="Local" value="structwd_all_order.html#a88062c74d92bd57eb53a5223d9a9503f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyOpenAvgPrice"><param name="Local" value="structwd_all_order.html#a0e77c83dc29571b14ce435507dd70269"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyOpenHands"><param name="Local" value="structwd_all_order.html#a338a19196c2d89f9821ff9217fc2ed49"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseAvgPrice"><param name="Local" value="structwd_all_order.html#a2ccb8e6a68ac61c305633d7bd634978d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseHands"><param name="Local" value="structwd_all_order.html#aad4d63257dd60f37a45bbb90cba32657"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseTodayAvgPrice"><param name="Local" value="structwd_all_order.html#a8cc962a26ae738d0310c67a1dc8357da"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseTodayHands"><param name="Local" value="structwd_all_order.html#a5ed354f6e36486cc5d86b731c456491c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellOpenAvgPrice"><param name="Local" value="structwd_all_order.html#af8c091808c987771bd8669c996dd1b17"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellOpenHands"><param name="Local" value="structwd_all_order.html#a268d846b0689ee5d5bb6038b82465099"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdAvailableOrder"><param name="Local" value="structwd_available_order.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="update"><param name="Local" value="structwd_available_order.html#ac313ee1741e45732e46db53984f2de53"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseAvgPrice"><param name="Local" value="structwd_available_order.html#a482b7ef5dde75b8fda13241a182c08b5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseHands"><param name="Local" value="structwd_available_order.html#aa116c83cf3bfd54d0fecccd1264dd66d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseTodayAvgPrice"><param name="Local" value="structwd_available_order.html#aaec5d1329dc406f0ec743898dfff0ac8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseTodayHands"><param name="Local" value="structwd_available_order.html#a88062c74d92bd57eb53a5223d9a9503f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyOpenAvgPrice"><param name="Local" value="structwd_available_order.html#a0e77c83dc29571b14ce435507dd70269"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyOpenHands"><param name="Local" value="structwd_available_order.html#a338a19196c2d89f9821ff9217fc2ed49"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseAvgPrice"><param name="Local" value="structwd_available_order.html#a2ccb8e6a68ac61c305633d7bd634978d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseHands"><param name="Local" value="structwd_available_order.html#aad4d63257dd60f37a45bbb90cba32657"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseTodayAvgPrice"><param name="Local" value="structwd_available_order.html#a8cc962a26ae738d0310c67a1dc8357da"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseTodayHands"><param name="Local" value="structwd_available_order.html#a5ed354f6e36486cc5d86b731c456491c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellOpenAvgPrice"><param name="Local" value="structwd_available_order.html#af8c091808c987771bd8669c996dd1b17"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellOpenHands"><param name="Local" value="structwd_available_order.html#a268d846b0689ee5d5bb6038b82465099"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdErrOrderInfo"><param name="Local" value="structwd_err_order_info.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="InputOrder"><param name="Local" value="structwd_err_order_info.html#a06e1676f363dc4d34d6051f44081cb72"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdInstrument"><param name="Local" value="structwd_instrument.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="update"><param name="Local" value="structwd_instrument.html#a9148af720ddb52012ac5f79e188b7da7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ExchangeID"><param name="Local" value="structwd_instrument.html#a17cffe3d0e53f984eaaa3de8170d37e5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="IsTrading"><param name="Local" value="structwd_instrument.html#a83b526f2ffd8ebf4b5c521e038dd95d5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PriceTick"><param name="Local" value="structwd_instrument.html#a160bd055542b5db718c5cbdfa96666f4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="VolumeMultiple"><param name="Local" value="structwd_instrument.html#a6482e0e0c04abdb2620fb32392d04d5e"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdKLine"><param name="Local" value="structwd_k_line.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="wdKLine"><param name="Local" value="structwd_k_line.html#a7ea2e0e1a8a12dd76ca0a8bb686c44ea"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="wdKLine"><param name="Local" value="structwd_k_line.html#a9d8875ac8395e941f4d311837f7778ff"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ClosePrice"><param name="Local" value="structwd_k_line.html#a5b23b28056814dc4255ca95dd65a5d04"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ExchangeTime"><param name="Local" value="structwd_k_line.html#a2b07b22705ea5329125568eeeb2faf13"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HighestPrice"><param name="Local" value="structwd_k_line.html#aee047c5040fcb64c0a7304a1feda40fc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="InstrumentID"><param name="Local" value="structwd_k_line.html#a63a9f5b69b4ae4e192501792a351b4f9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LastOpenInterest"><param name="Local" value="structwd_k_line.html#ad75748237424a91717fa85cc6a4cee59"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LastVolume"><param name="Local" value="structwd_k_line.html#a8e08553509a2f7864070627439534619"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LowestPrice"><param name="Local" value="structwd_k_line.html#aab7cbaf6a514246108b0cac04642bf6a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenInterest"><param name="Local" value="structwd_k_line.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenPrice"><param name="Local" value="structwd_k_line.html#a26b9924705bf07962ebb302dc940f55e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Period"><param name="Local" value="structwd_k_line.html#af53d92e48a6f64208faf3c0575ee8e75"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Volume"><param name="Local" value="structwd_k_line.html#a4e1621dce0ce4268046a2ce7aed53313"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdLimitPrice"><param name="Local" value="structwd_limit_price.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="wdLimitPrice"><param name="Local" value="structwd_limit_price.html#a098953f470bf58fa23bd8be82e963432"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LowerLimitPrice"><param name="Local" value="structwd_limit_price.html#a7db30a83450e7909376716417473e594"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="UpperLimitPrice"><param name="Local" value="structwd_limit_price.html#aac418152d60257268bd13b1c6fcb1871"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdPosition"><param name="Local" value="structwd_position.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="update"><param name="Local" value="structwd_position.html#a270536d08b244e12b54648d7887820ab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ALPos"><param name="Local" value="structwd_position.html#ae80127bdd3e30ba44f66953113541cd2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ANLPos"><param name="Local" value="structwd_position.html#ab5cd79c095417c9d7b98cd29cf63d849"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ANSPos"><param name="Local" value="structwd_position.html#a3875d6869047bc9fad196525871ef5a6"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ASPos"><param name="Local" value="structwd_position.html#a0026adde9cac8e2ba9ea4569e595c666"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LPosAvgPrice"><param name="Local" value="structwd_position.html#a7725dd46ea97f4921ef93f0aa07a2e40"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NLPos"><param name="Local" value="structwd_position.html#a2fb3b4fea79d3c53d1317b2dc7c35e6c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="NSPos"><param name="Local" value="structwd_position.html#af17814f92f91919a27b722cfbf058088"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OLPos"><param name="Local" value="structwd_position.html#a3931563cf3c9d2b2915282744241763d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OSPos"><param name="Local" value="structwd_position.html#aadda7d391835e1a19263d4928f541a29"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SPosAvgPrice"><param name="Local" value="structwd_position.html#a6b3d828be779ea2bc54be6a72a1e3827"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TLPos"><param name="Local" value="structwd_position.html#abd69682ede5e8a5de4533bd6442b281d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TSPos"><param name="Local" value="structwd_position.html#a49bb4248d02c58024856c87dfbc809f7"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdTick"><param name="Local" value="structwd_tick.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="wdTick"><param name="Local" value="structwd_tick.html#a94e4a59f0a3498500d3c7efb6c8f4a25"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="wdTick"><param name="Local" value="structwd_tick.html#a2e79d2f30c6e4644e9f07a7826cb68f7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="wdTick"><param name="Local" value="structwd_tick.html#a8c1d34f59bdc06cbad335e52c78dc63d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AskPrice1"><param name="Local" value="structwd_tick.html#a4b43d1accd06ab4d7c29d1b2a7b10489"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="AskVolume1"><param name="Local" value="structwd_tick.html#ae0f8a32a08347d197e9726d4696352ec"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BidPrice1"><param name="Local" value="structwd_tick.html#a733afd89abd9648fe611894f74c5cb05"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BidVolume1"><param name="Local" value="structwd_tick.html#ad3d1bd519b30f4776736877b99e35dab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="ExchangeTime"><param name="Local" value="structwd_tick.html#a2b07b22705ea5329125568eeeb2faf13"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="HighestPrice"><param name="Local" value="structwd_tick.html#aee047c5040fcb64c0a7304a1feda40fc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="InstrumentID"><param name="Local" value="structwd_tick.html#a63a9f5b69b4ae4e192501792a351b4f9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LastPrice"><param name="Local" value="structwd_tick.html#a4f03f7df7145f69895a70bece6f5c4a8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LocalTime"><param name="Local" value="structwd_tick.html#a8e6e423d91883860afdd0b0bfa07c9c0"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="LowestPrice"><param name="Local" value="structwd_tick.html#aab7cbaf6a514246108b0cac04642bf6a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="OpenInterest"><param name="Local" value="structwd_tick.html#ad2589f3ac6c5bd1f7a4de9b7613f61e7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Turnover"><param name="Local" value="structwd_tick.html#a144a1c30b82b2daa0483d3b821e001d3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Volume"><param name="Local" value="structwd_tick.html#a4e1621dce0ce4268046a2ce7aed53313"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdTradeTicket"><param name="Local" value="structwd_trade_ticket.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="update"><param name="Local" value="structwd_trade_ticket.html#a52e37c87fe72a6e90de1758ccd5e34b1"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseAvgPrice"><param name="Local" value="structwd_trade_ticket.html#a482b7ef5dde75b8fda13241a182c08b5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseHands"><param name="Local" value="structwd_trade_ticket.html#aa116c83cf3bfd54d0fecccd1264dd66d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseTodayAvgPrice"><param name="Local" value="structwd_trade_ticket.html#aaec5d1329dc406f0ec743898dfff0ac8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyCloseTodayHands"><param name="Local" value="structwd_trade_ticket.html#a88062c74d92bd57eb53a5223d9a9503f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyOpenAvgPrice"><param name="Local" value="structwd_trade_ticket.html#a0e77c83dc29571b14ce435507dd70269"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="BuyOpenHands"><param name="Local" value="structwd_trade_ticket.html#a338a19196c2d89f9821ff9217fc2ed49"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseAvgPrice"><param name="Local" value="structwd_trade_ticket.html#a2ccb8e6a68ac61c305633d7bd634978d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseHands"><param name="Local" value="structwd_trade_ticket.html#aad4d63257dd60f37a45bbb90cba32657"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseTodayAvgPrice"><param name="Local" value="structwd_trade_ticket.html#a8cc962a26ae738d0310c67a1dc8357da"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellCloseTodayHands"><param name="Local" value="structwd_trade_ticket.html#a5ed354f6e36486cc5d86b731c456491c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellOpenAvgPrice"><param name="Local" value="structwd_trade_ticket.html#af8c091808c987771bd8669c996dd1b17"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="SellOpenHands"><param name="Local" value="structwd_trade_ticket.html#a268d846b0689ee5d5bb6038b82465099"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="wdTradingAccount"><param name="Local" value="structwd_trading_account.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="update"><param name="Local" value="structwd_trading_account.html#a9ac2ed2c2eb30da30a2cb436e188d533"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CloseProfit"><param name="Local" value="structwd_trading_account.html#afc53908d506e34ec2f1378c586cbe62a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Commission"><param name="Local" value="structwd_trading_account.html#a878c7e8cc4a576b42762f0144f80fb0f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CurrentEquity"><param name="Local" value="structwd_trading_account.html#a5f964a45a717fef197726a4b68da947a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CurrMargin"><param name="Local" value="structwd_trading_account.html#a525e065cc755ec75c30f94ac4ef4b518"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Deposit"><param name="Local" value="structwd_trading_account.html#a1449ccbfa126392b848f3a11a80e065d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrozenCommission"><param name="Local" value="structwd_trading_account.html#a8ef666ea7aa7b971f06033dbc05da821"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FrozenMargin"><param name="Local" value="structwd_trading_account.html#a3e9c865b1c0ec1f56bd7c2571e9beb76"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="FundAvailable"><param name="Local" value="structwd_trading_account.html#af53332b828fd0d1a4dcbf139cd0d663a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PositionProfit"><param name="Local" value="structwd_trading_account.html#a4fd1170ffdf8d22dc5f071c1cdf2625f"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="PreEquity"><param name="Local" value="structwd_trading_account.html#a25095f00b44fa8ba14f3f625d97fef78"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="RiskRatio"><param name="Local" value="structwd_trading_account.html#a859e236d4c57a62a08396316d9c74bcc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="Withdraw"><param name="Local" value="structwd_trading_account.html#a0c65fdac82764c3d279424113f27e70d"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="结构体索引"><param name="Local" value="classes.html"><param name="ImageNumber" value="11"></OBJECT>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="成员变量"><param name="Local" value="functions.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="全部"><param name="Local" value="functions.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="函数"><param name="Local" value="functions_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="变量"><param name="Local" value="functions_vars.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+<LI><OBJECT type="text/sitemap"><param name="Name" value="文件"><param name="ImageNumber" value="1"></OBJECT>
+  <UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="文件列表"><param name="Local" value="files.html"><param name="ImageNumber" value="1"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="mainpage.h"><param name="Local" value="mainpage_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="MarketData.h"><param name="Local" value="_market_data_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="QuantBoxApi.h"><param name="Local" value="_quant_box_api_8h.html"><param name="ImageNumber" value="1"></OBJECT>
+      <UL>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegMDOnConnect"><param name="Local" value="_quant_box_api_8h.html#a347ce0fc248c99e7f12aece33e63a656"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegMDOnDisconnect"><param name="Local" value="_quant_box_api_8h.html#a13968638a4d50fe16c3a4beca936d1ab"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegMDOnRspError"><param name="Local" value="_quant_box_api_8h.html#ad77cbd517b5e988e5cf0861441a15fd5"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnErrRtnOrderAction"><param name="Local" value="_quant_box_api_8h.html#abd8ef145c0558b3c9ecfd722897c6d6e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnErrRtnOrderInsert"><param name="Local" value="_quant_box_api_8h.html#a292ce6ac26d262d367f41265c6dc2d62"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnErrRtnQuoteAction"><param name="Local" value="_quant_box_api_8h.html#a02ded29f2b1f2f074c35b424598dfd53"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnErrRtnQuoteInsert"><param name="Local" value="_quant_box_api_8h.html#ad94fd8c212c693b6196bc5da423e9262"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnHistory_KLine"><param name="Local" value="_quant_box_api_8h.html#aecdb9cac17cce17e999db938e7adad72"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnHistory_Tick"><param name="Local" value="_quant_box_api_8h.html#a3234f523c9bec6f9736c68cf493105c6"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspOrderAction"><param name="Local" value="_quant_box_api_8h.html#ade2ffd80ae8f188eb4d4fcc345eb3873"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspOrderInsert"><param name="Local" value="_quant_box_api_8h.html#afb4ced0ea6eac8cc5193498ce68eadba"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryDepthMarketData"><param name="Local" value="_quant_box_api_8h.html#a63663da93141a4070deed78afd1c63df"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryInstrument"><param name="Local" value="_quant_box_api_8h.html#a91a11556bbdcebafcf2defc94df32b65"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryInstrumentCommissionRate"><param name="Local" value="_quant_box_api_8h.html#aa2ba828eeb7a1722fea2f47c3d61042b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryInstrumentMarginRate"><param name="Local" value="_quant_box_api_8h.html#addc402a0b68f0aba294b08478b6dc010"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryInvestorPosition"><param name="Local" value="_quant_box_api_8h.html#aa0903eb54ae108527f2ca53b83bc06e9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryInvestorPositionDetail"><param name="Local" value="_quant_box_api_8h.html#a0709eda6f3d4c877669e62e1d06884ef"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryOrder"><param name="Local" value="_quant_box_api_8h.html#aa40997c423c04abc4763482632edbda1"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQrySettlementInfo"><param name="Local" value="_quant_box_api_8h.html#ae26cbb8421a3fc4a955d87befca7c670"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryTrade"><param name="Local" value="_quant_box_api_8h.html#a1d60fba29c758fac192bbc470460ae9d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQryTradingAccount"><param name="Local" value="_quant_box_api_8h.html#a212e87bfa2bf6b89b694e66969d71610"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQuoteAction"><param name="Local" value="_quant_box_api_8h.html#a6b563ab2050e1ae406919f1270edcb69"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRspQuoteInsert"><param name="Local" value="_quant_box_api_8h.html#a70529507cecab384872f6153d1443b7c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnDepthMarketData_KLine"><param name="Local" value="_quant_box_api_8h.html#a34b7a888bf809e28cfa3320c9dfab227"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnDepthMarketData_Tick"><param name="Local" value="_quant_box_api_8h.html#a1b495d94184efdfc4fa99937b5082f82"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnForQuoteRsp"><param name="Local" value="_quant_box_api_8h.html#ab22dba262661fa6de7a4da70610505a4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnInstrumentStatus"><param name="Local" value="_quant_box_api_8h.html#ace2748dfaeb605c63990de33ddc093e2"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnOrder"><param name="Local" value="_quant_box_api_8h.html#a910b064710678ed34717122c0f0d509d"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnQuote"><param name="Local" value="_quant_box_api_8h.html#a0af30c685b9f38e1ef6c087a388f78a8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegOnRtnTrade"><param name="Local" value="_quant_box_api_8h.html#a7c5f4a2f31686f2ce5fdf56a8771d97e"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegTDOnConnect"><param name="Local" value="_quant_box_api_8h.html#a6bc236f8a210a0d6bcedcbb13cc8ce4b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegTDOnDisconnect"><param name="Local" value="_quant_box_api_8h.html#ad1dadc9612ebef2f30aba0b5dfd4e9ca"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="CTP_RegTDOnRspError"><param name="Local" value="_quant_box_api_8h.html#a1ffdb04cf77e42b64c2df4ac238b4c7c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetAllOrder"><param name="Local" value="_quant_box_api_8h.html#a0c06438cbf5d7bd51f582c9d08aea216"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetAvailableOrder"><param name="Local" value="_quant_box_api_8h.html#ac1be3c0a8c2f401a0e99fc1b11229f24"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLastKLine"><param name="Local" value="_quant_box_api_8h.html#ae0116dc81f47571b4d1d024b6312a73b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLastKLines"><param name="Local" value="_quant_box_api_8h.html#a42e573a914a5901aa40f376fcbd2e250"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLastTick"><param name="Local" value="_quant_box_api_8h.html#a23127e7d3afb5c4a77d28e56bcee9aaf"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLastTicks"><param name="Local" value="_quant_box_api_8h.html#a6ac1d4096d7cecf539f21c9a6d35ade0"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetLimitPrice"><param name="Local" value="_quant_box_api_8h.html#ad36186044b6bdac3131e99770b29ecf3"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetPosition"><param name="Local" value="_quant_box_api_8h.html#a3530add5bb997a790d89ad11850d94bd"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTradeTicket"><param name="Local" value="_quant_box_api_8h.html#a3cde0bf5f5b0eb4007b15e6615ebf0f7"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="GetTradingAccount"><param name="Local" value="_quant_box_api_8h.html#af76d49d46e3ae6eb6eaf462d84f1ac8c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MD_Connect"><param name="Local" value="_quant_box_api_8h.html#a38874c22801d5e2b10e54bb9dfec081c"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MD_Disconnect"><param name="Local" value="_quant_box_api_8h.html#a8f0d4de5d91017db616c7b1582da0d48"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MD_Subscribe"><param name="Local" value="_quant_box_api_8h.html#a6115b9f2119f071b33731a6c7236b25b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MD_SubscribeHistory"><param name="Local" value="_quant_box_api_8h.html#a452b02c1b5cd96d7e111aef86ee3aea4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="MD_Unsubscribe"><param name="Local" value="_quant_box_api_8h.html#a0e61c8dbe8d3af3503397d788454800b"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_CancelOrder"><param name="Local" value="_quant_box_api_8h.html#a02b3d5e1defa2ed2538a2eb6971ff3a9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_Connect"><param name="Local" value="_quant_box_api_8h.html#a54a982651306de28adab5d1bf99d951a"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_Disconnect"><param name="Local" value="_quant_box_api_8h.html#a43f6baead7a624550e07289e864e3049"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryInstrument"><param name="Local" value="_quant_box_api_8h.html#a99252e6e581504d2866778b5826b6b14"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryInstrumentCommissionRate"><param name="Local" value="_quant_box_api_8h.html#a1b133bfcc54c2d37ef5c90e3726132d8"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryInstrumentMarginRate"><param name="Local" value="_quant_box_api_8h.html#ace4cdf920bc633a3f19229fc035ea717"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryInvestorPosition"><param name="Local" value="_quant_box_api_8h.html#a40638f4d455389fa5d16519fe81fc9e4"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryOrder"><param name="Local" value="_quant_box_api_8h.html#a5231c436f9c631f3af1a599a90146633"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQrySettlementInfo"><param name="Local" value="_quant_box_api_8h.html#a9dba7ee8b8ba662f2775bb4e60da09e9"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryTrade"><param name="Local" value="_quant_box_api_8h.html#abec0283495913ceb0f5999944c5505cc"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_ReqQryTradingAccount"><param name="Local" value="_quant_box_api_8h.html#a0fd7033aad7b376ec0c9c3a423ff73b0"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_SendContingentOrder"><param name="Local" value="_quant_box_api_8h.html#ab9ccf7d4d274ed7d3977ab969ea89417"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_SendLimitOrder"><param name="Local" value="_quant_box_api_8h.html#a282521584f0b66a2154a32d3a585c927"><param name="ImageNumber" value="11"></OBJECT>
+      <LI><OBJECT type="text/sitemap"><param name="Name" value="TD_SendMarketOrder"><param name="Local" value="_quant_box_api_8h.html#acf922ccabd74f1a0cd791677d0b50760"><param name="ImageNumber" value="11"></OBJECT>
+      </UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="TradeData.h"><param name="Local" value="_trade_data_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="Types.h"><param name="Local" value="_types_8h_source.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  <LI><OBJECT type="text/sitemap"><param name="Name" value="全局定义"><param name="Local" value="globals.html"><param name="ImageNumber" value="11"></OBJECT>
+    <UL>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="全部"><param name="Local" value="globals.html"><param name="ImageNumber" value="11"></OBJECT>
+    <LI><OBJECT type="text/sitemap"><param name="Name" value="函数"><param name="Local" value="globals_func.html"><param name="ImageNumber" value="11"></OBJECT>
+    </UL>
+  </UL>
+</UL>
+</BODY>
+</HTML>

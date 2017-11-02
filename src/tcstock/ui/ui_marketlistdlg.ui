@@ -1,0 +1,189 @@
+<ui version="4.0" >
+ <class>tcMarketListDialog</class>
+ <widget class="QDialog" name="tcMarketListDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>643</width>
+    <height>439</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Market List...</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <property name="margin" >
+    <number>9</number>
+   </property>
+   <property name="spacing" >
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QGroupBox" name="gbx1" >
+     <property name="title" >
+      <string>Markets:</string>
+     </property>
+     <layout class="QHBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lbl1_1" >
+        <property name="text" >
+         <string>Market:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cbo1_1" />
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn1_1" >
+        <property name="text" >
+         <string>Add Market</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn1_2" >
+        <property name="text" >
+         <string>Modify Market</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn1_3" >
+        <property name="text" >
+         <string>Remove Market</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer>
+        <property name="orientation" >
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" >
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tbl1" />
+   </item>
+   <item>
+    <layout class="QHBoxLayout" >
+     <property name="margin" >
+      <number>0</number>
+     </property>
+     <property name="spacing" >
+      <number>6</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btn1" >
+       <property name="text" >
+        <string>Add Stock</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn2" >
+       <property name="text" >
+        <string>Modify Stock</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn3" >
+       <property name="text" >
+        <string>Remove Stock</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" >
+        <size>
+         <width>41</width>
+         <height>25</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn4" >
+       <property name="text" >
+        <string>Import From CVS File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn5" >
+       <property name="text" >
+        <string>Export To CSV File</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox" >
+     <property name="orientation" >
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons" >
+      <set>QDialogButtonBox::Close</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>tcMarketListDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>tcMarketListDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

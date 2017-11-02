@@ -1,0 +1,70 @@
+//初始化程序中的各种变量
+#include "GVAR.h"
+#include "initialize.h"
+#include <qdebug.h>
+#include <qfile.h>
+#include <qtextstream.h>
+#include <qsettings.h>
+#include <qmessagebox.h>
+#include <map>
+using std::make_pair;
+
+//读取文档找到前置机地址
+void iniFrontAdress(){
+	QFile iniFile("ini/front.ini");
+	if (!iniFile.open(QIODevice::ReadOnly|QIODevice::Text)){
+		qDebug() << "cannot find front.ini";
+		QMessageBox::information(0, QStringLiteral("错误"), QStringLiteral("找不到front.ini"));
+		abort();
+	}
+	QTextStream in(&iniFile);
+	FRONT_ADDRESS = in.readLine();
+	iniFile.close();
+}
+
+//读取文档初始化合约信息
+void iniwdTick(){
+	QFile iniFile("ini/instrumentInfo.ini");
+	if (!iniFile.open(QIODevice::ReadOnly | QIODevice::Text)){
+		qDebug() << "cannot find instrumentInfo.ini";
+		QMessageBox::information(0, QStringLiteral("错误"), QStringLiteral("找不到instrumentInfo.ini"));
+		abort();
+	}
+	QTextStream in(&iniFile);
+	QString line; 
+	while (!in.atEnd()){
+		line = in.readLine();
+		QStringList list = line.split("|");
+		QString code = list.at(0).trimmed();
+		QString name = list.at(1).trimmed();
+		instruList.insert(make_pair(code, wdTick(code, name)));
+	}
+	iniFile.close();
+}
+
+//读取文件初始化数据库信息
+void iniDB(){
+	QSettings setting("ini/db.ini", QSettings::IniFormat);
+	DB_DRIVER_NAME = setting.value("DB_DRIVER_NAME").toString();
+	DB_HOST_NAME = setting.value("DB_HOST_NAME").toString();
+	DATABASE_NAME = setting.value("DATABASE_NAME").toString();
+	USER_NAME = setting.value("USER_NAME").toString();
+	PASSWORD = setting.value("PASSWORD").toString();
+}
+
+//读取文件初始化一键订阅的合约
+void iniOneKeySubscribe(){
+	QFile iniFile("ini/onekeySub.ini");
+	if (!iniFile.open(QIODevice::ReadOnly | QIODevice::Text)){
+		QMessageBox::information(0, QStringLiteral("错误"), QStringLiteral("找不到onekeySub.ini文件"));
+		abort();
+	}
+	QString context;
+	QTextStream in(&iniFile);
+	in >> context;
+	QStringList list = context.split(";", QString::SkipEmptyParts);
+	for (int i = 0; i < list.size(); i++){
+		onekeyInstru.push_back(list.at(i));
+	}
+	iniFile.close();
+}
