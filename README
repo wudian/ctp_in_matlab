@@ -1,12 +1,32 @@
-1、混合编程平台								
-QuantBox.dll ： C++库								
-QuantBox.CSharp2CTP.dll ： C#库								
-								
-matlabFunction  =》  QuantBox.CSharp2CTP.dll的function  =》  QuantBox.dll的function   =》  CTP-Server 								
-matlab回调      《=  QuantBox.CSharp2CTP.dll的回调      《=   QuantBox.dll的回调      《=   CTP-Server								
-								
-2、注册matlab回调								
+#!matlab中用CTP进行期货自动交易
+
+> ###作者：吴典（Andy.Woo） 联系方式 手机/微信:18621528717   @上海
+>
+
+
+
+#《一》项目简介
+
+> 1.混合编程平台
+QuantBox.dll ： C++库
+QuantBox.CSharp2CTP.dll ： C#库
+
+matlabFunction  =》  QuantBox.CSharp2CTP.dll的function  =》  QuantBox.dll的function   =》  CTP-Server 
+matlab回调      《=  QuantBox.CSharp2CTP.dll的回调      《=   QuantBox.dll的回调      《=   CTP-Server
+
+> 2.注册matlab回调
 matlab回调函数     				C# delegate				含义
 OnMdConnect				OnConnect				行情连接
 OnMdDisconnect				OnDisconnect				行情断开
-OnRtnDepthMarketData				OnRtnDepthMarketData				
+OnRtnDepthMarketData				OnRtnDepthMarketData
+
+#《二》混合编程
+> 1.
+
+
+
+#《历史日志》
+> 
+
+
+
