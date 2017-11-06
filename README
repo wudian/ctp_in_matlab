@@ -1,31 +1,31 @@
-#!matlabÖÐÓÃCTP½øÐÐÆÚ»õ×Ô¶¯½»Ò×
+# matlabä¸­ç”¨CTPè¿›è¡ŒæœŸè´§è‡ªåŠ¨äº¤æ˜“
 
-> ###×÷Õß£ºÎâµä£¨Andy.Woo£© ÁªÏµ·½Ê½ ÊÖ»ú/Î¢ÐÅ:18621528717   @ÉÏº£
+> ä½œè€…ï¼šå´å…¸ï¼ˆAndy.Wooï¼‰ @ä¸Šæµ· æ‰‹æœº/å¾®ä¿¡:18621528717
 >
 
 
 
-#¡¶Ò»¡·ÏîÄ¿¼ò½é
+# ã€Šä¸€ã€‹é¡¹ç›®ç®€ä»‹
 
-> 1.»ìºÏ±à³ÌÆ½Ì¨
-QuantBox.dll £º C++¿â
-QuantBox.CSharp2CTP.dll £º C#¿â
+> 1.æ··åˆç¼–ç¨‹å¹³å°
+QuantBox.dll ï¼š C++åº“
+QuantBox.CSharp2CTP.dll ï¼š C#åº“
 
-matlabFunction  =¡·  QuantBox.CSharp2CTP.dllµÄfunction  =¡·  QuantBox.dllµÄfunction   =¡·  CTP-Server 
-matlab»Øµ÷      ¡¶=  QuantBox.CSharp2CTP.dllµÄ»Øµ÷      ¡¶=   QuantBox.dllµÄ»Øµ÷      ¡¶=   CTP-Server
+matlabFunction  =ã€‹  QuantBox.CSharp2CTP.dllçš„function  =ã€‹  QuantBox.dllçš„function   =ã€‹  CTP-Server 
+matlabå›žè°ƒ      ã€Š=  QuantBox.CSharp2CTP.dllçš„å›žè°ƒ      ã€Š=   QuantBox.dllçš„å›žè°ƒ      ã€Š=   CTP-Server
 
-> 2.×¢²ámatlab»Øµ÷
-matlab»Øµ÷º¯Êý     				C# delegate				º¬Òå
-OnMdConnect				OnConnect				ÐÐÇéÁ¬½Ó
-OnMdDisconnect				OnDisconnect				ÐÐÇé¶Ï¿ª
+> 2.æ³¨å†Œmatlabå›žè°ƒ
+matlabå›žè°ƒå‡½æ•°     				C# delegate				å«ä¹‰
+OnMdConnect				OnConnect				è¡Œæƒ…è¿žæŽ¥
+OnMdDisconnect				OnDisconnect				è¡Œæƒ…æ–­å¼€
 OnRtnDepthMarketData				OnRtnDepthMarketData
 
-#¡¶¶þ¡·»ìºÏ±à³Ì
+#ã€ŠäºŒã€‹æ··åˆç¼–ç¨‹
 > 1.
 
 
 
-#¡¶ÀúÊ·ÈÕÖ¾¡·
+#ã€ŠåŽ†å²æ—¥å¿—ã€‹
 > 
 
 
